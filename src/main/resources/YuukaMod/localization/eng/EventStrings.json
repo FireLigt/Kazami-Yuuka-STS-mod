@@ -1,0 +1,83 @@
+{
+  "${modID}:EventID": {
+    "NAME": "Event Name",
+    "DESCRIPTIONS": [
+      "This is event text, generally used to describe what's happening.",
+      "#g~This~ #g~text~ #g~is~ #g~green~ #g~and~ #g~wavy.~",
+      "#r@RED@ #r@AND@ #r@VIBRATING@ #r@TEXT.@",
+      "#rRed #gGreen #yYellow #bBlue #pPurple. ~Wavy~ @vibrating.@",
+      "You have to mark every word individually.",
+      "You can also use [#ffffff]white[] hex color codes like this to color text.",
+      "Hex color codes also work in card text! But not on keywords, without some workarounds."
+    ],
+    "OPTIONS": [
+      "[Action Description] What you actually get.",
+      "[Denial] #rLose #r1 #rMax #rHP. Bad stuff is red.",
+      "[Acceptance] #gGain #gApotheosis. Good stuff is green.",
+      "[Leave]",
+      "Select card to remove. (You can also stick extra text like this in here.)"
+    ]
+  },
+  "${modID}:ParasolEvent": {
+    "NAME": "Rain",
+    "DESCRIPTIONS": [
+      "You walk slowly, wary of possible #rmonsters, when suddenly ~it starts raining~ NL No time to wonder why it's raining inside the spire, your immediate priority is to find shelter.",
+      "You encounter a mature woman with a parasol who speaks to you. NL \"It's raining.\" NL \"Looks like you need an umbrella. If you don't mind, I can lend you one.\"",
+      "\"Take it. It's alright, I'll have Rinnosuke make another one.\" NL Although you don't know who Rinnosuke is, at this moment you are very grateful to this lady and that Rinnosuke.",
+      "\"Okay, be careful not to catch a cold.\" NL You watch this lady slowly walk away; it's best not to accept her kindness too readily. NL Although you think this, being soaking wet makes you uncomfortable."
+    ],
+    "OPTIONS": [
+      "[Find shelter from the rain]",
+      "[Ask for her parasol] #gGain #gParasol - Randomly gain one stack of buff each turn.",
+      "[Ask for a new one] #gGain #gParasol - Randomly lose one stack of debuff each turn.",
+      "[Refuse kindness]",
+      "[Leave]"
+    ]
+  },
+  "${modID}:UsedCampfire": {
+  "NAME": "Used Campfire",
+  "DESCRIPTIONS": [
+    "You arrive at a campfire that still retains some warmth despite having already been used. NL It seems the previous user left not long ago. ",
+    "Out of the corner of your eye, you notice several belongings left behind near the campfire by its previous user. NL You could take them to strengthen yourself, or try catching up to their owner and return them.",
+    "You claim them as your own. Looks like someone's having a really bad day~",
+    "You try catching up to the one who lost them; he seems to be not far ahead. NL After running for several minutes, you catch up to him. NL He is covered in armor, clearly a warrior. NL \" #r~Th...Thank...~ \" NL His speech is slurred, as though he still carried traces of demonic influence. NL He gives you a small pouch of gold and a relic as thanks. NL \" #r~At~ #r~least...~ #r~I~ #r~know...~ #r~when~ #r~buying...~ #r~things...~ #r~gotta~ #r~pay...~ \"",
+    "\" #r~I~ #r~don't~ #r~understand...~ #r~but~ #r~I~ ~r~respect~ #r~it.~\"",
+    "You accept his gift. Good deeds are rewarded."
+  ],
+  "OPTIONS": [
+    "[Observe]",
+    "[Take] #g",
+    "[Take] #g",
+    "[Try to Return Them]",
+    "[Reward] #gGain #g50 #gGold #gand #ga #grandom #gRare #rRelic",
+    "[Refuse]",
+    "[Leave]"
+  ]
+},
+  "${modID}:TataraBlacksmith": {
+    "NAME": "Tatara Blacksmith",
+    "DESCRIPTIONS": [
+      "You notice a lit house in the corner. NL You walk in and look at the signboard, where the words 【 #bTatara #rSmithy 】 are boldly written.",
+      "\" #b~Booo~ #r~oooo~ \" NL A voice suddenly comes from behind you, startling you enough to shiver before immediately preparing to attack. NL \" #bAh! #bSorry! #bI #bdidn’t #bexpect #rI #rcould #rstill #rscare #rpeople #rnow.\" NL \" #bBut #bthanks #bto #byou, #rI #rfinally #rhad #ra #rfull #rmeal~\"",
+      "\" #bLet #bme #bmake #bit #bup #bto #byou, #ras #ryou #rcan #rsee #rthis #ris #ra #rsmithy.\" NL \" #b I #bcan #bupgrade #bone #bcard #rfor #ryou #rfor #rfree\" NL \" #bOr #bif #byou #bgive #bme #b~a~ #b~little~ #b~bit~ #bgold, #rI #rcan #rhelp #ryou #rduplicate #rone?\"",
+      "The girl in front of you gets to work, the sound of hammering accompanied by flying sparks. Your card looks stronger than before. NL \" #bTake #bgood #rcare #rof #rthem!\"",
+      "Your card has been perfectly #gduplicated. A brand-new copy slides into your deck. NL \" #bWell #bdone! #rCome #ragain #rnext #rtime.\"",
+      "The #yRare #yCard radiates with energy, and under her forging, an identical copy is produced and added to your deck. NL \" #bHehe, #bnot #bto #bbrag, #bbut #bthe #bthings #bI #bforge #rare #rseveral #rlevels #rabove #rwhat #rordinary #rhumans #rmake!\" NL You don’t know why the girl in front of you refers to others as “ordinary humans.” NL Without asking further, you leave the smithy.",
+      "You wave your hand to indicate you don’t need anything and explain that you only came in to take a look. NL \" #bEh—— #breally? #bMy #bcraftsmanship #ris #rreally #rgood #rthough!\" NL \" #bAlright #bthen, #rI #rwish #ryou #ra #rsafe #rjourney!\" NL The girl holding a purple umbrella waves goodbye as she watches you leave the smithy. NL As you leave, you think to yourself that the #ppurple umbrella looks really strange."
+    ],
+    "OPTIONS": [
+      "[Enter the Smithy]",
+      "[Continue]",
+      "[Upgrade a Card]",
+      "[Duplicate a Common/Uncommon Card] #r(50 #rGold)",
+      "[Duplicate a Rare Card] #r(100 #rGold)",
+      "[Refuse]",
+      "[Leave]",
+      "Choose a card to duplicate.",
+      "Requires 50 Gold and a Common or Uncommon Card",
+      "Requires 100 Gold and a Rare Card",
+      "No cards can be upgraded",
+      "Choose a card to upgrade."
+    ]
+  }
+}

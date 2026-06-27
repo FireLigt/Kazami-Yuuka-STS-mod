@@ -1,0 +1,79 @@
+{
+  "${modID}:RelicID": {
+    "NAME": "Good Relic",
+    "FLAVOR": "Flavor text displayed in detailed relic view.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. [E] is an energy icon."
+    ]
+  },
+  "${modID}:MegaMagicCannonRelic": {
+    "NAME": "超究极魔炮证书",
+    "FLAVOR": "超究极魔炮的使用证书, 使你能够在任意情况获得并使用超究极魔炮。",
+    "DESCRIPTIONS": [
+      "每场战斗第3回合开始时，往手牌添加一张超究极魔炮。"
+    ]
+  },
+  "${modID}:ParasolDebuffRelic": {
+    "NAME": "阳伞",
+    "FLAVOR": "一把异常坚固的阳伞，你能感受到阳伞上散发着浓厚的花香。",
+    "DESCRIPTIONS": [
+      "每回合开始时，随机减少你1层负面效果。"
+    ]
+  },
+  "${modID}:ParasolBuffRelic": {
+    "NAME": "阳伞",
+    "FLAVOR": "一把异常坚固的阳伞，你能感受到阳伞上散发着浓厚的花香。",
+    "DESCRIPTIONS": [
+      "每回合开始时，随机增加你1层正面效果。"
+    ]
+  },
+  "${modID}:SunflowerRelic": {
+    "NAME": "向日葵",
+    "FLAVOR": "一朵灿烂的向日葵，追随着太阳的轨迹，为明日的绽放积蓄能量。",
+    "DESCRIPTIONS": [
+      "在一回合内，每消耗3点能量，下回合开始时获得 [E] 。"
+    ]
+  },
+  "${modID}:DaisyRelic": {
+    "NAME": "雏菊",
+    "FLAVOR": "一朵朴素而坚韧的小花，它的花瓣庇护着培育它的人。",
+    "DESCRIPTIONS": [
+      "在一回合内，每打出5张牌，获得10点格挡。"
+    ]
+  },
+  "${modID}:ChrysanthemumRelic": {
+    "NAME": "菊花",
+    "FLAVOR": "一朵在寒风中绽放的高贵之花，其精华能随时间治愈伤口。",
+    "DESCRIPTIONS": [
+      "在一回合内，每获得10点格挡，获得2点再生。"
+    ]
+  },
+  "${modID}:RoseRelic": {
+    "NAME": "玫瑰",
+    "FLAVOR": "一朵美丽却带刺的花。舍弃旧物，为新的机会开辟道路。",
+    "DESCRIPTIONS": [
+      "在一回合内，每消耗2张牌，下回合开始时额外抽1张牌。"
+    ]
+  },
+  "${modID}:VioletRelic": {
+    "NAME": "紫罗兰",
+    "FLAVOR": "一朵谦逊而蕴含深意的花，其精华能放大炼金反应。",
+    "DESCRIPTIONS": [
+      "每当你使用一瓶药水，40%概率获得一瓶随机药水。"
+    ]
+  },
+  "${modID}:BloomingSunflowersRelic": {
+    "NAME": "向日葵花束",
+    "FLAVOR": "一束向日葵，它们充满了妖力且尝试反馈它们的主人。",
+    "DESCRIPTIONS": [
+      "替换 #y向日葵 。 NL 累计整场战斗消耗的能量。每消耗3点能量，下回合开始时获得 [E] 。"
+    ]
+  },
+  "${modID}:YuukaFumoRelic": {
+    "NAME": "幽香Fumo",
+    "FLAVOR": "一个以幽香为原型的毛绒玩偶，散发着温暖的光芒，滋养着周围的花朵。",
+    "DESCRIPTIONS": [
+      "强化你的花朵遗物效果。"
+    ]
+  }
+}

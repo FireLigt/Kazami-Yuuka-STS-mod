@@ -1,0 +1,200 @@
+{
+  "${modID}:WorthyOpponentPower": {
+    "NAME": "Worthy Opponent",
+    "DESCRIPTIONS": [
+      "Whenever you play a card, gain ",
+      " #yStrength."
+    ]
+  },
+  "${modID}:MorningHazePower": {
+    "NAME": "Morning haze",
+    "DESCRIPTIONS": [
+      "When you lose HP from an enemy attack, gain 1 #yStrength for every 2 HP lost. When you heal HP, lose that much #yStrength.",
+      "When this is applied, gain 1 #yStrength for every 2 missing HP. When you lose HP from an enemy attack, gain 1 #yStrength for every 2 HP lost. When you heal HP, lose that much #yStrength. Upon #yrevival, your #yStrength is reset based on your current HP."
+    ]
+  },
+  "${modID}:DanmakuFestivalPower": {
+    "NAME": "Danmaku Festival",
+    "DESCRIPTIONS": [
+      "Whenever you trigger a #yDanmaku card from #yMagic #ycannon, gain [E] and draw 1 card."
+    ]
+  },
+  "${modID}:DoubleMagicCannonPower": {
+    "NAME": "Double Magic Cannon",
+    "DESCRIPTIONS": [
+      "The next ",
+      " #yMagic #yCannon card you play is played twice."
+    ]
+  },
+
+  "${modID}:SeamlessComboPower": {
+    "NAME": "Seamless Combo",
+    "DESCRIPTIONS": [
+      "Whenever you play a #rPhysical #rarts card, draw a random #rPhysical #rarts card from your draw pile.",
+      "Whenever you play a #rPhysical #rarts card, draw a random #rPhysical #rarts card from your draw pile. Reduce its cost by 1 this turn."
+    ]
+  },
+  "${modID}:SunflowerPower": {
+    "NAME": "Sunflower",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn for ",
+      " more turn(s)."
+    ]
+  },
+  "${modID}:TwinSunflowerPower": {
+    "NAME": "Twin Sunflower",
+    "DESCRIPTIONS": [
+      "Gain [E] [E] at the start of your turn for ",
+      " more turn(s)."
+    ]
+  },
+  "${modID}:LLSPC98formPower": {
+    "NAME": "LLS PC98 Form",
+    "DESCRIPTIONS": [
+      "This turn, the next ",
+      " Attack card will deal double damage."
+    ]
+  },
+  "${modID}:LLSPC98formCooldown": {
+    "NAME": "LLS PC98 Form Cooldown",
+    "DESCRIPTIONS": [
+      "LLS PC98 form is recharging.",
+      " battle remaining.",
+      " battles remaining."
+    ]
+  },
+  "${modID}:ChargeUpPower": {
+    "NAME": "Charge Up",
+    "DESCRIPTIONS": [
+      "After playing a #rphysical #rarts card: Draw 2 cards, drawn #rphysical #rarts cost 1 less. NL #b",
+      " uses remaining."
+    ]
+  },
+
+  "${modID}:CrazyYuukaPower": {
+    "NAME": "Crazy Yuuka",
+    "DESCRIPTIONS": [
+      "Whenever you play a #gPlant card, add a random unupgraded #gPlant card to your hand. It has Ethereal and Exhaust.",
+      "Whenever you play a #gPlant card, add a random upgraded #gPlant card to your hand. It has Ethereal and Exhaust."
+    ]
+  },
+  "${modID}:YumemiPower": {
+    "NAME": "Yumemi",
+    "DESCRIPTIONS": [
+      "Gain an extra card reward at the end of this combat."
+    ]
+  },
+  "${modID}:TheBeautiesOfNaturePower": {
+    "NAME": "The beauties of nature",
+    "DESCRIPTIONS": [
+      "Each stack negates the next instance of damage you take and reflects #b50% back to the attacker."]
+  },
+
+  "${modID}:FourSeasonsPower": {
+    "NAME": "Four Season",
+    "DESCRIPTIONS": [
+      "Each turn, the first time you play a card that costs 2 or more, gain [E] .",
+      "Each turn, the first #b2 times you play a card that costs 2 or more, gain [E] ."]
+  },
+  "${modID}:GensouShunkaPower": {
+    "NAME": "Gensou Shunka",
+    "DESCRIPTIONS": [
+      "At the start of each turn, add a random #gFlower card to your hand. It has Ethereal and Exhaust.",
+      "At the start of each turn, add a random upgraded #gFlower card to your hand. It has Ethereal and Exhaust."]
+  },
+
+  "${modID}:TryYourBestPower": {
+    "NAME": "Try Your Best",
+    "DESCRIPTIONS": [
+      "If an attack would #rkill you before the enemy turn ends, #yRevive with #gfull #gHP instead. Otherwise, die when the enemy turn ends.",
+      "If an attack would #rkill you, #yRevive with #gfull #gHP instead. NL Persists until triggered."
+    ]
+  },
+
+  "${modID}:FertilizerPower": {
+    "NAME": "Fertilizer",
+    "DESCRIPTIONS": [
+      "Your #gFlower cards no longer exhaust."]
+  },
+
+  "${modID}:OwnerOfMugenkanPower": {
+    "NAME": "Owner of Mugenkan",
+    "DESCRIPTIONS": [
+      "At the end of your turn, gain Block equal to half the highest stack amount among your buffs.",
+      "At the end of your turn, gain Block equal to the highest stack amount among your buffs."]
+  },
+
+  "${modID}:PunctureWoundPower": {
+    "NAME": "Puncture Wound",
+    "DESCRIPTIONS": [
+      "The next #yMagic #yCannon card applies Shackle equal to its damage."
+    ]
+  },
+  "${modID}:ParasolPower": {
+    "NAME": "Parasol",
+    "DESCRIPTIONS": [
+      "Whenever you play a card, gain ",
+      " Block."
+    ]
+  },
+  "${modID}:MatureGangPower": {
+    "NAME": "Mature gang",
+    "DESCRIPTIONS": [
+      "Draw ",
+      " extra card(s) at the start of each turn."
+    ]
+  },
+  "${modID}:MeetRetsuPower": {
+    "NAME": "Meet Retsu",
+    "DESCRIPTIONS": [
+      "Every 3rd #rPhysical #rarts card you play: create a 0-cost copy with #yEthereal and #yExhaust.",
+      "Every 2nd #rPhysical #rarts card you play: create a 0-cost copy with #yEthereal and #yExhaust."
+    ]
+  },
+  "${modID}:EnergyDebtPower": {
+    "NAME": "Energy Debt",
+    "DESCRIPTIONS": [
+      "Lose ",
+      " energy next turn."
+    ]
+  },
+  "${modID}:ContemptPower": {
+    "NAME": "Contempt",
+    "DESCRIPTIONS": [
+      "This turn, cards drawn from your deck and cards in your hand that came from your deck cost 1 less. Does not affect temporary/generated cards."
+    ]
+  },
+  "${modID}:NoMannersPower": {
+    "NAME": "No Manners",
+    "DESCRIPTIONS": [
+      "Cannot gain new Buffs. Buffs already present cannot increase."
+    ]
+  },
+  "${modID}:GettingOverItPower": {
+    "NAME": "Getting Over It",
+    "DESCRIPTIONS": [
+      "At the start of each turn, gain ",
+      " #yStrength, but is removed upon taking any HP damage."
+    ]
+  },
+  "${modID}:BrokenFlowerPower": {
+    "NAME": "Broken Flower",
+    "DESCRIPTIONS": [
+      "Your next attack deals triple damage and then Exhausts."
+    ]
+  },
+  "${modID}:HoneyMilkPower": {
+    "NAME": "Honey Milk",
+    "DESCRIPTIONS": [
+      "After combat, heal #b",
+      " HP."
+    ]
+  },
+  "${modID}:GreenTeaPower": {
+    "NAME": "Green Tea",
+    "DESCRIPTIONS": [
+      "The next #b",
+      " card(s) you play that would Exhaust will not Exhaust instead."
+    ]
+  }
+}

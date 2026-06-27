@@ -1,0 +1,48 @@
+{
+  "${modID}:PotionID": {
+    "NAME": "Some Kind of Potion",
+    "DESCRIPTIONS": [
+      "Little",
+      " pieces ",
+      "that get put together",
+      " into a description.",
+      " Exactly how depends on the potion, and you can set it up however you want."
+    ]
+  },
+  "${modID}:PureWater": {
+    "NAME": "Pure Water",
+    "DESCRIPTIONS": [
+      "Remove all debuffs."
+    ]
+  },
+  "${modID}:Tea": {
+    "NAME": "Tea",
+    "DESCRIPTIONS": [
+      "Choose a card from your deck and add a copy to your hand."
+    ]
+  },
+  "${modID}:HoneyMilk": {
+    "NAME": "Honey Milk",
+    "DESCRIPTIONS": [
+      "Record your current HP. After combat, heal back to the recorded HP."
+    ]
+  },
+  "${modID}:ScentedTea": {
+    "NAME": "Scented Tea",
+    "DESCRIPTIONS": [
+      "Double the amount of a random buff you have."
+    ]
+  },
+  "${modID}:BlackTea": {
+    "NAME": "Black Tea",
+    "DESCRIPTIONS": [
+      "Gain 1 random buff."
+    ]
+  },
+  "${modID}:GreenTea": {
+    "NAME": "Green Tea",
+    "DESCRIPTIONS": [
+      "The next card you play that would Exhaust, will not Exhaust instead."
+    ]
+  }
+}

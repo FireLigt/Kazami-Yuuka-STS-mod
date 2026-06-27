@@ -1,0 +1,58 @@
+[
+  {
+    "PROPER_NAME": "Magic Cannon",
+    "NAMES": [
+      "magic cannon",
+      "magic_cannon",
+      "magic_cannons"
+    ],
+    "DESCRIPTION": "A type of attack card that deals damage to all enemies."
+  },
+  {
+    "PROPER_NAME": "Flower",
+    "NAMES": [
+      "flower",
+      "flowers"
+    ],
+    "DESCRIPTION": "A type of card that provides block and utility."
+  },
+  {
+    "PROPER_NAME": "Physical Arts",
+    "NAMES": [
+      "physical_arts",
+      "physical arts"
+    ],
+    "DESCRIPTION": "A type of card that focuses on direct combat and physical techniques."
+  },
+  {
+    "PROPER_NAME": "Danmaku",
+    "NAMES": [
+      "danmaku",
+      "danmakus"
+    ],
+    "DESCRIPTION": "A type of card that triggers from hand when you play a Magic Cannon card. If no matching cards are in hand, upgraded matching cards in the draw pile can trigger instead."
+  },
+  {
+    "PROPER_NAME": "Plant",
+    "NAMES": [
+      "plant",
+      "plants"
+    ],
+    "DESCRIPTION": "A type of card that triggers from hand when you play a Flower card. If no matching cards are in hand, upgraded matching cards in the draw pile can trigger instead."
+  },
+  {
+    "PROPER_NAME": "Unique",
+    "NAMES": [
+      "unique"
+    ],
+    "DESCRIPTION": "This card's effect cannot stack. Playing multiple copies will not increase its effect."
+  },
+  {
+    "PROPER_NAME": "No Manners",
+    "NAMES": [
+      "no_manners",
+      "no manners"
+    ],
+    "DESCRIPTION": "Cannot gain new Buffs. Buffs already present when this was applied cannot increase."
+  }
+]

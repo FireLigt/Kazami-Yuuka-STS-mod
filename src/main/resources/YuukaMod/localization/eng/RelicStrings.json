@@ -1,0 +1,79 @@
+{
+  "${modID}:RelicID": {
+    "NAME": "Good Relic",
+    "FLAVOR": "Flavor text displayed in detailed relic view.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. [E] is an energy icon."
+    ]
+  },
+  "${modID}:MegaMagicCannonRelic": {
+    "NAME": "Mega Magic Cannon Certificate",
+    "FLAVOR": "The ultimate magic cannon certificate, allow you to gain and use everywhere.",
+    "DESCRIPTIONS": [
+      "On the 3th turn of each combat, add a Mega Magic Cannon to your hand."
+    ]
+  },
+  "${modID}:ParasolDebuffRelic": {
+    "NAME": "Parasol",
+    "FLAVOR": "An exceptionally sturdy parasol, from which you can feel the rich fragrance of flowers emanating.",
+    "DESCRIPTIONS": [
+      "At the start of each turn, randomly reduce 1 stack of a debuff on you."
+    ]
+  },
+  "${modID}:ParasolBuffRelic": {
+    "NAME": "Parasol",
+    "FLAVOR": "An exceptionally sturdy parasol, from which you can feel the rich fragrance of flowers emanating.",
+    "DESCRIPTIONS": [
+      "At the start of each turn, randomly add 1 stack to a buff on you."
+    ]
+  },
+  "${modID}:SunflowerRelic": {
+    "NAME": "Sunflower",
+    "FLAVOR": "A radiant sunflower that follows the sun's path, storing energy for tomorrow's bloom.",
+    "DESCRIPTIONS": [
+      "In a single turn, for every 3 Energy used, gain [E] at the start of your next turn."
+    ]
+  },
+  "${modID}:DaisyRelic": {
+    "NAME": "Daisy",
+    "FLAVOR": "A simple yet resilient flower, its petals shield those who nurture it.",
+    "DESCRIPTIONS": [
+      "For every 5 cards played in a single turn, gain 10 Block."
+    ]
+  },
+  "${modID}:ChrysanthemumRelic": {
+    "NAME": "Chrysanthemum",
+    "FLAVOR": "A noble flower that thrives in the cold, its essence mends wounds over time.",
+    "DESCRIPTIONS": [
+      "For every 10 Block gained in a single turn, gain 2 Regen."
+    ]
+  },
+  "${modID}:RoseRelic": {
+    "NAME": "Rose",
+    "FLAVOR": "A beautiful yet thorny flower. Letting go of the old makes way for the new.",
+    "DESCRIPTIONS": [
+      "For every 2 cards Exhausted in a single turn, draw 1 extra card at the start of your next turn."
+    ]
+  },
+  "${modID}:VioletRelic": {
+    "NAME": "Violet",
+    "FLAVOR": "A modest flower with hidden depths, its essence amplifies alchemical reactions.",
+    "DESCRIPTIONS": [
+      "Whenever you use a potion, 40% chance to gain a random potion."
+    ]
+  },
+  "${modID}:BloomingSunflowersRelic": {
+    "NAME": "Sunflower Bouquet",
+    "FLAVOR": "A sunflower bouquet, brimming with enchanting energy, seeks to give back to its master.",
+    "DESCRIPTIONS": [
+      "Replaces #ySunflower. NL Combines all energy spent across combat. Every 3 Energy used grants [E] at the start of your next turn."
+    ]
+  },
+  "${modID}:YuukaFumoRelic": {
+    "NAME": "Yuuka Fumo",
+    "FLAVOR": "A fluffy doll in Yuuka's likeness, radiating a gentle warmth that nurtures nearby flowers.",
+    "DESCRIPTIONS": [
+      "Strengthens the effects of your flower relics."
+    ]
+  }
+}

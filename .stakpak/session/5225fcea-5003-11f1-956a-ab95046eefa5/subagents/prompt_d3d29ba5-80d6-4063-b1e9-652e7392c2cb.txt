@@ -1,0 +1,9 @@
+Scan all Java power files in src/main/java/YuukaMod/powers/. For each power file:
+1. Extract the power ID (from setID() or similar)
+2. Extract the power name
+3. List key mechanics/effects
+4. Check if it matches the PowerStrings.json definitions
+
+Return a structured list: [PowerID | ClassName | PowerName | Key Mechanics | Matches PowerStrings?]
+
+Flag any powers that don't have corresponding entries in PowerStrings.json or have mismatched descriptions.

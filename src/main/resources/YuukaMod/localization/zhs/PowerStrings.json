@@ -1,0 +1,193 @@
+{
+  "${modID}:WorthyOpponentPower": {
+    "NAME": "可敬的对手",
+    "DESCRIPTIONS": [
+      "每当你打出一张牌，获得",
+      " 层 #y力量 。"
+    ]
+  },
+  "${modID}:MorningHazePower": {
+    "NAME": "起床气",
+    "DESCRIPTIONS": [
+      "当你因敌人攻击失去生命时，每失去 2 点生命，获得 1 点 #y力量 。当你回复生命时，失去等量的 #y力量 。",
+      "当此效果被施加时，每损失 2 点生命，获得 1 点 #y力量 。当你因敌人攻击失去生命时，每失去 2 点生命，获得 1 点 #y力量。当你回复生命时，失去等量的 #y力量 。 #y复活 时，你的 #y力量 会根据当前生命重置。"
+    ]
+  },
+  "${modID}:DanmakuFestivalPower": {
+    "NAME": "弹幕祭典",
+    "DESCRIPTIONS": [
+      "每当你透过 #y魔炮 触发一张 #y弹幕 ，获得 [E] 并抽 1 张牌。"
+    ]
+  },
+  "${modID}:DoubleMagicCannonPower": {
+    "NAME": "双重魔炮",
+    "DESCRIPTIONS": [
+      "接下来你打出的 ",
+      " 张 #y魔炮 会发动两次。"
+    ]
+  },
+  "${modID}:SeamlessComboPower": {
+    "NAME": "无缝连击",
+    "DESCRIPTIONS": [
+      "每当你打出一张 #r体术 时，从抽牌堆中抽取一张随机 #r体术 。",
+      "每当你打出一张 #r体术 时，从抽牌堆中抽取一张随机 #r体术 。本回合其费用减少 1。"
+    ]
+  },
+  "${modID}:SunflowerPower": {
+    "NAME": "向日葵",
+    "DESCRIPTIONS": [
+      "在你的回合开始时获得 [E] ，持续 ",
+      " 回合。"
+    ]
+  },
+  "${modID}:TwinSunflowerPower": {
+    "NAME": "双子向日葵",
+    "DESCRIPTIONS": [
+      "在你的回合开始时获得 [E] [E] ，持续 ",
+      " 回合。"
+    ]
+  },
+  "${modID}:LLSPC98formPower": {
+    "NAME": "LLS PC98 形态",
+    "DESCRIPTIONS": [
+      "本回合，接下来的 ",
+      " 张攻击牌造成双倍伤害。"
+    ]
+  },
+  "${modID}:LLSPC98formCooldown": {
+    "NAME": "LLS PC98 形态冷却",
+    "DESCRIPTIONS": [
+      "LLS PC98 形态冷却中，还需等待",
+      " 场战斗。",
+      " 场战斗。"
+    ]
+  },
+  "${modID}:ChargeUpPower": {
+    "NAME": "蓄力",
+    "DESCRIPTIONS": [
+      "使用 #r体术 后：抽2张牌，抽到的 #r体术 费用减少1。 NL #b",
+      " 次剩余。"
+    ]
+  },
+  "${modID}:CrazyYuukaPower": {
+    "NAME": "疯狂幽香",
+    "DESCRIPTIONS": [
+      "每当你打出一张 #g植物 时，将一张随机 #g植物 加入手牌。其具有虚无与消耗。",
+      "每当你打出一张 #g植物 时，将一张已升级的随机 #g植物 加入手牌。其具有虚无与消耗。"
+    ]
+  },
+  "${modID}:YumemiPower": {
+    "NAME": "梦美",
+    "DESCRIPTIONS": [
+      "本场战斗结束后，额外获得一份卡牌奖励。"
+    ]
+  },
+  "${modID}:TheBeautiesOfNaturePower": {
+    "NAME": "花鸟风月、啸风弄月",
+    "DESCRIPTIONS": [
+      "每层会 #y无效化 一次你即将受到的伤害，#b50% 伤害被 #y反弹 给攻击者。"]
+  },
+  "${modID}:FourSeasonsPower": {
+    "NAME": "四季",
+    "DESCRIPTIONS": [
+      "每回合中，你首次打出费用为 2 或以上的卡牌时，获得 [E] 。",
+      "每回合中，前#b2次打出费用为 2 或以上的卡牌时，获得 [E] 。"]
+  },
+  "${modID}:GensouShunkaPower": {
+    "NAME": "幻想春花",
+    "DESCRIPTIONS": [
+      "在每回合开始时，将一张随机 #g花朵 加入手牌。其具有虚无与消耗。",
+      "在每回合开始时，将一张已升级的随机 #g花朵 加入手牌。其具有虚无与消耗。"]
+  },
+  "${modID}:TryYourBestPower": {
+    "NAME": "全力以赴",
+    "DESCRIPTIONS": [
+      "若敌方回合结束前攻击将会 #r击杀 你，则改为以 #g满 #g生命 #y复活 。否则，在敌方回合结束时死亡。",
+      "若攻击将会 #r击杀 你，则改为以 #g满 #g生命 #y复活 。 NL 持续至效果触发为止。"
+    ]
+  },
+  "${modID}:FertilizerPower": {
+    "NAME": "肥料",
+    "DESCRIPTIONS": [
+      "你的 #g花朵 不再消耗。"]
+  },
+  "${modID}:OwnerOfMugenkanPower": {
+    "NAME": "梦幻馆之主",
+    "DESCRIPTIONS": [
+      "每回合结束时，获得一半最高增益层数的格挡。",
+      "每回合结束时，获得最高增益层数的格挡。"]
+  },
+  "${modID}:PunctureWoundPower": {
+    "NAME": "穿刺伤口",
+    "DESCRIPTIONS": [
+      "下一张 #y魔炮 会使所有敌人失去伤害数的力量一回合。"
+    ]
+  },
+  "${modID}:ParasolPower": {
+    "NAME": "阳伞",
+    "DESCRIPTIONS": [
+      "每当你打出一张卡牌时，获得 ",
+      " 点格挡。"
+    ]
+  },
+  "${modID}:MatureGangPower": {
+    "NAME": "熟女联盟",
+    "DESCRIPTIONS": [
+      "每回合开始时额外抽取 ",
+      " 张牌。"
+    ]
+  },
+  "${modID}:MeetRetsuPower": {
+    "NAME": "与烈的会面",
+    "DESCRIPTIONS": [
+      "每打出第 3 张 #r体术 时：生成一张 0 费用的复制品，具有 #y虚无 和 #y消耗 。",
+      "每打出第 2 张 #r体术 时：生成一张 0 费用的复制品，具有 #y虚无 和 #y消耗 。"
+    ]
+  },
+  "${modID}:EnergyDebtPower": {
+    "NAME": "能量债务",
+    "DESCRIPTIONS": [
+      "下回合失去 ",
+      " 点能量。"
+    ]
+  },
+  "${modID}:ContemptPower": {
+    "NAME": "蔑视",
+    "DESCRIPTIONS": [
+      "本回合，从牌组抽到的牌和手牌中来自牌组的牌费用减少1。临时生成的牌不被影响。"
+    ]
+  },
+  "${modID}:NoMannersPower": {
+    "NAME": "无礼",
+    "DESCRIPTIONS": [
+      "无法获得增益。已有增益不受影响。"
+    ]
+  },
+  "${modID}:GettingOverItPower": {
+    "NAME": "掘地求花",
+    "DESCRIPTIONS": [
+      "在每回合开始时，获得 ",
+      " 点 #y力量，但生命减少后会移除。"
+    ]
+  },
+  "${modID}:BrokenFlowerPower": {
+    "NAME": "破碎花朵",
+    "DESCRIPTIONS": [
+      "你的下一次攻击造成三倍伤害，然后消耗。"
+    ]
+  },
+  "${modID}:HoneyMilkPower": {
+    "NAME": "蜂蜜牛奶",
+    "DESCRIPTIONS": [
+      "战斗结束后，回复 #b",
+      " 点HP。"
+    ]
+  },
+  "${modID}:GreenTeaPower": {
+    "NAME": "绿茶",
+    "DESCRIPTIONS": [
+      "你接下来 #b",
+      " 张会消耗的牌不会被消耗。"
+    ]
+  }
+}

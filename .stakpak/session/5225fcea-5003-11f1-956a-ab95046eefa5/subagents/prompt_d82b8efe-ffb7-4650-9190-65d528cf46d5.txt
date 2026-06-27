@@ -1,0 +1,8 @@
+Scan all Java card files in src/main/java/YuukaMod/cards/ (all subdirectories: basic, common, power, rare, special, uncommon). For each card file:
+1. Extract the card ID (from setID() or similar)
+2. Extract the card name
+3. List key mechanics/effects
+
+Return a structured list: [CardID | ClassName | CardName | Key Mechanics]
+
+Focus on finding cards that might not match their CardStrings definitions or have missing implementations.

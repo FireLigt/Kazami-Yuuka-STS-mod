@@ -1,0 +1,64 @@
+[
+  {
+    "PROPER_NAME": "魔砲",
+    "NAMES": [
+      "魔砲",
+      "magic_cannon",
+      "まほうじゅう"
+    ],
+    "DESCRIPTION": "敵全体にダメージを与える攻撃カード。"
+  },
+  {
+    "PROPER_NAME": "フラワー",
+    "NAMES": [
+      "フラワー",
+      "flower",
+      "flower"
+    ],
+    "DESCRIPTION": "ブロックやユーティリティを提供するカード。"
+  },
+  {
+    "PROPER_NAME": "体術",
+    "NAMES": [
+      "体術",
+      "physical_arts",
+      "たいじゅつ"
+    ],
+    "DESCRIPTION": "直接戦闘と身体技術に特化したカード。"
+  },
+  {
+    "PROPER_NAME": "弾幕",
+    "NAMES": [
+      "弾幕",
+      "danmaku",
+      "だんまく"
+    ],
+    "DESCRIPTION": "魔砲カードをプレイした時、手札（アップグレード後は山札）から自動的に発動するカード。"
+  },
+  {
+    "PROPER_NAME": "プラント",
+    "NAMES": [
+      "プラント",
+      "plant",
+      "plants"
+    ],
+    "DESCRIPTION": "フラワーカードをプレイした時、手札（アップグレード後は山札）から自動的に発動するカード。"
+  },
+  {
+    "PROPER_NAME": "ユニーク",
+    "NAMES": [
+      "ユニーク",
+      "unique"
+    ],
+    "DESCRIPTION": "このカードの効果は重複しない。複数枚プレイしても効果は増加しない。"
+  },
+  {
+    "PROPER_NAME": "無作法",
+    "NAMES": [
+      "無作法",
+      "no_manners",
+      "no manners"
+    ],
+    "DESCRIPTION": "新しいバフを得られない。適用時に既に存在していたバフは影響を受けない。"
+  }
+]

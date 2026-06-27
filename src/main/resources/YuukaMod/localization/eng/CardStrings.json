@@ -1,0 +1,296 @@
+{
+  "${modID}:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! block."},
+  "${modID}:Intimidation": {
+    "NAME": "Intimidation",
+    "DESCRIPTION": "Gain !M! Strength and apply !${modID}:SecondMagic! Weak to enemy."},
+  "${modID}:Small_magic_cannon": {
+    "NAME": "Small magic cannon",
+    "DESCRIPTION": "${modID}:magic_cannon NL Deal !D! damage to all enemies."},
+  "${modID}:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."},
+
+  "${modID}:Backspin_kick": {
+    "NAME": "Backspin_kick",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Shackle Strength by !D! this turn."},
+  "${modID}:Charge_up": {
+    "NAME": "Charge Up",
+    "DESCRIPTION": "The next !M! ${modID}:physical_arts card you play will draw 2 cards. NL Drawn ${modID}:physical_arts in this way will cost 1 less.",
+    "UPGRADE_DESCRIPTION": "Innate NL The next !M! ${modID}:physical_arts cards you play will draw 2 cards each. NL Drawn ${modID}:physical_arts in this way will cost 1 less."},
+  "${modID}:Danmaku": {
+    "NAME": "Danmaku",
+    "DESCRIPTION": "${modID}:Danmaku NL Deal !D! damage. ",
+    "UPGRADE_DESCRIPTION": "${modID}:Danmaku NL Deal !D! damage. "},
+  "${modID}:Flower_pot": {
+    "NAME": "Flower pot",
+    "DESCRIPTION": "${modID}:Flower NL Gain !B! block."},
+  "${modID}:Magic_cannon": {
+    "NAME": "Magic cannon",
+    "DESCRIPTION": "${modID}:magic_cannon NL Deal !D! damage to all enemies."},
+  "${modID}:Memory": {
+    "NAME": "Memory",
+    "DESCRIPTION": "Gain !M! Plated Armor. NL Gain 1 Blur. NL Exhaust "},
+  "${modID}:Plantern": {
+    "NAME": "Plantern",
+    "DESCRIPTION": "${modID}:Plant NL Scry !M!. Whenever a card is discarded by Scry, gain !${modID}:SecondMagic! Block."},
+  "${modID}:Preemptive_attack": {
+    "NAME": "Preemptive Attack",
+    "DESCRIPTION": "${modID}:physical_arts NL Deal !D! damage. NL Whenever this is played, permanently gain 1 damage this run."},
+  "${modID}:Pursuit": {
+    "NAME": "Pursuit",
+    "DESCRIPTION": "${modID}:physical_arts NL Deal !D! damage. If Fatal, Return this card to your hand and gain [E] [E] [E] ."},
+  "${modID}:Ready": {
+    "NAME": "Ready",
+    "DESCRIPTION": "Draw !M! random ${modID}:magic_cannon card from your draw pile."},
+  "${modID}:Reload": {
+    "NAME": "Reload",
+    "DESCRIPTION": "Move ALL ${modID}:Danmaku from your discard pile into your draw pile.",
+    "UPGRADE_DESCRIPTION": "Retain NL Move ALL ${modID}:Danmaku from your discard pile into your draw pile."},
+  "${modID}:Resist_offensive": {
+    "NAME": "Resist Offensive",
+    "DESCRIPTION": "Gain Block equal to the number of cards in your draw pile. NL Exhaust ",
+    "UPGRADE_DESCRIPTION": "Gain Block equal to the number of cards in your deck. NL Exhaust "},
+  "${modID}:Second_magic_cannon": {
+    "NAME": "2nd magic cannon",
+    "DESCRIPTION": "${modID}:magic_cannon NL Deal !D! damage to all enemies."},
+  "${modID}:Seed": {
+    "NAME": "Seed",
+    "DESCRIPTION": "Draw !M! cards. NL Exhaust ",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Exhaust "},
+  "${modID}:Smiling": {
+    "NAME": "Smiling",
+    "DESCRIPTION": "Heal !M! HP. NL Exhaust "},
+  "${modID}:Straight_punch": {
+    "NAME": "Straight Punch",
+    "DESCRIPTION": "${modID}:physical_arts NL Deal !D! damage. Draw !M! card from your discard pile.",
+    "UPGRADE_DESCRIPTION": "${modID}:physical_arts NL Deal !D! damage. Draw !M! cards from your discard pile."},
+  "${modID}:Sunflower": {
+    "NAME": "Sunflower",
+    "DESCRIPTION": "${modID}:Flower NL Gain [E] at the start of your next 2 turns. NL Exhaust "},
+
+  "${modID}:Uppercut": {
+    "NAME": "Uppercut",
+    "DESCRIPTION": "${modID}:physical_arts NL Deal !D! damage. Apply !M! Vulnerable."},
+  "${modID}:Wall_nut": {
+    "NAME": "Wall_nut",
+    "DESCRIPTION": "${modID}:Plant NL Gain !B! block.",
+    "UPGRADE_DESCRIPTION": "${modID}:Plant NL Gain !B! block."},
+
+  "${modID}:Ankensatsu": {
+    "NAME": "Ankensatsu",
+    "DESCRIPTION": "${modID}:physical_arts NL Deal !D! damage. NL Gain [E].",
+    "UPGRADE_DESCRIPTION": "${modID}:physical_arts NL Deal !D! damage. NL Gain [E]. NL If the last card played this turn is a ${modID}:physical_arts, gain [E] [E]."},
+  "${modID}:Big_danmaku": {
+    "NAME": "Big Danmaku",
+    "DESCRIPTION": "${modID}:Danmaku NL Deal !D! damage."},
+  "${modID}:Big_magic_cannon": {
+    "NAME": "Big magic cannon",
+    "DESCRIPTION": "${modID}:magic_cannon NL Deal !D! damage to all enemies.",
+    "UPGRADE_DESCRIPTION": "${modID}:magic_cannon NL Deal !D! damage to all enemies. NL Apply !M! Weak to all enemies."},
+  "${modID}:Blover": {
+    "NAME": "Blover",
+    "DESCRIPTION": "${modID}:Plant NL Blow away all Minion enemies. NL Give all non-Minion enemies 2 Weak and 2 Vulnerable. NL Exhaust "},
+  "${modID}:Bouquet": {
+    "NAME": "Bouquet",
+    "DESCRIPTION": " !M! uses remaining. NL Exhaust NL When the last use is spent, gain an extra rare card reward after this combat and remove this card from your deck.",
+    "UPGRADE_DESCRIPTION": " !M! uses remaining. NL Exhaust NL When the last use is spent, gain an extra rare card reward after this combat and remove this card from your deck. NL Costs 1 less."},
+  "${modID}:Bridge_suplex": {
+    "NAME": "Bridge Suplex",
+    "DESCRIPTION": "${modID}:physical_arts NL If the last card you played is a ${modID}:physical_arts card, this costs 1 less this turn. NL Deal !D! damage."},
+  "${modID}:Contempt": {
+    "NAME": "Contempt",
+    "DESCRIPTION": "${modID}:unique NL In this turn all card cost -1 except temporary card. NL Exhaust"},
+  "${modID}:Crazy_yuuka": {
+    "NAME": "Crazy Yuuka",
+    "DESCRIPTION": "Whenever you play a Plant card, add a random Plant card to your hand. It has Ethereal and Exhaust.",
+    "UPGRADE_DESCRIPTION": "Whenever you play a Plant card, add a random upgraded Plant card to your hand. It has Ethereal and Exhaust."},
+  "${modID}:Famed_far": {
+    "NAME": "Famed far",
+    "DESCRIPTION": "Draw cards until you draw a Power card or the draw pile is empty. Excess cards go to your discard pile."},
+  "${modID}:Finishing_move": {
+    "NAME": "Finishing Move",
+    "DESCRIPTION": "${modID}:physical_arts NL Deal !D! damage. NL If you played other ${modID}:physical_arts card this turn, deal double damage and apply !M! Weak instead. NL End your turn."},
+  "${modID}:Flower_danmaku": {
+    "NAME": "Flower Danmaku",
+    "DESCRIPTION": "${modID}:Flower  ${modID}:Danmaku NL Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "${modID}:Flower  ${modID}:Danmaku NL Deal !D! damage."},
+  "${modID}:Four_season": {
+    "NAME": "Four Season",
+    "DESCRIPTION": "Each turn, the first time you play a card that costs 2 or more, gain [E] .",
+    "UPGRADE_DESCRIPTION": "Each turn, the first 2 times you play a card that costs 2 or more, gain [E] ."},
+  "${modID}:Gensou_shunka": {
+    "NAME": "Gensou Shunka",
+    "DESCRIPTION": "At the start of each turn, add a random ${modID}:Flower card to your hand. It has Ethereal and Exhaust.",
+    "UPGRADE_DESCRIPTION": "At the start of each turn, add a random upgraded ${modID}:Flower card to your hand. It has Ethereal and Exhaust."},
+  "${modID}:Gentle": {
+    "NAME": "Gentle",
+    "DESCRIPTION": "Can only be played if no Attack has been played this turn. NL Gain !B! Block. NL If any enemy intends to attack, apply ${modID}:no_manners. NL Exhaust"},
+  "${modID}:Getting_over_it": {
+    "NAME": "Getting Over It",
+    "DESCRIPTION": "At the start of each turn, gain !M! Strength. If you take HP damage, lose this power.",
+    "UPGRADE_DESCRIPTION": "At the start of each turn, gain !M! Strength. If you take HP damage, lose this power."},
+  "${modID}:Giant_magic_cannon": {
+    "NAME": "Giant magic cannon",
+    "DESCRIPTION": "${modID}:magic_cannon NL Deals !D! damage to all enemies. NL If you have 3 or more [E] but not enough to cover the cost of this card, consume all [E] and gain an Energy Debt equal to the difference.",
+    "UPGRADE_DESCRIPTION": "${modID}:magic_cannon NL Deals !D! damage to all enemies. NL If you have 3 or more [E] but not enough to cover the cost of this card, consume all [E] and gain an Energy Debt equal to the difference."},
+  "${modID}:Gunmaku": {
+    "NAME": "Gunmaku",
+    "DESCRIPTION": "${modID}:Danmaku NL Deal !D! damage !M! times.",
+    "UPGRADE_DESCRIPTION": "${modID}:Danmaku NL Deal !D! damage !M! times."},
+  "${modID}:Large_magic_cannon": {
+    "NAME": "Large magic cannon",
+    "DESCRIPTION": "${modID}:magic_cannon NL Deal !D! damage to all enemies. NL Apply !M! Vulnerable to all enemies."},
+  "${modID}:Low_speed": {
+    "NAME": "Low speed",
+    "DESCRIPTION": "Lose !${modID}:DexLoss! Dexterity. NL Gain !M! Strength."},
+  "${modID}:Marigold": {
+    "NAME": "Marigold",
+    "DESCRIPTION": "${modID}:Flower NL Gain !M! Gold. NL Exhaust"},
+  "${modID}:Mature_gang": {
+    "NAME": "Mature gang",
+    "DESCRIPTION": "${modID}:unique NL Draw extra 2 card at the start of each turn.",
+    "UPGRADE_DESCRIPTION": "${modID}:unique NL Innate NL Draw extra three card at the start of each turn."},
+  "${modID}:Parasol": {
+    "NAME": "Parasol",
+    "DESCRIPTION": "Whenever you play a card, gain !M! Block."},
+  "${modID}:Power_deterrence": {
+    "NAME": "Power deterrence",
+    "DESCRIPTION": "Draw !M! cards. For each ${modID}:magic_cannon card drawn this way, apply !M! Weak to ALL enemies. NL Exhaust"},
+  "${modID}:Prepare": {
+    "NAME": "Prepare",
+    "DESCRIPTION": "Gain !${modID}:DANMAKU! temporary Strength equal to the number of ${modID}:danmaku cards in your deck.",
+    "UPGRADE_DESCRIPTION": "Retain NL Gain !${modID}:DANMAKU! temporary Strength equal to the number of ${modID}:danmaku cards in your deck."},
+  "${modID}:Punch_in_face": {
+    "NAME": "Punch in face",
+    "DESCRIPTION": "${modID}:physical_arts NL Deal !D! damage. NL Stun the enemy. NL Exhaust "},
+  "${modID}:Puncture_wound": {
+    "NAME": "Puncture Wound",
+    "DESCRIPTION": "The next ${modID}:magic_cannon card deals damage. Apply Shackle to ALL enemies equal to the damage dealt. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Retain NL The next ${modID}:magic_cannon card deals damage. Apply Shackle to ALL enemies equal to the damage dealt. NL Exhaust"},
+  "${modID}:Repeater": {
+    "NAME": "Repeater",
+    "DESCRIPTION": "${modID}:Plant NL Deal !D! damage !M! times."},
+  "${modID}:Seamless_combo": {
+    "NAME": "Seamless Combo",
+    "DESCRIPTION": "${modID}:unique NL Whenever you play a ${modID}:physical_arts card, draw a random ${modID}:physical_arts card from your draw pile.",
+    "UPGRADE_DESCRIPTION": "${modID}:unique NL Whenever you play a ${modID}:physical_arts card, draw a random ${modID}:physical_arts card from your draw pile. Reduce its cost by 1 this turn."},
+  "${modID}:Shovel": {
+    "NAME": "Shovel",
+    "DESCRIPTION": "Choose !M! Flower card from your exhaust pile. Add it to your draw pile. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Choose !M! Flower cards from your exhaust pile. Add them to your draw pile. NL Exhaust",
+    "EXTENDED_DESCRIPTION": [
+      "Choose Flower cards to retrieve."
+    ]},
+  "${modID}:Suika": {
+    "NAME": "Suika",
+    "DESCRIPTION": "${modID}:Plant NL Deal !D! damage. NL When played manually, also create 3 Small Suika in your draw pile and remove this card from combat. NL When triggered by a ${modID}:Flower card, deal !M! damage instead.",
+    "UPGRADE_DESCRIPTION": "${modID}:Plant NL Deal !D! damage. NL When played manually, also create 3 upgraded Small Suika in your draw pile and remove this card from combat. NL When triggered by a ${modID}:Flower card, deal !M! damage instead."},
+  "${modID}:Tall_nut": {
+    "NAME": "Tall_nut",
+    "DESCRIPTION": "${modID}:Plant NL Gain !B! block.",
+    "UPGRADE_DESCRIPTION": "${modID}:Plant NL Gain !B! block."},
+  "${modID}:Twin_sunflower": {
+    "NAME": "Twin Sunflower",
+    "DESCRIPTION": "${modID}:Flower NL Gain [E] [E] at the start of your next 2 turns. NL Exhaust "},
+
+  "${modID}:Blossoming_of_Gensokyo": {
+    "NAME": "Blossoming of Gensokyo",
+    "DESCRIPTION": "Deal !D! damage. NL Create a copy in hand with double damage, Ethereal, and Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "Ethereal NL Deal !D! damage. NL Create a copy in hand with double damage. NL Exhaust "]},
+  "${modID}:Broken_flower": {
+    "NAME": "Broken Flower",
+    "DESCRIPTION": "Ethereal NL The next attack you play deals triple damage, then Exhausts.",
+    "UPGRADE_DESCRIPTION": "The next attack you play deals triple damage, then Exhausts."},
+  "${modID}:Call_for_help": {
+    "NAME": "Call for Help",
+    "DESCRIPTION": "Choose one of three special cards to add to your hand. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Choose one of three special cards to add to your hand. The chosen card is upgraded. NL Exhaust"},
+  "${modID}:Danmaku_festival": {
+    "NAME": "Danmaku festival",
+    "DESCRIPTION": "${modID}:unique NL Ethereal NL Whenever a ${modID}:Danmaku card is triggered by a ${modID}:magic_cannon card, gain [E] and draw 1 card.",
+    "UPGRADE_DESCRIPTION": "${modID}:unique NL Whenever a ${modID}:Danmaku card is triggered by a ${modID}:magic_cannon card, gain [E] and draw 1 card."},
+  "${modID}:Double_magic_cannon": {
+    "NAME": "Double magic cannon",
+    "DESCRIPTION": "The next ${modID}:magic_cannon card you play is played twice."},
+  "${modID}:Fertilizer": {
+    "NAME": "Fertilizer",
+    "DESCRIPTION": "${modID}:unique NL ${modID}:Flower cards no longer exhaust for the rest of combat.",
+    "UPGRADE_DESCRIPTION": "${modID}:unique NL Innate NL ${modID}:Flower cards no longer exhaust for the rest of combat."},
+  "${modID}:Flower_Shooting": {
+    "NAME": "Flower Shooting",
+    "DESCRIPTION": "${modID}:Flower NL Deal !D! damage. NL Trigger up to 10 total ${modID}:Danmaku or ${modID}:Plant cards from your hand and upgraded ones from your draw pile.",
+    "UPGRADE_DESCRIPTION": "${modID}:Flower NL Deal !D! damage. NL Trigger all ${modID}:Danmaku or ${modID}:Plant cards in your hand and draw pile."},
+  "${modID}:Fragrance": {
+    "NAME": "Fragrance",
+    "DESCRIPTION": "Gain [E] . Draw !M! card. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] . Draw !M! card. NL Exhaust after !${modID}:SecondMagic! uses."},
+  "${modID}:Infinite_spiral": {
+    "NAME": "Infinite Spiral",
+    "DESCRIPTION": "Unplayable  Retain  Innate  NL Turns remaining: !M!  NL At end of turn, decrease by 1. When 0, deal !D! damage to ALL enemies and remove this copy from deck. NL After remove, you will receive a random relic and a [Bouquet]."},
+  "${modID}:LLS_PC98_form": {
+    "NAME": "LLS PC98 form",
+    "DESCRIPTION": "Change to PC98 form. Every first !M! Attack cards each round deal double damage. NL Cannot be used in the next combat.",
+    "UPGRADE_DESCRIPTION": "Change to PC98 form. Every first !M! Attack cards each round deal double damage.",
+    "EXTENDED_DESCRIPTION": [
+      "Cannot use: on cooldown from previous combat.",
+      "Cooldown: "]},
+  "${modID}:Manipulating_flower": {
+    "NAME": "Manipulating Flower",
+    "DESCRIPTION": "Draw cards until your hand is full. ${modID}:Flower cards are drawn first. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Draw cards until your hand is full. ${modID}:Flower cards are drawn first. NL Gain Vigor equal to the number of cards drawn. NL Exhaust"},
+  "${modID}:Meet_Retsu": {
+    "NAME": "Meet Retsu",
+    "DESCRIPTION": "${modID}:unique ${modID}:physical_arts NL Every 3rd ${modID}:physical_arts card you play: create a 0-cost copy with Ethereal and Exhaust.",
+    "UPGRADE_DESCRIPTION": "${modID}:unique ${modID}:physical_arts NL Every 2nd ${modID}:physical_arts card you play: create a 0-cost copy with Ethereal and Exhaust."},
+  "${modID}:Morning_haze": {
+    "NAME": "Morning haze",
+    "DESCRIPTION": "${modID}:unique NL When you lose HP from an enemy attack, gain 1 Strength for every 2 HP lost. NL When you heal HP, lose that much Strength.",
+    "UPGRADE_DESCRIPTION": "${modID}:unique NL When this is played, gain 1 Strength for every 2 missing HP. NL When you lose HP from an enemy attack, gain 1 Strength for every 2 HP lost. NL When you heal HP, lose that much Strength. NL Upon revival, your Strength is reset based on your current HP."},
+  "${modID}:Owner_of_mugenkan": {
+    "NAME": "Owner of Mugenkan",
+    "DESCRIPTION": "At the end of your turn, gain Block equal to half the highest stack amount among your buffs.",
+    "UPGRADE_DESCRIPTION": "At the end of your turn, gain Block equal to the highest stack amount among your buffs."},
+  "${modID}:The_beauties_of_nature": {
+    "NAME": "The beauties of nature",
+    "DESCRIPTION": "For every 2 Energy spent, gain 1 stack (rounded down). NL Each stack negates the next instance of damage you take and reflects half back to the attacker.",
+    "UPGRADE_DESCRIPTION": "For every 2 Energy spent, gain 1 stack (rounded up). NL Each stack negates the next instance of damage you take and reflects half back to the attacker."},
+  "${modID}:Try_your_best": {
+    "NAME": "Try Your Best",
+    "DESCRIPTION": "If lethal damage would kill you before the enemy turn ends, survive with full HP instead. NL Otherwise, die when the enemy turn ends. NL Removed from your deck for the rest of the run. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Survive lethal damage with full HP instead. NL Persists until triggered. NL Removed from your deck for the rest of the run. NL Exhaust."},
+  "${modID}:Ultra_magic_cannon": {
+    "NAME": "Ultra magic cannon",
+    "DESCRIPTION": "${modID}:magic_cannon NL When this card is drawn, reduce its cost by 1 for the combat. NL Cost will be reset every time used. NL Deal !D! damage to all enemies."},
+  "${modID}:Uninterrupted_combo": {
+    "NAME": "Uninterrupted combo",
+    "DESCRIPTION": "${modID}:physical_arts NL Deal !D! damage !M! times."},
+  "${modID}:Watering": {
+    "NAME": "Watering",
+    "DESCRIPTION": "Shuffle your discard pile into your draw pile.",
+    "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your draw pile. NL Retrieve deck cards from your exhaust pile. NL !M! uses remaining. NL When 0, remove this card from your deck."},
+  "${modID}:Worthy_opponent": {
+    "NAME": "Worthy Opponent",
+    "DESCRIPTION": "${modID}:unique NL Ethereal NL Whenever you play a card, gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "${modID}:unique NL Innate NL Whenever you play a card, gain !M! Strength."},
+
+  "${modID}:Mega_magic_cannon": {
+    "NAME": "Mega Magic Cannon",
+    "DESCRIPTION": "${modID}:magic_cannon NL Deal !D! damage to ALL enemies."},
+  "${modID}:Mima": {
+    "NAME": "Mima",
+    "DESCRIPTION": "Ethereal NL Gain [E] and !M! Intangible. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Ethereal NL Gain [E] [E] and !M! Intangible. NL Exhaust"},
+  "${modID}:Shinki": {
+    "NAME": "Shinki",
+    "DESCRIPTION": "Ethereal NL Add half of all current Buff counters. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Ethereal NL Double all current Buff counters. NL Exhaust"},
+  "${modID}:Small_suika": {
+    "NAME": "Small Suika",
+    "DESCRIPTION": "${modID}:Plant NL Deal !D! damage. NL If there are 3 copies of Small Suika in your discard pile, they merge into a Suika."},
+  "${modID}:Yumemi": {
+    "NAME": "Yumemi",
+    "DESCRIPTION": "Ethereal NL When this combat ends, gain an extra card reward. NL Exhaust"}
+}

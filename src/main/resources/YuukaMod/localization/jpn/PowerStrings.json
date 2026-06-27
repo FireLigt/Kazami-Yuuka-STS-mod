@@ -1,0 +1,200 @@
+{
+  "${modID}:WorthyOpponentPower": {
+    "NAME": "好敵手",
+    "DESCRIPTIONS": [
+      "カードをプレイするたびにを獲得",
+      "#y筋力する。"
+    ]
+  },
+  "${modID}:MorningHazePower": {
+    "NAME": "朝の不機嫌",
+    "DESCRIPTIONS": [
+      "敵の攻撃でHPを失った時、失ったHP2ごとに #y筋力 を1獲得。HPを回復した時、その分の #y筋力 を失う。",
+      "この効果が適用された時、不足HP2ごとに #y筋力 を1獲得。敵の攻撃でHPを失った時、失ったHP2ごとに #y筋力 を1獲得。HPを回復した時、その分の #y筋力 を失う。#y復活 時、現在HPに基づいて #y筋力 がリセットされる。"
+    ]
+  },
+  "${modID}:DanmakuFestivalPower": {
+    "NAME": "弾幕フェスティバル",
+    "DESCRIPTIONS": [
+      "${modID}:魔砲 カードによって ${modID}:弾幕 カードが発動するたび、[E] を得て1枚ドローする。"
+    ]
+  },
+  "${modID}:DoubleMagicCannonPower": {
+    "NAME": "ダブル魔砲",
+    "DESCRIPTIONS": [
+      "次にプレイする",
+      " 枚の #y魔砲 カードは2回プレイされる。"
+    ]
+  },
+
+  "${modID}:SeamlessComboPower": {
+    "NAME": "シームレスコンボ",
+    "DESCRIPTIONS": [
+      "#r体術 カードをプレイするたび、山札からランダムな #r体術 カードを1枚ドローする。",
+      "#r体術 カードをプレイするたび、山札からランダムな #r体術 カードを1枚ドローする。このターンそのコストを1減らす。"
+    ]
+  },
+  "${modID}:SunflowerPower": {
+    "NAME": "向日葵",
+    "DESCRIPTIONS": [
+      "残り",
+      " ターンの間、ターン開始時に [E] を獲得。"
+    ]
+  },
+  "${modID}:TwinSunflowerPower": {
+    "NAME": "双生向日葵",
+    "DESCRIPTIONS": [
+      "残り",
+      " ターンの間、ターン開始時に [E] [E] を獲得。"
+    ]
+  },
+  "${modID}:LLSPC98formPower": {
+    "NAME": "LLS PC98形態",
+    "DESCRIPTIONS": [
+      "このターン、次の",
+      " 枚の攻撃カードのダメージが2倍になる。"
+    ]
+  },
+  "${modID}:LLSPC98formCooldown": {
+    "NAME": "LLS PC98形態 クールダウン",
+    "DESCRIPTIONS": [
+      "LLS PC98形態 クールダウン、残り",
+      " 戦闘。",
+      " 戦闘。"
+    ]
+  },
+  "${modID}:ChargeUpPower": {
+    "NAME": "チャージアップ",
+    "DESCRIPTIONS": [
+      "${modID}:体術 カードプレイ後: 2枚ドロー、引いた ${modID}:体術 のコスト-1。 NL #b",
+      " 回使用可能。"
+    ]
+  },
+
+  "${modID}:CrazyYuukaPower": {
+    "NAME": "クレイジー幽香",
+    "DESCRIPTIONS": [
+      "#gプラント カードをプレイするたび、アップグレードされていないランダムな #gプラント カードを手札に加える。それはエセリアルと廃棄を持つ。",
+      "#gプラント カードをプレイするたび、アップグレードされたランダムな #gプラント カードを手札に加える。それはエセリアルと廃棄を持つ。"
+    ]
+  },
+  "${modID}:YumemiPower": {
+    "NAME": "夢美",
+    "DESCRIPTIONS": [
+      "この戦闘終了時、追加のカード報酬を獲得。"
+    ]
+  },
+  "${modID}:TheBeautiesOfNaturePower": {
+    "NAME": "自然の美",
+    "DESCRIPTIONS": [
+      "各スタックは、次に受けるダメージを #y無効化 し、#b50% を攻撃者に #y反射 する。"]
+  },
+
+  "${modID}:FourSeasonsPower": {
+    "NAME": "四季",
+    "DESCRIPTIONS": [
+      "各ターン、最初にコスト2以上のカードをプレイした時、[E] を獲得。",
+      "各ターン、最初の#b2回コスト2以上のカードをプレイした時、[E] を獲得。"]
+  },
+  "${modID}:GensouShunkaPower": {
+    "NAME": "幻想春花",
+    "DESCRIPTIONS": [
+      "各ターン開始時、ランダムな #gフラワー カードを手札に加える。それはエセリアルと廃棄を持つ。",
+      "各ターン開始時、アップグレードされたランダムな #gフラワー カードを手札に加える。それはエセリアルと廃棄を持つ。"]
+  },
+
+  "${modID}:TryYourBestPower": {
+    "NAME": "全力を尽くせ",
+    "DESCRIPTIONS": [
+      "敵ターン終了前に攻撃で #r死亡 する場合、代わりに #g全HP で #y復活 する。そうでない場合、敵ターン終了時に死亡する。",
+      "攻撃で #r死亡 する場合、代わりに #g全HP で #y復活 する。 NL 効果が発動するまで持続する。"
+    ]
+  },
+
+  "${modID}:FertilizerPower": {
+    "NAME": "肥料",
+    "DESCRIPTIONS": [
+      "あなたの #gフラワー カードは廃棄しなくなる。"]
+  },
+
+  "${modID}:OwnerOfMugenkanPower": {
+    "NAME": "夢幻館の主",
+    "DESCRIPTIONS": [
+      "各ターン終了時、最も高いバフのスタック数の半分のブロックを獲得。",
+      "各ターン終了時、最も高いバフのスタック数と等しいブロックを獲得。"]
+  },
+
+  "${modID}:PunctureWoundPower": {
+    "NAME": "刺創",
+    "DESCRIPTIONS": [
+      "次の #y魔砲 カードが、そのダメージと等しい拘束を適用する。"
+    ]
+  },
+  "${modID}:ParasolPower": {
+    "NAME": "日傘",
+    "DESCRIPTIONS": [
+      "カードをプレイするたび、",
+      " ブロックを獲得。"
+    ]
+  },
+  "${modID}:MatureGangPower": {
+    "NAME": "マチュアギャング",
+    "DESCRIPTIONS": [
+      "各ターンの開始時に、追加でカードを ",
+      " 枚引く。"
+    ]
+  },
+  "${modID}:MeetRetsuPower": {
+    "NAME": "ミート烈",
+    "DESCRIPTIONS": [
+      "3回目の #r体術 カードをプレイするたび：コスト0のコピーを生成する（#yエーテル 、#y廃棄 ）。",
+      "2回目の #r体術 カードをプレイするたび：コスト0のコピーを生成する（#yエーテル 、#y廃棄 ）。"
+    ]
+  },
+  "${modID}:EnergyDebtPower": {
+    "NAME": "エネルギーデット",
+    "DESCRIPTIONS": [
+      "次のターン、",
+      " エネルギーを失う。"
+    ]
+  },
+  "${modID}:ContemptPower": {
+    "NAME": "Contempt",
+    "DESCRIPTIONS": [
+      "このターン、デッキから引いたカードと、デッキ由来の手札のカードのコストが1減少する。一時的・生成されたカードには影響しない。"
+    ]
+  },
+  "${modID}:NoMannersPower": {
+    "NAME": "ノーマナー",
+    "DESCRIPTIONS": [
+      "バフを獲得できない。既存のバフには影響しない。"
+    ]
+  },
+  "${modID}:GettingOverItPower": {
+    "NAME": "ゲッティング・オーバー・イット",
+    "DESCRIPTIONS": [
+      "各ターン開始時に",
+      " #y筋力 を獲得。HPダメージを受けると消滅。"
+    ]
+  },
+  "${modID}:BrokenFlowerPower": {
+    "NAME": "ブロークンフラワー",
+    "DESCRIPTIONS": [
+      "次の攻撃のダメージが3倍になり、その後廃棄される。"
+    ]
+  },
+  "${modID}:HoneyMilkPower": {
+    "NAME": "ハチミツミルク",
+    "DESCRIPTIONS": [
+      "戦闘終了後、HPを #b",
+      " 回復する。"
+    ]
+  },
+  "${modID}:GreenTeaPower": {
+    "NAME": "緑茶",
+    "DESCRIPTIONS": [
+      "次に #b",
+      " 枚の廃棄するカードを廃棄しないようにする。"
+    ]
+  }
+}

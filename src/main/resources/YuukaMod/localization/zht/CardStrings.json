@@ -1,0 +1,292 @@
+{
+  "${modID}:Defend": {
+    "NAME": "防御",
+    "DESCRIPTION": "獲得 !B! 點 格擋。"},
+  "${modID}:Intimidation": {
+    "NAME": "恐嚇",
+    "DESCRIPTION": "獲得 !M! 點 力量。 NL 給予敵人 !${modID}:SecondMagic! 層 虛弱 。"},
+  "${modID}:Small_magic_cannon": {
+    "NAME": "小型魔炮",
+    "DESCRIPTION": "${modID}:魔炮 NL 對所有敵人造成 !D! 點傷害。"},
+  "${modID}:Strike": {
+    "NAME": "打擊",
+    "DESCRIPTION": "造成 !D! 點傷害。"},
+
+  "${modID}:Blover": {
+    "NAME": "三叶草",
+    "DESCRIPTION": "${modID}:植物 NL 吹飞所有 爪牙 敌人。 NL 对所有非 爪牙 敌人施加 2 层 虛弱 和 2 层 易伤 。 NL 消耗 "},
+
+  "${modID}:Charge_up": {
+    "NAME": "蓄力",
+    "DESCRIPTION": "下一張 ${modID}:體術 打出后抽2張牌。 NL 以此方式抽到的 ${modID}:體術 費用減少1。",
+    "UPGRADE_DESCRIPTION": "固有 NL 下 !M! 張 ${modID}:體術 打出后抽2張牌。 NL 以此方式抽到的 ${modID}:體術 費用減少1。"},
+  "${modID}:Flower_pot": {
+    "NAME": "花盆",
+    "DESCRIPTION": "${modID}:花朵 NL 獲得 !B! 點 格擋。"},
+  "${modID}:Danmaku": {
+    "NAME": "彈幕",
+    "DESCRIPTION": "${modID}:彈幕 NL 造成 !D! 點傷害。 ",
+    "UPGRADE_DESCRIPTION": "${modID}:彈幕 NL 造成 !D! 點傷害。"},
+  "${modID}:Magic_cannon": {
+    "NAME": "魔炮",
+    "DESCRIPTION": "${modID}:魔炮 NL 對所有敵人造成 !D! 點傷害。"},
+  "${modID}:Memory": {
+    "NAME": "回憶",
+    "DESCRIPTION": "獲得 !M! 層 多層護甲 。 NL 獲得 1 層 模糊 。 NL 消耗 "},
+  "${modID}:Plantern": {
+    "NAME": "路燈花",
+    "DESCRIPTION": "${modID}:植物 NL 預見 !M! 張卡牌。 透過 預見 每舍棄一張卡牌，獲得 !${modID}:SecondMagic! 點 格擋。"},
+  "${modID}:Preemptive_attack": {
+    "NAME": "預判攻擊",
+    "DESCRIPTION": "${modID}:體術 NL 造成 !D! 點傷害。 NL 每次使用，此卡在本局遊戲中永久增加1點傷害。"},
+  "${modID}:Pursuit": {
+    "NAME": "追擊",
+    "DESCRIPTION": "${modID}:體術 NL 造成 !D! 點傷害。 斬殺 時， 此卡回到手牌并獲得 [E] [E] [E] 。"},
+  "${modID}:Ready": {
+    "NAME": "準備",
+    "DESCRIPTION": "從抽牌堆中抽 !M! 張隨機 ${modID}:魔炮 卡加入手牌。"},
+  "${modID}:Reload": {
+    "NAME": "裝填",
+    "DESCRIPTION": "將棄牌堆中的所有 ${modID}:彈幕 卡洗回抽牌堆。",
+    "UPGRADE_DESCRIPTION": " 保留  NL 將棄牌堆中的所有 ${modID}:彈幕 卡洗回抽牌堆。"},
+  "${modID}:Resist_offensive": {
+    "NAME": "抵御攻勢",
+    "DESCRIPTION": "獲得與抽牌堆中卡牌數量相等的 格擋 。 NL 消耗 ",
+    "UPGRADE_DESCRIPTION": "獲得與牌組中卡牌數量相等的 格擋 。 NL 消耗 "},
+  "${modID}:Second_magic_cannon": {
+    "NAME": "二號魔炮",
+    "DESCRIPTION": "${modID}:魔炮 NL 對所有敵人造成 !D! 點傷害。"},
+  "${modID}:Seed": {
+    "NAME": "種子",
+    "DESCRIPTION": "抽 !M! 張卡。 NL 消耗 ",
+    "UPGRADE_DESCRIPTION": "抽 !M! 張卡。 NL 消耗 "},
+  "${modID}:Smiling": {
+    "NAME": "微笑",
+    "DESCRIPTION": "回復 !M! 點生命。 NL 消耗 "},
+  "${modID}:Straight_punch": {
+    "NAME": "直拳",
+    "DESCRIPTION": "${modID}:體術 NL 造成 !D! 點傷害。 NL 從棄牌堆抽 !M! 張卡。",
+    "UPGRADE_DESCRIPTION": "${modID}:體術 NL 造成 !D! 點傷害。 NL 從棄牌堆抽 !M! 張卡。"},
+  "${modID}:Sunflower": {
+    "NAME": "向日葵",
+    "DESCRIPTION": "${modID}:花朵 NL 下两個回合開始時， NL 獲得 [E] 。 NL 消耗 "},
+  "${modID}:Backspin_kick": {
+    "NAME": "后旋上踢",
+    "DESCRIPTION": "造成 !D! 點傷害。 NL 給予敵人 !M! 層 易傷 。 NL 此回合敵人降低 !D! 層 力量 。"},
+  "${modID}:Uppercut": {
+    "NAME": "上勾拳",
+    "DESCRIPTION": "${modID}:體術 NL 造成 !D! 點傷害。 NL 給予 !M! 層 易傷 。"},
+  "${modID}:Wall_nut": {
+    "NAME": "堅果墻",
+    "DESCRIPTION": "${modID}:植物 NL 獲得 !B! 點 格擋 。",
+    "UPGRADE_DESCRIPTION": "${modID}:植物 NL 獲得 !B! 點 格擋 。"},
+
+  "${modID}:Ankensatsu": {
+    "NAME": "暗劍殺",
+    "DESCRIPTION": "${modID}:體術 NL 造成 !D! 點傷害。 NL 獲得 [E] 。",
+    "UPGRADE_DESCRIPTION": "${modID}:體術 NL 造成 !D! 點傷害。 NL 獲得 [E] 。 NL 如果上一張打出的卡是 ${modID}:體術 卡， 再獲得 [E] [E] 。"},
+  "${modID}:Big_danmaku": {
+    "NAME": "大彈幕",
+    "DESCRIPTION": "${modID}:彈幕 NL 造成 !D! 點傷害。"},
+  "${modID}:Big_magic_cannon": {
+    "NAME": "大號魔炮",
+    "DESCRIPTION": "${modID}:魔炮 NL 對所有敵人造成 !D! 點傷害。",
+    "UPGRADE_DESCRIPTION": "${modID}:魔炮 NL 對所有敵人造成 !D! 點傷害。 NL 給予所有敵人 !M! 層 虛弱 。"},
+  "${modID}:Bouquet": {
+    "NAME": "花束",
+    "DESCRIPTION": "還有 !M! 次使用次數。 NL 消耗 NL 此卡累计使用5次后， 這張卡從牌組移除并在這場戰斗結束后贈與一張稀有卡。"},
+  "${modID}:Bridge_suplex": {
+    "NAME": "橋式背摔",
+    "DESCRIPTION": "${modID}:體術 NL 若上一張使用的卡是 ${modID}:體術 卡，本牌費用減少 1 點。 NL 造成 !D! 點傷害。"},
+   "${modID}:Contempt": {
+    "NAME": "藐視",
+    "DESCRIPTION": "${modID}:唯一 NL 本回合内，除臨時卡牌外，所有卡牌費用-1。 NL 消耗 "},
+  "${modID}:Crazy_yuuka": {
+    "NAME": "瘋狂幽香",
+    "DESCRIPTION": "每當你使用一張 ${modID}:植物 卡，往手牌加入一張帶有 虛無 和 消耗 的隨機 ${modID}:植物 卡。",
+    "UPGRADE_DESCRIPTION": "每當你使用一張 ${modID}:植物 卡，往手牌加入升級過的一張帶有 虛無 和 消耗 的隨機 ${modID}:植物 卡。"},
+  "${modID}:Famed_far": {
+    "NAME": "威名遠揚",
+    "DESCRIPTION": "抽牌直到抽到能力牌或抽牌堆為空。多餘的牌進入棄牌堆。 NL 消耗 "},
+  "${modID}:Finishing_move": {
+    "NAME": "收尾招式",
+    "DESCRIPTION": "${modID}:體術 NL 造成 !D! 點傷害。 NL 若這回合有使用過其他的 ${modID}:體術 卡，造成雙倍傷害并給予 !M! 層 虛弱。 NL 立即結束回合。"},
+  "${modID}:Flower_danmaku": {
+    "NAME": "花朵彈幕",
+    "DESCRIPTION": "${modID}:花朵 ${modID}:彈幕 NL 造成 !D! 點傷害。",
+    "UPGRADE_DESCRIPTION": "${modID}:花朵 ${modID}:彈幕 NL 造成 !D! 點傷害。"},
+  "${modID}:Four_season": {
+    "NAME": "四季",
+    "DESCRIPTION": "每個回合第一次打出費用為2或以上的卡時， 獲得 [E] 。",
+    "UPGRADE_DESCRIPTION": "每個回合前2次打出費用為2或以上的卡時， 獲得 [E] 。"},
+  "${modID}:Gensou_shunka": {
+    "NAME": "幻想春花",
+    "DESCRIPTION": "每回合開始時， 往手牌加入一張帶有 虛無 和 消耗 的隨機 ${modID}:花朵 卡。",
+    "UPGRADE_DESCRIPTION": "每回合開始時， 往手牌加入升級過的一張帶有 虛無 和 消耗 的隨機 ${modID}:花朵 卡。"},
+  "${modID}:Gentle": {
+    "NAME": "紳士風范",
+      "DESCRIPTION": "只能在本回合未使用過攻擊牌時打出。 NL 獲得 !B! 點 格擋 。 NL 若敵人的意圖是攻擊，对其施加 ${modID}:無禮 。 NL 消耗 "},
+  "${modID}:Getting_over_it": {
+    "NAME": "掘地求花",
+    "DESCRIPTION": "在每回合開始時，獲得 !M! 層 力量 。若你受到傷害，失去此能力。",
+    "UPGRADE_DESCRIPTION": "在每回合開始時，獲得 !M! 層 力量 。若你受到傷害，失去此能力。"},
+  "${modID}:Giant_magic_cannon": {
+    "NAME": "巨型魔炮",
+    "DESCRIPTION": "${modID}:魔炮 NL 對所有敵人造成 !D! 點傷害。 NL 若你擁有 3 以上的 [E] 但不足以支付此卡費用，消耗所有 [E] 并獲得等同于差額的 能量債務 。",
+    "UPGRADE_DESCRIPTION": "${modID}:魔炮 NL 對所有敵人造成 !D! 點傷害。 NL 若你擁有 3 點以上 [E] 但不足以支付其費用，消耗所有 [E] 并獲得等同于差額的 能量債務 。"},
+  "${modID}:Gunmaku": {
+    "NAME": "槍幕",
+    "DESCRIPTION": "${modID}:彈幕 NL 造成 !D! 點傷害 !M! 次。",
+    "UPGRADE_DESCRIPTION": "${modID}:彈幕 NL 造成 !D! 點傷害 !M! 次。"},
+  "${modID}:Large_magic_cannon": {
+    "NAME": "廣域魔炮",
+    "DESCRIPTION": "${modID}:魔炮 NL 對所有敵人造成 !D! 點傷害。 NL 對所有敵人施加 !M! 層 易傷 。"},
+  "${modID}:Low_speed": {
+    "NAME": "低速",
+    "DESCRIPTION": "失去 !${modID}:DexLoss! 層 敏捷 。 NL 獲得 !M! 層 力量 。"},
+  "${modID}:Marigold": {
+    "NAME": "金盞花",
+    "DESCRIPTION": "${modID}:花朵 NL 獲得 !M! 金幣。 NL 消耗 "},
+  "${modID}:Mature_gang": {
+    "NAME": "熟女聯盟",
+    "DESCRIPTION": "${modID}:唯一 NL 每回合開始時額外抽出2張牌。",
+    "UPGRADE_DESCRIPTION": "${modID}:唯一 NL 固有 。 NL 每回合開始時額外抽出3張牌。"},
+  "${modID}:Parasol": {
+    "NAME": "陽傘",
+    "DESCRIPTION": "每當你打出一張卡時，獲得 !M! 點 格擋 。"},
+  "${modID}:Power_deterrence": {
+    "NAME": "力量威懾",
+    "DESCRIPTION": "抽 !M! 張卡。每抽到一張 ${modID}:魔炮 卡，對所有敵人施加 !M! 層 虛弱 。 NL 消耗 "},
+  "${modID}:Prepare": {
+    "NAME": "準備",
+    "DESCRIPTION": "根據你牌組中的 ${modID}:彈幕 卡牌總數，獲得 !${modID}:DANMAKU! 層 臨時 力量 。",
+    "UPGRADE_DESCRIPTION": "保留 NL 根據你牌組中的 ${modID}:彈幕 卡牌總數，獲得 !${modID}:DANMAKU! 層 臨時 力量 。"},
+  "${modID}:Punch_in_face": {
+    "NAME": "正面重拳",
+    "DESCRIPTION": "${modID}:體術 NL 造成 !D! 點傷害。 NL 擊暈敵人。 NL 消耗 "},
+  "${modID}:Puncture_wound": {
+    "NAME": "穿刺傷口",
+    "DESCRIPTION": "下一張 ${modID}:魔炮 卡造成傷害時，所有敵人失去傷害數的 力量 一回合。 NL 消耗 ",
+    "UPGRADE_DESCRIPTION": "保留 NL 下一張 ${modID}:魔炮 卡牌造成傷害時，所有敵人失去傷害數的 力量 一回合。 NL 消耗 "},
+  "${modID}:Repeater": {
+    "NAME": "雙發射手",
+    "DESCRIPTION": "${modID}:植物 NL 造成 !D! 點傷害 !M! 次。"},
+  "${modID}:Seamless_combo": {
+    "NAME": "無縫連擊",
+    "DESCRIPTION": "${modID}:唯一 NL 每使用 ${modID}:體術 時，從抽牌堆中抽取一張隨機的 ${modID}:體術 卡。",
+    "UPGRADE_DESCRIPTION": "${modID}:唯一 NL 每使用 ${modID}:體術 時，從抽牌堆中抽取一張隨機的 ${modID}:體術 卡。本回合其費用減少 1。"},
+  "${modID}:Shovel": {
+    "NAME": "鏟子",
+    "DESCRIPTION": "從你的消耗堆中選擇 !M! 張 ${modID}:花朵 加入你的抽牌堆。 NL 消耗 ",
+    "UPGRADE_DESCRIPTION": "從你的消耗堆中選擇 !M! 張 ${modID}:花朵 加入你的抽牌堆。 NL 消耗 "},
+  "${modID}:Suika": {
+    "NAME": "萃香",
+    "DESCRIPTION": "${modID}:植物 NL 造成 !D! 點傷害。 NL 手動打出時，在你的抽牌堆中生成 3 張小萃香，並將此卡暂时移出本場戰鬥。 NL 當被 ${modID}:花朵 觸發時，改為造成 !M! 點傷害。",
+    "UPGRADE_DESCRIPTION": "${modID}:植物 NL 造成 !D! 點傷害。 NL 手動打出時，在你的抽牌堆中生成 3 張已升級的小萃香，並將此卡暂时移出本場戰鬥。 NL 當被 ${modID}:花朵 觸發時，改為造成 !M! 點傷害。"},
+  "${modID}:Tall_nut": {
+    "NAME": "高堅果",
+    "DESCRIPTION": "${modID}:植物 NL 獲得 !B! 點 格擋 。",
+    "UPGRADE_DESCRIPTION": "${modID}:植物 NL 獲得 !B! 點 格擋 。"},
+  "${modID}:Twin_sunflower": {
+    "NAME": "雙子向日葵",
+    "DESCRIPTION": "${modID}:花朵 NL 下两個回合開始時，獲得 [E] [E] 。 NL 消耗 "},
+
+  "${modID}:Blossoming_of_Gensokyo": {
+    "NAME": "幻想鄉の開花",
+    "DESCRIPTION": "造成 !D! 傷害。 NL 在手中生成一張傷害翻倍、具有 虛無 與 消耗 的復制卡。",
+    "EXTENDED_DESCRIPTION": [
+      "虛無  NL 造成 !D! 傷害。 NL 在手中生成一張傷害翻倍的複製卡。 NL 消耗 "]},
+  "${modID}:Broken_flower": {
+    "NAME": "破碎花朵",
+    "DESCRIPTION": "虛無 NL 你打出的下一張攻擊卡造成三倍傷害，然後 消耗 。",
+    "UPGRADE_DESCRIPTION": "你打出的下一張攻擊卡造成三倍傷害，然後 消耗 。"},
+  "${modID}:Call_for_help": {
+    "NAME": "呼叫助力",
+    "DESCRIPTION": "從三張特殊卡當中選擇其中一張加入手牌。 NL 消耗 ",
+    "UPGRADE_DESCRIPTION": "從三張已升級過的特殊卡當中選擇其中一張加入手牌。 NL 消耗 "},
+  "${modID}:Danmaku_festival": {
+    "NAME": "彈幕祭典",
+    "DESCRIPTION": "${modID}:唯一 NL 虛無 NL 每當一張 ${modID}:彈幕 牌被 ${modID}:魔炮 牌觸發時，獲得 [E] 並抽 1 張牌。",
+    "UPGRADE_DESCRIPTION": "${modID}:唯一 NL 每當一張 ${modID}:彈幕 牌被 ${modID}:魔炮 牌觸發時，獲得 [E] 並抽 1 張牌。"},
+  "${modID}:Double_magic_cannon": {
+    "NAME": "雙重魔炮",
+    "DESCRIPTION": "你打出的下一張 ${modID}:魔炮 會發動兩次。"},
+  "${modID}:Fertilizer": {
+    "NAME": "肥料",
+    "DESCRIPTION": "${modID}:唯一 NL ${modID}:花朵 在本場戰斗剩余期間不再 消耗 。",
+    "UPGRADE_DESCRIPTION": "${modID}:唯一 NL 固有 。 NL ${modID}:花朵 在本場戰斗剩余期間不再 消耗 。"},
+  "${modID}:Flower_Shooting": {
+    "NAME": "花之射擊",
+    "DESCRIPTION": "${modID}:花朵 NL 造成 !D! 傷害。 NL 從手牌和抽牌堆中的已升級牌中，觸發總計最多 10 張 ${modID}:彈幕 或 ${modID}:植物 卡牌。",
+    "UPGRADE_DESCRIPTION": "${modID}:花朵 NL 造成 !D! 傷害。 NL 觸發手牌和抽牌堆中全部 ${modID}:彈幕 或 ${modID}:植物 卡牌。"},
+  "${modID}:Fragrance": {
+      "NAME": "芳香",
+      "DESCRIPTION": "獲得 [E] 。抽 !M! 張牌。 NL 消耗 ",
+      "UPGRADE_DESCRIPTION": "獲得 [E] [E] 。抽 !M! 張牌。 NL 使用 !${modID}:SecondMagic! 次後消耗 。"},
+  "${modID}:Infinite_spiral": {
+    "NAME": "無限螺旋",
+    "DESCRIPTION": "無法被打出  保留  固有   NL 剩餘回合數： !M!  NL 在回合結束時減少 1。當為 0 時，對所有敵人造成 !D! 傷害並從牌組中移除此複製。 NL 移除後可獲得一件隨機遺物與一張【花束】。"},
+  "${modID}:LLS_PC98_form": {
+      "NAME": "LLS PC98 形態",
+      "DESCRIPTION": "切換為 PC98 形態。每回合前 !M! 張攻擊牌造成雙倍傷害。 NL 下一場戰斗無法使用。",
+      "UPGRADE_DESCRIPTION": "切換為 PC98 形態。每回合前 !M! 張攻擊牌造成雙倍傷害。",
+      "EXTENDED_DESCRIPTION": [
+        "無法使用: 冷卻中。",
+        "冷卻中: "]},
+  "${modID}:Manipulating_flower": {
+      "NAME": "操縱花朵程度的能力",
+      "DESCRIPTION": "抽牌直到手牌已滿。優先抽取 ${modID}:花朵 卡。 NL 消耗 ",
+      "UPGRADE_DESCRIPTION": "抽牌直到手牌已滿。優先抽取 ${modID}:花朵 卡。 NL 獲得等同于抽牌數量的 活力 。 NL 消耗 "},
+  "${modID}:Meet_Retsu": {
+      "NAME": "與烈的會面",
+    "DESCRIPTION": "${modID}:唯一 ${modID}:體術 NL 每打出第 3 張 ${modID}:體術 時：生成一張 0 費用的複製品，具有 虛無 和 消耗 。",
+    "UPGRADE_DESCRIPTION": "${modID}:唯一 ${modID}:體術 NL 每打出第 2 張 ${modID}:體術 時：生成一張 0 費用的複製品，具有 虛無 和 消耗 。"},
+  "${modID}:Morning_haze": {
+      "NAME": "起床氣",
+      "DESCRIPTION": "${modID}:唯一 NL 當你因敵人攻擊失去生命時，每失去2點生命，獲得 1 點 力量 。 NL 當你回復生命時，失去等量的 力量 。",
+      "UPGRADE_DESCRIPTION": "${modID}:唯一 NL 打出此牌時，每損失 2 點生命，獲得 1 點 力量 。 NL 當你因敵人攻擊失去生命時，每失去 2 點生命，獲得 1 點 力量 。 NL 當你回復生命時，失去等量的 力量 。 NL 復活時，你的 力量 會根據當前生命重置。"},
+  "${modID}:Owner_of_mugenkan": {
+      "NAME": "夢幻館之主",
+      "DESCRIPTION": "每回合結束時，獲得一半最高增益層數的格擋。",
+      "UPGRADE_DESCRIPTION": "每回合結束時，獲得最高增益層數的格擋。"},
+  "${modID}:The_beauties_of_nature": {
+      "NAME": "花鳥風月、嘯風弄月",
+    "DESCRIPTION": "每消耗2點能量獲得1層（向下取整）。 NL 每層會無效化一次你即將受到的傷害並反彈一半給攻擊者。",
+    "UPGRADE_DESCRIPTION": "每消耗2點能量獲得1層（向上取整）。 NL 每層會無效化一次你即將受到的傷害並反彈一半給攻擊者。"},
+  "${modID}:Try_your_best": {
+      "NAME": "全力以赴",
+      "DESCRIPTION": "若敵方回合結束前受到致命傷害，則改為以滿生命復活。 NL 否則，在敵方回合結束時死亡。 NL 在本次遊戲剩餘期間從你的牌組中移除。 NL 消耗 ",
+      "UPGRADE_DESCRIPTION": "以免於致命傷的狀態以滿生命復活。 NL 持續至效果觸發為止。 NL 在本次遊戲剩餘期間從你的牌組中移除。 NL 消耗 "},
+  "${modID}:Ultra_magic_cannon": {
+      "NAME": "究極魔炮",
+      "DESCRIPTION": "${modID}:魔炮 NL 當此卡被抽到時，本場戰斗中費用減少 1。 NL 每次使用后費用都會重置。 NL 對所有敵人造成 !D! 傷害。"},
+  "${modID}:Uninterrupted_combo": {
+      "NAME": "無間斷連擊",
+      "DESCRIPTION": "${modID}:體術 NL 造成 !D! 傷害 !M! 次。"},
+  "${modID}:Watering": {
+    "NAME": "澆水",
+    "DESCRIPTION": "將棄牌堆洗入抽牌堆。",
+    "UPGRADE_DESCRIPTION": "將棄牌堆洗入抽牌堆。 NL 從消耗堆取回牌組中的卡牌。 NL 剩餘 !M! 次。 NL 歸零時從牌組移除。"},
+  "${modID}:Worthy_opponent": {
+      "NAME": "可敬的對手",
+      "DESCRIPTION": "${modID}:唯一 NL 虛無 NL 每當你打出一張牌，獲得 !M! 點 力量 。",
+      "UPGRADE_DESCRIPTION": "${modID}:唯一 NL 固有 NL 每當你打出一張牌，獲得 !M! 點 力量 。"},
+
+  "${modID}:Mega_magic_cannon": {
+    "NAME": "超究極魔炮",
+    "DESCRIPTION": "${modID}:魔炮 NL 對所有敵人造成 !D! 點傷害。"},
+  "${modID}:Mima": {
+    "NAME": "魅魔",
+    "DESCRIPTION": "虛無 NL 獲得 [E] 和 !M! 層 無實體 NL 消耗 ",
+    "UPGRADE_DESCRIPTION": "虛無 NL 獲得 [E] [E] 和 !M! 層 無實體 NL 消耗 "},
+  "${modID}:Shinki": {
+    "NAME": "神綺",
+    "DESCRIPTION": "虛無 NL 將目前所有增益增加一半。 NL 消耗 ",
+    "UPGRADE_DESCRIPTION": "虛無 NL 將目前所有增益翻倍。 NL 消耗 "},
+  "${modID}:Small_suika": {
+    "NAME": "小萃香",
+    "DESCRIPTION": "${modID}:植物 NL 造成 !D! 點傷害。 NL 若棄牌堆中有三張小萃香，將會融合成一張萃香。"},
+  "${modID}:Yumemi": {
+    "NAME": "夢美",
+    "DESCRIPTION": "虛無 NL 戰斗結束時，獲得一個額外的卡牌獎勵。 NL 消耗 "}
+}

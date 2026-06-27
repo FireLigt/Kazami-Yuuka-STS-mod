@@ -1,0 +1,48 @@
+{
+  "${modID}:PotionID": {
+    "NAME": "Some Kind of Potion",
+    "DESCRIPTIONS": [
+      "Little",
+      " pieces ",
+      "that get put together",
+      " into a description.",
+      " Exactly how depends on the potion, and you can set it up however you want."
+    ]
+  },
+  "${modID}:PureWater": {
+    "NAME": "純淨水",
+    "DESCRIPTIONS": [
+      "移除所有負面效果。"
+    ]
+  },
+  "${modID}:Tea": {
+    "NAME": "茶",
+    "DESCRIPTIONS": [
+      "從牌組選擇一張卡牌，將其複製到你的手牌中。"
+    ]
+  },
+  "${modID}:HoneyMilk": {
+    "NAME": "蜂蜜牛奶",
+    "DESCRIPTIONS": [
+      "記錄當前HP。戰鬥結束後，恢復到記錄時的HP。"
+    ]
+  },
+  "${modID}:ScentedTea": {
+    "NAME": "花茶",
+    "DESCRIPTIONS": [
+      "將你的一個隨機增益效果層數翻倍。"
+    ]
+  },
+  "${modID}:BlackTea": {
+    "NAME": "紅茶",
+    "DESCRIPTIONS": [
+      "獲得1個隨機增益效果。"
+    ]
+  },
+  "${modID}:GreenTea": {
+    "NAME": "綠茶",
+    "DESCRIPTIONS": [
+      "你下一張會消耗的牌不會被消耗。"
+    ]
+  }
+}

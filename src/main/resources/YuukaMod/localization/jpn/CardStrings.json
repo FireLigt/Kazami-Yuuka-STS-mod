@@ -1,0 +1,293 @@
+{
+  "${modID}:Defend": {
+    "NAME": "ガード",
+    "DESCRIPTION": "!B! ブロックを獲得。"},
+  "${modID}:Intimidation": {
+    "NAME": "威嚇",
+    "DESCRIPTION": " !M! 筋力を獲得。 NL 敵に !${modID}:SecondMagic! 脱力を付与。"},
+  "${modID}:Small_magic_cannon": {
+    "NAME": "小型魔砲",
+    "DESCRIPTION": "${modID}:魔砲 NL 敵全体に !D! ダメージ。"},
+  "${modID}:Strike": {
+    "NAME": "ストライク",
+    "DESCRIPTION": "!D! ダメージを与える。"},
+
+  "${modID}:Backspin_kick": {
+    "NAME": "バックスピンキック",
+    "DESCRIPTION": "!D! ダメージを与える。 NL !M! 弱体を付与。 NL このターン、筋力を !D! だけ拘束する。"},
+  "${modID}:Blover": {
+    "NAME": "ブローバー",
+    "DESCRIPTION": "${modID}:植物 NL 全てのミニオン敵を吹き飛ばす。 NL ミニオンではない敵全てに 2 弱体 と 2 脆弱 を付与。 NL 廃棄。"},
+
+  "${modID}:Charge_up": {
+    "NAME": "チャージアップ",
+    "DESCRIPTION": "次の ${modID}:体術 カード: 2枚ドロー。 NL 引いた ${modID}:体術 のコスト-1。",
+    "UPGRADE_DESCRIPTION": "天賦 NL 次の !M! 枚の ${modID}:体術 カード: 各2枚ドロー。 NL 引いた ${modID}:体術 のコスト-1。"},
+  "${modID}:Danmaku": {
+    "NAME": "弾幕",
+    "DESCRIPTION": "${modID}:弾幕 NL !D! ダメージ。 ",
+    "UPGRADE_DESCRIPTION": "${modID}:弾幕 NL !D! ダメージ。 "},
+  "${modID}:Flower_pot": {
+    "NAME": "植木鉢",
+    "DESCRIPTION": "${modID}:フラワー NL !B! ブロックを獲得。"},
+  "${modID}:Magic_cannon": {
+    "NAME": "魔砲",
+    "DESCRIPTION": "${modID}:魔砲 NL 敵全体に !D! ダメージ。"},
+  "${modID}:Memory": {
+    "NAME": "追憶",
+    "DESCRIPTION": "!M! 追加装甲を獲得。 NL ぼやけを1獲得。 NL 廃棄。"},
+  "${modID}:Plantern": {
+    "NAME": "プランターン",
+    "DESCRIPTION": "${modID}:プラント NL 占術 !M!。 占術でカードが捨てられるたび、!${modID}:SecondMagic! ブロックを獲得。"},
+  "${modID}:Preemptive_attack": {
+    "NAME": "先制攻撃",
+    "DESCRIPTION": "${modID}:体術 NL !D! ダメージ。 NL プレイするたび、このランの間永続的にダメージ+1。"},
+  "${modID}:Pursuit": {
+    "NAME": "追撃",
+    "DESCRIPTION": "${modID}:体術 NL !D! ダメージ。 致命一击時、このカードを手札に戻し [E] [E] [E] を獲得。"},
+  "${modID}:Ready": {
+    "NAME": "準備",
+    "DESCRIPTION": "山札から !M! 枚のランダムな ${modID}:魔砲 カードを手札に加える。"},
+  "${modID}:Reload": {
+    "NAME": "リロード",
+    "DESCRIPTION": "捨て札の ${modID}:弾幕 を全て山札に戻す。",
+    "UPGRADE_DESCRIPTION": "保留 NL 捨て札の ${modID}:弾幕 を全て山札に戻す。"},
+  "${modID}:Resist_offensive": {
+    "NAME": "耐勢攻勢",
+    "DESCRIPTION": "山札の枚数と等しいブロックを獲得。 NL 廃棄。",
+    "UPGRADE_DESCRIPTION": "デッキの枚数と等しいブロックを獲得。 NL 廃棄。"},
+  "${modID}:Second_magic_cannon": {
+    "NAME": "2号魔砲",
+    "DESCRIPTION": "${modID}:魔砲 NL 敵全体に !D! ダメージ。"},
+  "${modID}:Seed": {
+    "NAME": "種",
+    "DESCRIPTION": "カードを !M! 枚引く。 NL 廃棄。",
+    "UPGRADE_DESCRIPTION": "カードを !M! 枚引く。 NL 廃棄。"},
+  "${modID}:Smiling": {
+    "NAME": "微笑み",
+    "DESCRIPTION": "HPを !M! 回復。 NL 廃棄。"},
+  "${modID}:Straight_punch": {
+    "NAME": "ストレートパンチ",
+    "DESCRIPTION": "${modID}:体術 NL !D! ダメージ。 捨て札からカードを!M!枚引く。",
+    "UPGRADE_DESCRIPTION": "${modID}:体術 NL !D! ダメージ。 捨て札からカードを!M!枚引く。"},
+  "${modID}:Sunflower": {
+    "NAME": "向日葵",
+    "DESCRIPTION": "${modID}:フラワー NL 次の 2 ターンの開始時に [E] を獲得。 NL 廃棄。"},
+  "${modID}:Uppercut": {
+    "NAME": "アッパーカット",
+    "DESCRIPTION": "${modID}:体術 NL !D! ダメージ。 !M! 弱体を付与。"},
+  "${modID}:Wall_nut": {
+    "NAME": "ウォールナット",
+    "DESCRIPTION": "${modID}:プラント NL !B! ブロックを獲得。",
+    "UPGRADE_DESCRIPTION": "${modID}:プラント NL !B! ブロックを獲得。"},
+
+  "${modID}:Ankensatsu": {
+    "NAME": "暗剣殺",
+    "DESCRIPTION": "${modID}:体術 NL !D! ダメージ。 NL [E] を獲得。",
+    "UPGRADE_DESCRIPTION": "${modID}:体術 NL !D! ダメージ。 NL [E] を獲得。 NL このターン最後にプレイしたカードが ${modID}:体術 の場合、さらに [E] [E] を獲得。"},
+  "${modID}:Big_danmaku": {
+    "NAME": "大弾幕",
+    "DESCRIPTION": "${modID}:弾幕 NL !D! ダメージ。"},
+  "${modID}:Big_magic_cannon": {
+    "NAME": "大型魔砲",
+    "DESCRIPTION": "${modID}:魔砲 NL 敵全体に !D! ダメージ。",
+    "UPGRADE_DESCRIPTION": "${modID}:魔砲 NL 敵全体に !D! ダメージ。 NL 敵全体に !M! 脱力を付与。"},
+  "${modID}:Bouquet": {
+    "NAME": "花束",
+    "DESCRIPTION": "即時効果はない。 NL 残り使用回数: !M!。 NL 廃棄。 NL 最後の使用回数を消費した時、この戦闘後に追加のレアカード報酬を獲得し、このカードをデッキから削除する。",
+    "UPGRADE_DESCRIPTION": "即時効果はない。 NL 残り使用回数: !M!。 NL 廃棄。 NL 最後の使用回数を消費した時、この戦闘後に追加のレアカード報酬を獲得し、このカードをデッキから削除する。 NL コスト-1。"},
+  "${modID}:Bridge_suplex": {
+    "NAME": "ブリッジスープレックス",
+    "DESCRIPTION": "${modID}:体術 NL 直前にプレイしたカードが ${modID}:体術 の場合、このカードのコストが1減る。 NL !D! ダメージ。"},
+  "${modID}:Contempt": {
+    "NAME": "侮蔑",
+    "DESCRIPTION": "${modID}:ユニーク NL このターンでは、一時的なカードを除くすべてのカードのコストが-1になります。 NL 廃棄。"},
+  "${modID}:Crazy_yuuka": {
+    "NAME": "クレイジー幽香",
+    "DESCRIPTION": "プラントカードをプレイするたび、ランダムなプラントカードを手札に加える。それはエセリアルと廃棄を持つ。",
+    "UPGRADE_DESCRIPTION": "プラントカードをプレイするたび、アップグレードされたランダムなプラントカードを手札に加える。それはエセリアルと廃棄を持つ。"},
+  "${modID}:Famed_far": {
+    "NAME": "フェイムド・ファー",
+    "DESCRIPTION": "パワーカードを引くかドロー山札が空になるまでドローする。溢れたカードは捨て山札に行く。"},
+  "${modID}:Finishing_move": {
+    "NAME": "フィニッシュムーブ",
+    "DESCRIPTION": "${modID}:体術 NL !D! ダメージ。 NL このターン他の ${modID}:体術 をプレイしていた場合、ダメージが2倍になり、代わりに !M! 脱力を付与。 NL ターンを終了。"},
+  "${modID}:Flower_danmaku": {
+    "NAME": "花弾",
+    "DESCRIPTION": "${modID}:フラワー ${modID}:弾幕 NL !D! ダメージ。",
+    "UPGRADE_DESCRIPTION": "${modID}:フラワー ${modID}:弾幕 NL !D! ダメージ。"},
+  "${modID}:Four_season": {
+    "NAME": "四季",
+    "DESCRIPTION": "各ターン、最初にコスト2以上のカードをプレイした時、[E] を獲得。",
+    "UPGRADE_DESCRIPTION": "各ターン、最初の2回コスト2以上のカードをプレイした時、[E] を獲得。"},
+  "${modID}:Gensou_shunka": {
+    "NAME": "幻想春花",
+    "DESCRIPTION": "各ターン開始時、ランダムな ${modID}:フラワー カードを手札に加える。それはエセリアルと廃棄を持つ。",
+    "UPGRADE_DESCRIPTION": "各ターン開始時、アップグレードされたランダムな ${modID}:フラワー カードを手札に加える。それはエセリアルと廃棄を持つ。"},
+  "${modID}:Gentle": {
+    "NAME": "ジェントル",
+      "DESCRIPTION": "このターンに攻撃カードをプレイしていない場合のみ使用可能。 NL !B! ブロックを獲得。 NL 敵が攻撃を意図している場合、${modID}:無作法 を付与。 NL 廃棄 。"},
+  "${modID}:Getting_over_it": {
+    "NAME": "ゲッティング・オーバー・イット",
+    "DESCRIPTION": "各ターン開始時、!M! 筋力を獲得。HPダメージを受けるとこのパワーを失う。",
+    "UPGRADE_DESCRIPTION": "各ターン開始時、!M! 筋力を獲得。HPダメージを受けるとこのパワーを失う。"},
+  "${modID}:Giant_magic_cannon": {
+    "NAME": "巨大魔砲",
+    "DESCRIPTION": "${modID}:魔砲 NL 敵全体に !D! ダメージ。 NL このカードのコストが [E] で自分の [E] が3未満の場合プレイ不可。 NL [E] が3以上でコストが足りない場合、全ての [E] を消費し、不足分と等しい #yエネルギーデット を獲得。 NL このターンこのカードのコストが0の場合（例: ミイラの手）、エネルギーデットは発生しない。",
+    "UPGRADE_DESCRIPTION": "${modID}:魔砲 NL 敵全体に !D! ダメージ。 NL このカードのコストが [E] で自分の [E] が3未満の場合プレイ不可。 NL [E] が3以上でコストが足りない場合、全ての [E] を消費し、不足分と等しい #yエネルギーデット を獲得。 NL このターンこのカードのコストが0の場合（例: ミイラの手）、エネルギーデットは発生しない。"},
+  "${modID}:Gunmaku": {
+    "NAME": "ガンマク",
+    "DESCRIPTION": "${modID}:弾幕 NL !D! ダメージを !M! 回与える。",
+    "UPGRADE_DESCRIPTION": "${modID}:弾幕 NL !D! ダメージを !M! 回与える。"},
+  "${modID}:Large_magic_cannon": {
+    "NAME": "広域魔砲",
+    "DESCRIPTION": "${modID}:魔砲 NL 敵全体に !D! ダメージ。 NL 敵全体に !M! 弱体を付与。"},
+  "${modID}:Low_speed": {
+    "NAME": "低速",
+    "DESCRIPTION": "!${modID}:DexLoss! 敏捷を失う。 NL !M! 筋力を獲得。"},
+  "${modID}:Marigold": {
+    "NAME": "マリーゴールド",
+    "DESCRIPTION": "${modID}:フラワー NL !M! ゴールドを獲得。 NL 廃棄"},
+  "${modID}:Mature_gang": {
+    "NAME": "マチュアギャング",
+    "DESCRIPTION": "${modID}:ユニーク NL 各ターンの開始時に、追加でカードを２枚引く。",
+    "UPGRADE_DESCRIPTION": "${modID}:ユニーク NL 天賦 NL 各ターンの開始時に、追加でカードを3枚引く。"},
+  "${modID}:Parasol": {
+    "NAME": "日傘",
+    "DESCRIPTION": "カードをプレイするたび、!M!ブロックを獲得。"},
+  "${modID}:Power_deterrence": {
+    "NAME": "パワー抑止",
+    "DESCRIPTION": "カードを !M! 枚引く。この方法で引いた ${modID}:魔砲 1枚につき、敵全体に !M! 脱力を付与。 NL 廃棄"},
+  "${modID}:Prepare": {
+    "NAME": "準備",
+    "DESCRIPTION": "デッキ内の ${modID}:弾幕 カードの総数と等しい !${modID}:DANMAKU! 一時的な 筋力を 獲得。",
+    "UPGRADE_DESCRIPTION": "リテイン。 NL デッキ内の ${modID}:弾幕 カードの総数と等しい !${modID}:DANMAKU! 一時的な 筋力を 獲得。"},
+  "${modID}:Punch_in_face": {
+    "NAME": "顔面パンチ",
+    "DESCRIPTION": "${modID}:体術 NL !D! ダメージ。 NL 敵をスタンさせる。 NL 廃棄 "},
+  "${modID}:Puncture_wound": {
+    "NAME": "刺創",
+    "DESCRIPTION": "次の ${modID}:魔砲 カードがダメージを与える。そのダメージと等しい拘束を敵全体に付与。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "保留 NL 次の ${modID}:魔砲 カードがダメージを与える。そのダメージと等しい拘束を敵全体に付与。 NL 廃棄"},
+  "${modID}:Repeater": {
+    "NAME": "リピーター",
+    "DESCRIPTION": "${modID}:プラント NL !D! ダメージを !M! 回与える。"},
+  "${modID}:Seamless_combo": {
+    "NAME": "シームレスコンボ",
+    "DESCRIPTION": "${modID}:ユニーク NL ${modID}:体術 をプレイするたび、山札からランダムな ${modID}:体術 を1枚引く。",
+    "UPGRADE_DESCRIPTION": "${modID}:ユニーク NL ${modID}:体術 をプレイするたび、山札からランダムな ${modID}:体術 を1枚引く。このターンそのコストを1減らす。"},
+  "${modID}:Shovel": {
+    "NAME": "ショベル",
+    "DESCRIPTION": "廃棄札からフラワーカードを !M! 枚選び、山札に加える。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "廃棄札からフラワーカードを !M! 枚選び、山札に加える。 NL 廃棄"},
+  "${modID}:Suika": {
+    "NAME": "萃香",
+    "DESCRIPTION": "${modID}:プラント NL !D! ダメージ。 NL 手動でプレイした場合、小型萃香を3枚山札に生成し、このカードを戦闘から取り除く。 NL ${modID}:フラワー カードで発動した場合、代わりに !M! ダメージ。",
+    "UPGRADE_DESCRIPTION": "${modID}:プラント NL !D! ダメージ。 NL 手動でプレイした場合、アップグレードされた小型萃香を3枚山札に生成し、このカードを戦闘から取り除く。 NL ${modID}:フラワー カードで発動した場合、代わりに !M! ダメージ。"},
+  "${modID}:Tall_nut": {
+    "NAME": "タルナット",
+    "DESCRIPTION": "${modID}:プラント NL !B! ブロックを獲得。",
+    "UPGRADE_DESCRIPTION": "${modID}:プラント NL !B! ブロックを獲得。"},
+  "${modID}:Twin_sunflower": {
+    "NAME": "双生向日葵",
+    "DESCRIPTION": "${modID}:フラワー NL 次の 2 ターンの開始時に [E] [E] を獲得。 NL 廃棄"},
+
+  "${modID}:Blossoming_of_Gensokyo": {
+    "NAME": "幻想郷の開花",
+    "DESCRIPTION": "!D! ダメージ。 NL ダメージが2倍のコピーを手札に生成。それはエセリアルと廃棄を持つ。",
+    "EXTENDED_DESCRIPTION": [
+      "エセリアル NL !D! ダメージ。 NL ダメージが2倍のコピーを手札に生成。 NL 廃棄"]},
+  "${modID}:Broken_flower": {
+    "NAME": "ブロークンフラワー",
+    "DESCRIPTION": "エセリアル。 NL 次にプレイする攻撃のダメージが3倍になり、その後 廃棄 される。",
+    "UPGRADE_DESCRIPTION": "次にプレイする攻撃のダメージが3倍になり、その後 廃棄 される。"},
+  "${modID}:Call_for_help": {
+    "NAME": "救援要請",
+    "DESCRIPTION": "3枚の特殊カードから1枚を選び手札に加える。 NL 廃棄。",
+    "UPGRADE_DESCRIPTION": "3枚の特殊カードからアップグレードされた1枚を選び手札に加える。 NL 廃棄。"},
+  "${modID}:Danmaku_festival": {
+    "NAME": "弾幕フェスティバル",
+    "DESCRIPTION": "${modID}:ユニーク NL エセリアル NL ${modID}:魔砲 カードによって ${modID}:弾幕 カードが発動するたび、[E] を得て1枚ドローする。",
+    "UPGRADE_DESCRIPTION": "${modID}:ユニーク NL ${modID}:魔砲 カードによって ${modID}:弾幕 カードが発動するたび、[E] を得て1枚ドローする。"},
+  "${modID}:Double_magic_cannon": {
+    "NAME": "ダブル魔砲",
+    "DESCRIPTION": "次にプレイする ${modID}:魔砲 カードが2回プレイされる。"},
+  "${modID}:Fertilizer": {
+    "NAME": "肥料",
+    "DESCRIPTION": "${modID}:ユニーク NL ${modID}:フラワー カードは戦闘中廃棄しなくなる。",
+    "UPGRADE_DESCRIPTION": "${modID}:ユニーク NL 天賦 NL ${modID}:フラワー カードは戦闘中廃棄しなくなる。"},
+  "${modID}:Flower_Shooting": {
+    "NAME": "フラワーシューティング",
+    "DESCRIPTION": "${modID}:フラワー NL !D! ダメージ。 NL 手札と山札のアップグレード済みカードから、${modID}:弾幕 か ${modID}:プラント を合計最大10枚まで発動。",
+    "UPGRADE_DESCRIPTION": "${modID}:フラワー NL !D! ダメージ。 NL 手札と山札の全ての ${modID}:弾幕 か ${modID}:プラント を発動。"},
+  "${modID}:Fragrance": {
+    "NAME": "芳香",
+    "DESCRIPTION": " [E] を獲得。カードを !M! 枚引く。 NL 廃棄。",
+    "UPGRADE_DESCRIPTION": " [E] [E] を獲得。カードを !M! 枚引く。 NL !${modID}:SecondMagic! 回使用後 廃棄 。"},
+  "${modID}:Infinite_spiral": {
+    "NAME": "無限螺旋",
+    "DESCRIPTION": "プレイ不可。 保留。 天賦。 NL 残りターン: !M! 。 NL ターン終了時に1減少。0になった時、敵全体に !D! ダメージを与え、このコピーをデッキから削除。 NL それを取り除くと、ランダムなレリックと[花束]がもらえます。"},
+  "${modID}:LLS_PC98_form": {
+    "NAME": "LLS PC98形態",
+    "DESCRIPTION": "PC98形態に変化。各ラウンド最初の !M! 枚の攻撃カードのダメージが2倍になる。 NL 次の戦闘では使用不可。",
+      "UPGRADE_DESCRIPTION": "PC98形態に変化。各ラウンド最初の !M! 枚の攻撃カードのダメージが2倍になる。",
+      "EXTENDED_DESCRIPTION": [
+        "使用不可: クールダウン中。",
+        "クールダウン: "]},
+  "${modID}:Manipulating_flower": {
+    "NAME": "操花",
+    "DESCRIPTION": "手札が一杯になるまでカードを引く。${modID}:フラワー カードが優先的に引かれる。 NL 廃棄。",
+    "UPGRADE_DESCRIPTION": "手札が一杯になるまでカードを引く。${modID}:フラワー カードが優先的に引かれる。 NL 引いたカードの枚数と等しい活力を獲得。 NL 廃棄。"},
+  "${modID}:Meet_Retsu": {
+    "NAME": "ミート烈",
+    "DESCRIPTION": "${modID}:ユニーク ${modID}:体術 NL 3回目の ${modID}:体術 カードをプレイするたび：コスト0のコピーを生成する（エーテル、廃棄）。",
+    "UPGRADE_DESCRIPTION": "${modID}:ユニーク ${modID}:体術 NL 2回目の ${modID}:体術 カードをプレイするたび：コスト0のコピーを生成する（エーテル、廃棄）。"},
+  "${modID}:Morning_haze": {
+    "NAME": "朝の不機嫌",
+    "DESCRIPTION": "${modID}:ユニーク NL 敵の攻撃でHPを失った時、失ったHP2ごとに筋力を1獲得。 HPを回復した時、その分の筋力を失う。",
+    "UPGRADE_DESCRIPTION": "${modID}:ユニーク NL プレイ時、不足HP2ごとに筋力を1獲得。 敵の攻撃でHPを失った時、失ったHP2ごとに筋力を1獲得。 HPを回復した時、その分の筋力を失う。 復活時、現在HPに基づいて筋力がリセットされる。"},
+  "${modID}:Owner_of_mugenkan": {
+    "NAME": "夢幻館の主",
+    "DESCRIPTION": "各ターン終了時、最も高いバフのスタック数の半分のブロックを獲得。",
+    "UPGRADE_DESCRIPTION": "各ターン終了時、最も高いバフのスタック数と等しいブロックを獲得。"},
+  "${modID}:The_beauties_of_nature": {
+    "NAME": "花鳥風月、嘯風弄月",
+    "DESCRIPTION": "2エネルギーにつき1スタック獲得（切り捨て）。 NL 各スタックは、次に受けるダメージを無効化し、半分を攻撃者に反射する。",
+    "UPGRADE_DESCRIPTION": "2エネルギーにつき1スタック獲得（切り上げ）。 NL 各スタックは、次に受けるダメージを無効化し、半分を攻撃者に反射する。"},
+  "${modID}:Try_your_best": {
+    "NAME": "全力を尽くせ",
+    "DESCRIPTION": "敵のターン終了までに致死ダメージを受ける場合、代わりに全HPで生存する。 NL そうでない場合、敵のターン終了時に死亡する。 NL このラン中デッキから削除される。 NL 廃棄。",
+    "UPGRADE_DESCRIPTION": "保留 致死ダメージを全HPで生存する。 NL 効果が発動するまで持続する。 NL このラン中デッキから削除される。 NL 廃棄。"},
+  "${modID}:Ultra_magic_cannon": {
+    "NAME": "ウルトラ魔砲",
+    "DESCRIPTION": "${modID}:魔砲 NL このカードが引かれた時、この戦闘中コストが1減少。 NL 使用するたびにコストはリセットされる。 NL 敵全体に !D! ダメージ。"},
+  "${modID}:Uninterrupted_combo": {
+    "NAME": "無中断コンボ",
+    "DESCRIPTION": "${modID}:体術 NL !D! ダメージを !M! 回与える。"},
+  "${modID}:Watering": {
+    "NAME": "水やり",
+    "DESCRIPTION": "捨て札を山札にシャッフルする。",
+    "UPGRADE_DESCRIPTION": "捨て札を山札にシャッフルする。 NL デッキのカードを消耗山札から取り出す。 NL 残り !M! 回。 NL 0になった時、デッキから削除。"},
+  "${modID}:Worthy_opponent": {
+    "NAME": "好敵手",
+    "DESCRIPTION": "${modID}:ユニーク NL エセリアル NL カードを使用するたび、!M! 筋力を獲得。",
+    "UPGRADE_DESCRIPTION": "${modID}:ユニーク NL 初手 NL カードを使用するたび、!M! 筋力を獲得。"},
+
+  "${modID}:Mega_magic_cannon": {
+    "NAME": "メガ魔砲",
+    "DESCRIPTION": "${modID}:魔砲 NL 敵全体に !D! ダメージ。"},
+  "${modID}:Mima": {
+    "NAME": "魅魔",
+    "DESCRIPTION": "エセリアル。 NL [E] と !M! 無形を獲得。 NL 廃棄。",
+    "UPGRADE_DESCRIPTION": "エセリアル。 NL [E] [E] と !M! 無形を獲得。 NL 廃棄。"},
+  "${modID}:Shinki": {
+    "NAME": "神綺",
+    "DESCRIPTION": "エセリアル。 NL 現在の全てのバフカウンターに半分を追加。 NL 廃棄。",
+    "UPGRADE_DESCRIPTION": "エセリアル。 NL 現在の全てのバフカウンターを2倍にする。 NL 廃棄。"},
+  "${modID}:Small_suika": {
+    "NAME": "小型萃香",
+    "DESCRIPTION": "${modID}:植物 NL !D! ダメージ。 NL 捨て札に小型萃香が3枚ある場合、それらが合体して萃香になる。"},
+  "${modID}:Yumemi": {
+    "NAME": "夢美",
+    "DESCRIPTION": "エセリアル。 NL この戦闘終了時、追加のカード報酬を獲得。 NL 廃棄。"}
+}

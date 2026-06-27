@@ -1,0 +1,61 @@
+[
+  {
+    "PROPER_NAME": "魔炮",
+    "NAMES": [
+      "魔炮",
+      "魔法炮",
+      "魔力炮"
+    ],
+    "DESCRIPTION": "火力强大的群体伤害卡牌。"
+  },
+  {
+    "PROPER_NAME": "花朵",
+    "NAMES": [
+      "花朵",
+      "小花",
+      "花儿"
+    ],
+    "DESCRIPTION": "有着各种效果以及给予格挡的卡牌。"
+  },
+  {
+    "PROPER_NAME": "体术",
+    "NAMES": [
+      "体术",
+      "格斗技术"
+    ],
+    "DESCRIPTION": "物理攻击的格斗技艺。"
+  },
+  {
+    "PROPER_NAME": "弹幕",
+    "NAMES": [
+      "弹幕",
+      "弹幕"
+    ],
+    "DESCRIPTION": "当打出魔炮卡牌时，能从手牌上（升级后也可从抽牌堆中）自动打出的卡牌。"
+  },
+  {
+    "PROPER_NAME": "植物",
+    "NAMES": [
+      "植物",
+      "植物"
+    ],
+    "DESCRIPTION": "当打出花朵卡牌时，能从手牌上（升级后也可从抽牌堆中）自动打出的卡牌。"
+  },
+  {
+    "PROPER_NAME": "唯一",
+    "NAMES": [
+      "唯一",
+      "unique"
+    ],
+    "DESCRIPTION": "此卡牌的效果无法叠加。使用多张不会增加其效果。"
+  },
+  {
+    "PROPER_NAME": "无礼",
+    "NAMES": [
+      "无礼",
+      "no_manners",
+      "no manners"
+    ],
+    "DESCRIPTION": "无法获得新的增益。施加时已存在的增益不受影响。"
+  }
+]

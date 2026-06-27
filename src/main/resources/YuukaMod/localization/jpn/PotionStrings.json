@@ -1,0 +1,48 @@
+{
+  "${modID}:PotionID": {
+    "NAME": "何かのポーション",
+    "DESCRIPTIONS": [
+      "小さな",
+      " ピースが ",
+      "組み合わされて",
+      " 説明になります。",
+      " 正確な動作はポーションによって異なり、好きなように設定できます。"
+    ]
+  },
+  "${modID}:PureWater": {
+    "NAME": "純水",
+    "DESCRIPTIONS": [
+      "全ての弱体効果を解除する。"
+    ]
+  },
+  "${modID}:Tea": {
+    "NAME": "お茶",
+    "DESCRIPTION": [
+      "デッキからカードを1枚選び、手札に加える。"
+    ]
+  },
+  "${modID}:HoneyMilk": {
+    "NAME": "ハチミツミルク",
+    "DESCRIPTIONS": [
+      "現在のHPを記録する。戦闘終了後、記録したHPまで回復する。"
+    ]
+  },
+  "${modID}:ScentedTea": {
+    "NAME": "花茶",
+    "DESCRIPTIONS": [
+      "ランダムなバフの効果量を2倍にする。"
+    ]
+  },
+  "${modID}:BlackTea": {
+    "NAME": "紅茶",
+    "DESCRIPTIONS": [
+      "ランダムなバフを1つ得る。"
+    ]
+  },
+  "${modID}:GreenTea": {
+    "NAME": "緑茶",
+    "DESCRIPTIONS": [
+      "次に消耗するカードを消耗しないようにする。"
+    ]
+  }
+}
