@@ -1,0 +1,7 @@
+{
+  "${modID}:RecordPlayer": {
+    "NAME": "虚影",
+    "MOVES": ["昔日的强者"],
+    "DIALOG": ["有点熟悉...", "..."]
+  }
+}

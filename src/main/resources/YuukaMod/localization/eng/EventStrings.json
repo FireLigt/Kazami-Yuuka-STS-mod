@@ -79,5 +79,55 @@
       "No cards can be upgraded",
       "Choose a card to upgrade."
     ]
+  },
+  "${modID}:FlowerGarden": {
+    "NAME": "Flower Field",
+    "DESCRIPTIONS": [
+      "You find a wild flower field tucked away in a corner of the Spire.",
+      "Looking around, you see flowers of four colors blooming in perfect harmony. NL The air is filled with tranquility, broken only by the rustle of petals in the breeze.",
+      "You notice the flowers are arranged in orderly rows—roses, chrysanthemums, violets, and daisies growing side by side. NL It looks as though someone—or something—has been tending to this place with great care.",
+      "Steeling yourself, you reach out and gently pick one of the flowers. NL A warm light flows through your hand as its essence merges with your own. NL  #r@Suddenly,@ #r@you@ #r@feel@ #r@something@ #r@watching@ #r@you.@ #r@Better@ #r@leave@ #r@quickly.@",
+      "You turn and leave the field without disturbing a single blade of grass. #g~The~ #g~quiet~ #g~beauty~ #g~lingers~ #g~in~ #g~your~ #g~heart~ as you continue your journey."
+    ],
+    "OPTIONS": [
+      "[Approach the flower field]",
+      "[Step into the blossoms]",
+      "[Pick a flower] #rGain #ra #rrandom #rflower #rrelic",
+      "[Turn and leave]",
+      "[Leave the flower field]",
+      "You have already collected all the flowers. [Locked]"
+    ]
+  },
+  "${modID}:RecordPlayerEvent": {
+    "NAME": "Phantom",
+    "DESCRIPTIONS": [
+      "While climbing the Spire, you spot a #rPhantom walking in the opposite direction.",
+      "In the Spire, you must remain ever vigilant. NL You steel yourself for battle, only to be met by a #r~terrifying~ #r~aura~.",
+      "Such dreadful pressure could only belong to one who has already conquered the tower. NL Either flee, or fight it to the end!",
+      "Forced to abandon your supplies, you flee in disgrace from the #rPhantom. NL The #rPhantom does not give chase—what a relief.",
+      "You succeed in slaying the #rPhantom. Perhaps one day, you too will become a new #rPhantom ? NL In any case, you gain #grich #gcombat #gexperience and some #gsupplies. NL ... It is time to press on."
+    ],
+    "OPTIONS": [
+      "[Observe]",
+      "[Study closely]",
+      "[Flee] #rRemove #ra #rrandom #rUncommon #ror #rRare #rcard",
+      "[Challenge the peak-climber]",
+      "[Leave]",
+      "You have no Uncommon or Rare cards to forget. [Locked]"
+    ]
+  },
+  "${modID}:MagicCannonEvent": {
+    "NAME": "Domain of Surging Magic",
+    "DESCRIPTIONS": [
+      "While walking along the road, you notice the energy around you growing increasingly dense.",
+      "You feel as though you might be able to learn something from it.",
+      "Lost in meditation, that #ymagical #yenergy flows into your body. NL When you awaken, you find a #yrandom #yMagic #yCannon #ycard you did not possess. NL It is time to press on."
+    ],
+    "OPTIONS": [
+      "[Savour the feeling]",
+      "[Meditate] #gObtain #ga #grandom #gMagic #gCannon #gcard #gyou #gdon't #ghave",
+      "[Leave]",
+      "You already have all 7 Magic Cannons. [Locked]"
+    ]
   }
 }

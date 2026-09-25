@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.relics.ChemicalX;
 
 public class The_beauties_of_nature extends BaseCard {
     public static final String ID = makeID(The_beauties_of_nature.class.getSimpleName());
@@ -25,16 +26,28 @@ public class The_beauties_of_nature extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (!this.freeToPlayOnce) {
-            p.energy.use(this.energyOnUse);
+        boolean isXCost = this.cost == -1 && this.costForTurn == -1;
+        int effect = isXCost ? this.energyOnUse : 0;
+
+        if (isXCost) {
+            if (p.hasRelic(ChemicalX.ID)) {
+                effect += ChemicalX.BOOST;
+                p.getRelic(ChemicalX.ID).flash();
+            }
+            if (!this.freeToPlayOnce) {
+                p.energy.use(this.energyOnUse);
+            }
         }
-        int amount = upgraded ? (this.energyOnUse + 1) / 2 : this.energyOnUse / 2;
-        addToBot(new ApplyPowerAction(
-                p,
-                p,
-                new TheBeautiesOfNaturePower(p, amount),
-                amount
-        ));
+
+        if (effect > 0) {
+            int amount = upgraded ? (effect + 1) / 2 : effect / 2;
+            addToBot(new ApplyPowerAction(
+                    p,
+                    p,
+                    new TheBeautiesOfNaturePower(p, amount),
+                    amount
+            ));
+        }
     }
 
     @Override

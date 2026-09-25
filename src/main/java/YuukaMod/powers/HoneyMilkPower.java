@@ -10,13 +10,19 @@ import static YuukaMod.Yuukamod.makeID;
 
 public class HoneyMilkPower extends BasePower {
     public static final String POWER_ID = makeID("HoneyMilkPower");
-    private static final PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+    private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 
     private int hpOnUse;
 
     public HoneyMilkPower(AbstractCreature owner, int hpOnUse) {
         super(POWER_ID, PowerType.BUFF, false, owner, 0);
         this.hpOnUse = hpOnUse;
+        updateDescription();
+    }
+
+    @Override
+    public void stackPower(int stackAmount) {
+        this.hpOnUse = owner.currentHealth;
         updateDescription();
     }
 
@@ -48,6 +54,6 @@ public class HoneyMilkPower extends BasePower {
     public void updateDescription() {
         int healAmount = Math.max(0, hpOnUse - owner.currentHealth);
         this.amount = healAmount;
-        description = strings.DESCRIPTIONS[0] + healAmount + strings.DESCRIPTIONS[1];
+        description = powerStrings.DESCRIPTIONS[0] + healAmount + powerStrings.DESCRIPTIONS[1];
     }
 }

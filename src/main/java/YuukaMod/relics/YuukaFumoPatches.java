@@ -44,7 +44,7 @@ public class YuukaFumoPatches {
         @SpirePostfixPatch
         public static int Postfix(int __result, MagicFlower __instance, int healAmount) {
             if (AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(YuukaFumoRelic.ID)) {
-                if (AbstractDungeon.currMapNode != null && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
+                if (AbstractDungeon.getCurrRoom() != null && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
                     return MathUtils.round((float) healAmount * 1.75F);
                 }
             }

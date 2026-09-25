@@ -91,4 +91,8 @@ public class MagicCannonComboTracker {
             playerSteps.remove(p);
         }
     }
+
+    public static void clearAll() {
+        playerSteps.clear();
+    }
 }

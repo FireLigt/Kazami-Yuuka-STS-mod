@@ -1,5 +1,6 @@
 package YuukaMod.potions;
 
+import YuukaMod.util.PowerLibrary;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -10,7 +11,7 @@ import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import static YuukaMod.Yuukamod.makeID;
 
@@ -34,21 +35,16 @@ public class BlackTea extends BasePotion {
             public void update() {
                 AbstractCreature p = AbstractDungeon.player;
 
-                ArrayList<AbstractPower> buffs = new ArrayList<>();
-                for (AbstractPower power : p.powers) {
-                    if (power.type == AbstractPower.PowerType.BUFF) {
-                        buffs.add(power);
-                    }
+                List<Class<? extends AbstractPower>> buffs = PowerLibrary.getBuffClasses(p);
+                AbstractPower power = null;
+                if (!buffs.isEmpty()) {
+                    Class<? extends AbstractPower> chosen = buffs.get(AbstractDungeon.miscRng.random(buffs.size() - 1));
+                    power = PowerLibrary.instantiate(chosen, p);
                 }
-
-                if (buffs.isEmpty()) {
-                    addToTop(new ApplyPowerAction(p, p, new StrengthPower(p, 1)));
-                } else {
-                    AbstractPower selected = buffs.get(AbstractDungeon.miscRng.random(buffs.size() - 1));
-                    selected.amount += 1;
-                    selected.flash();
-                    selected.updateDescription();
+                if (power == null) {
+                    power = new StrengthPower(p, 1);
                 }
+                addToTop(new ApplyPowerAction(p, p, power));
 
                 this.isDone = true;
             }

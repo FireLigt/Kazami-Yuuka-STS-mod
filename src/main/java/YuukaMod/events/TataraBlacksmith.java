@@ -19,11 +19,12 @@ public class TataraBlacksmith extends PhasedEvent {
     public static final String ID = makeID("TataraBlacksmith");
     private static final EventStrings eventStrings = CardCrawlGame.languagePack.getEventString(ID);
 
+    private static final String NAME = eventStrings.NAME;
     private static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
     private static final String[] OPTIONS = eventStrings.OPTIONS;
 
     public TataraBlacksmith() {
-        super(ID, eventStrings.NAME, imagePath("events/Blacksmith.png"));
+        super(ID, NAME, imagePath("events/Blacksmith.png"));
 
         registerPhase("intro", new TextPhase(DESCRIPTIONS[0])
                 .addOption(OPTIONS[0], i -> {

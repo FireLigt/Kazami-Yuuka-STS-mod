@@ -1,16 +1,15 @@
 {
-  "${modID}:Example": {
+  "${modID}:FumoHints": {
     "TEXT": [
-      "This is",
-      "an array of Strings."
-    ],
-    "EXTRA_TEXT": [
-      "This is another",
-      "array of Strings."
-    ],
-    "TEXT_DICT": {
-      "This": "Contains pairs of Strings, used to get values based on keys.",
-      "This is a key": "This is a value."
-    }
+      "With Yuuka Fumo : gain an additional [E] when this triggers.",
+      "With Yuuka Fumo : gain an additional [E] when you exit Calm.",
+      "With Yuuka Fumo : healing is 75% more effective during combat.",
+      "With Yuuka Fumo : the effect triggers when Energy used is equal to or greater than last turn.",
+      "With Yuuka Fumo : gain 5 more Block.",
+      "With Yuuka Fumo : gain 1 more Regen.",
+      "With Yuuka Fumo : no longer turn-limited.",
+      "With Yuuka Fumo : chance increased from 40% to 60%.",
+      "With Yuuka Fumo : no longer turn-limited."
+    ]
   }
 }

@@ -8,11 +8,13 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 import static YuukaMod.Yuukamod.makeID;
 import YuukaMod.relics.YuukaFumoRelic;
+import YuukaMod.util.AutoTriggerLimit;
 
 public class DaisyRelic extends BaseRelic {
     public static final String ID = makeID("DaisyRelic");
     private static final int CARDS_PER_TRIGGER = 5;
     private static final int BLOCK_AMOUNT = 10;
+    private static final int FUMO_BLOCK_AMOUNT = 15;
     private int cardsPlayedThisTurn;
 
     public DaisyRelic() {
@@ -33,12 +35,13 @@ public class DaisyRelic extends BaseRelic {
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
+        if (AutoTriggerLimit.isAutoTriggered(c)) return;
         cardsPlayedThisTurn++;
         setCounter(cardsPlayedThisTurn);
-        int threshold = AbstractDungeon.player.hasRelic(YuukaFumoRelic.ID) ? 4 : CARDS_PER_TRIGGER;
-        if (cardsPlayedThisTurn % threshold == 0) {
+        int blockAmount = AbstractDungeon.player.hasRelic(YuukaFumoRelic.ID) ? FUMO_BLOCK_AMOUNT : BLOCK_AMOUNT;
+        if (cardsPlayedThisTurn % CARDS_PER_TRIGGER == 0) {
             flash();
-            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, BLOCK_AMOUNT));
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, blockAmount));
         }
     }
 

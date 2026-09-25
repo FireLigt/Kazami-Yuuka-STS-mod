@@ -40,13 +40,17 @@
     "DESCRIPTION": "${modID}:physical_arts NL Deal !D! damage. NL Whenever this is played, permanently gain 1 damage this run."},
   "${modID}:Pursuit": {
     "NAME": "Pursuit",
-    "DESCRIPTION": "${modID}:physical_arts NL Deal !D! damage. If Fatal, Return this card to your hand and gain [E] [E] [E] ."},
+    "DESCRIPTION": "${modID}:physical_arts NL Deal !D! damage. If Fatal, Return this card to your hand and gain [E] [E] [E] .",
+    "SIGNATURE_UNLOCK_CONDITION": "Kill 3 enemies with Pursuit in a single turn",
+    "SIGNATURE_ILLUSTRATOR": "ヘッツァ NL Pixiv 8866388"},
   "${modID}:Ready": {
     "NAME": "Ready",
     "DESCRIPTION": "Draw !M! random ${modID}:magic_cannon card from your draw pile."},
   "${modID}:Reload": {
     "NAME": "Reload",
     "DESCRIPTION": "Move ALL ${modID}:Danmaku from your discard pile into your draw pile.",
+    "SIGNATURE_UNLOCK_CONDITION": "Move 3 or more Danmaku cards to draw pile with Reload",
+    "SIGNATURE_ILLUSTRATOR": "東天紅@紅楼夢そ-05ab NL Pixiv 132693801",
     "UPGRADE_DESCRIPTION": "Retain NL Move ALL ${modID}:Danmaku from your discard pile into your draw pile."},
   "${modID}:Resist_offensive": {
     "NAME": "Resist Offensive",
@@ -61,7 +65,9 @@
     "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Exhaust "},
   "${modID}:Smiling": {
     "NAME": "Smiling",
-    "DESCRIPTION": "Heal !M! HP. NL Exhaust "},
+    "DESCRIPTION": "Heal !M! HP. NL Exhaust ",
+    "SIGNATURE_UNLOCK_CONDITION": "Heal a total of 50 HP with Smiling across the run",
+    "SIGNATURE_ILLUSTRATOR": "林檎の兎 NL Pixiv 135594938"},
   "${modID}:Straight_punch": {
     "NAME": "Straight Punch",
     "DESCRIPTION": "${modID}:physical_arts NL Deal !D! damage. Draw !M! card from your discard pile.",
@@ -101,17 +107,23 @@
     "DESCRIPTION": "${modID}:physical_arts NL If the last card you played is a ${modID}:physical_arts card, this costs 1 less this turn. NL Deal !D! damage."},
   "${modID}:Contempt": {
     "NAME": "Contempt",
-    "DESCRIPTION": "${modID}:unique NL In this turn all card cost -1 except temporary card. NL Exhaust"},
+    "DESCRIPTION": "${modID}:unique NL In this turn all card cost -1 except temporary card. NL Exhaust",
+    "SIGNATURE_UNLOCK_CONDITION": "Hold Contempt in hand at end of turn without playing it",
+    "SIGNATURE_ILLUSTRATOR": "AeeGs NL Pixiv 134749519"},
   "${modID}:Crazy_yuuka": {
     "NAME": "Crazy Yuuka",
     "DESCRIPTION": "Whenever you play a Plant card, add a random Plant card to your hand. It has Ethereal and Exhaust.",
     "UPGRADE_DESCRIPTION": "Whenever you play a Plant card, add a random upgraded Plant card to your hand. It has Ethereal and Exhaust."},
   "${modID}:Famed_far": {
     "NAME": "Famed far",
-    "DESCRIPTION": "Draw cards until you draw a Power card or the draw pile is empty. Excess cards go to your discard pile."},
+    "DESCRIPTION": "Draw cards until you draw a Power card or the draw pile is empty. Excess cards go to your discard pile.",
+    "SIGNATURE_UNLOCK_CONDITION": "Play Famed far with no cards going to discard from its effect",
+    "SIGNATURE_ILLUSTRATOR": "ZeeW NL Pixiv 148539974"},
   "${modID}:Finishing_move": {
     "NAME": "Finishing Move",
-    "DESCRIPTION": "${modID}:physical_arts NL Deal !D! damage. NL If you played other ${modID}:physical_arts card this turn, deal double damage and apply !M! Weak instead. NL End your turn."},
+    "DESCRIPTION": "${modID}:physical_arts NL Deal !D! damage. NL If you played other ${modID}:physical_arts card this turn, deal double damage and apply !M! Weak instead. NL End your turn.",
+    "SIGNATURE_UNLOCK_CONDITION": "Kill an enemy with Finishing Move",
+    "SIGNATURE_ILLUSTRATOR": "wei NL Pixiv 147044087"},
   "${modID}:Flower_danmaku": {
     "NAME": "Flower Danmaku",
     "DESCRIPTION": "${modID}:Flower  ${modID}:Danmaku NL Deal !D! damage.",
@@ -121,12 +133,16 @@
     "DESCRIPTION": "Each turn, the first time you play a card that costs 2 or more, gain [E] .",
     "UPGRADE_DESCRIPTION": "Each turn, the first 2 times you play a card that costs 2 or more, gain [E] ."},
   "${modID}:Gensou_shunka": {
-    "NAME": "Gensou Shunka",
-    "DESCRIPTION": "At the start of each turn, add a random ${modID}:Flower card to your hand. It has Ethereal and Exhaust.",
-    "UPGRADE_DESCRIPTION": "At the start of each turn, add a random upgraded ${modID}:Flower card to your hand. It has Ethereal and Exhaust."},
+      "NAME": "Gensou Shunka",
+      "DESCRIPTION": "At the start of each turn, add a random ${modID}:Flower card to your hand. It has Ethereal and Exhaust.",
+      "SIGNATURE_UNLOCK_CONDITION": "Use Gensou Shunka 10 times across the run",
+      "SIGNATURE_ILLUSTRATOR": "にしもん NL Pixiv 37591920",
+      "UPGRADE_DESCRIPTION": "At the start of each turn, add a random upgraded ${modID}:Flower card to your hand. It has Ethereal and Exhaust."},
   "${modID}:Gentle": {
-    "NAME": "Gentle",
-    "DESCRIPTION": "Can only be played if no Attack has been played this turn. NL Gain !B! Block. NL If any enemy intends to attack, apply ${modID}:no_manners. NL Exhaust"},
+      "NAME": "Gentle",
+      "DESCRIPTION": "Can only be played if no Attack has been played this turn. NL Gain !B! Block. NL If any enemy intends to attack, apply ${modID}:no_manners. NL Exhaust",
+      "SIGNATURE_UNLOCK_CONDITION": "Use Gentle 5 times across the run",
+      "SIGNATURE_ILLUSTRATOR": "白山ゆーき NL Pixiv 145649076"},
   "${modID}:Getting_over_it": {
     "NAME": "Getting Over It",
     "DESCRIPTION": "At the start of each turn, gain !M! Strength. If you take HP damage, lose this power.",
@@ -144,7 +160,9 @@
     "DESCRIPTION": "${modID}:magic_cannon NL Deal !D! damage to all enemies. NL Apply !M! Vulnerable to all enemies."},
   "${modID}:Low_speed": {
     "NAME": "Low speed",
-    "DESCRIPTION": "Lose !${modID}:DexLoss! Dexterity. NL Gain !M! Strength."},
+    "DESCRIPTION": "Lose !${modID}:DexLoss! Dexterity. NL Gain !M! Strength.",
+    "SIGNATURE_UNLOCK_CONDITION": "Play Low Speed while you have negative Dexterity",
+    "SIGNATURE_ILLUSTRATOR": "Cloudy.R NL Pixiv 101783065"},
   "${modID}:Marigold": {
     "NAME": "Marigold",
     "DESCRIPTION": "${modID}:Flower NL Gain !M! Gold. NL Exhaust"},
@@ -154,14 +172,16 @@
     "UPGRADE_DESCRIPTION": "${modID}:unique NL Innate NL Draw extra three card at the start of each turn."},
   "${modID}:Parasol": {
     "NAME": "Parasol",
-    "DESCRIPTION": "Whenever you play a card, gain !M! Block."},
+    "DESCRIPTION": "Whenever you play a card, gain !M! Block.",
+    "SIGNATURE_UNLOCK_CONDITION": "Use Parasol 10 times across the run",
+    "SIGNATURE_ILLUSTRATOR": "Reina NL Pixiv 7593428"},
   "${modID}:Power_deterrence": {
     "NAME": "Power deterrence",
     "DESCRIPTION": "Draw !M! cards. For each ${modID}:magic_cannon card drawn this way, apply !M! Weak to ALL enemies. NL Exhaust"},
   "${modID}:Prepare": {
     "NAME": "Prepare",
-    "DESCRIPTION": "Gain !${modID}:DANMAKU! temporary Strength equal to the number of ${modID}:danmaku cards in your deck.",
-    "UPGRADE_DESCRIPTION": "Retain NL Gain !${modID}:DANMAKU! temporary Strength equal to the number of ${modID}:danmaku cards in your deck."},
+    "DESCRIPTION": "Gain temporary Strength equal to the number of ${modID}:danmaku cards in your deck. NL Total danmaku : !${modID}:DANMAKU!",
+    "UPGRADE_DESCRIPTION": "Retain NL Gain temporary Strength equal to the number of ${modID}:danmaku cards in your deck. NL Total danmaku : !${modID}:DANMAKU!"},
   "${modID}:Punch_in_face": {
     "NAME": "Punch in face",
     "DESCRIPTION": "${modID}:physical_arts NL Deal !D! damage. NL Stun the enemy. NL Exhaust "},
@@ -178,10 +198,11 @@
     "UPGRADE_DESCRIPTION": "${modID}:unique NL Whenever you play a ${modID}:physical_arts card, draw a random ${modID}:physical_arts card from your draw pile. Reduce its cost by 1 this turn."},
   "${modID}:Shovel": {
     "NAME": "Shovel",
-    "DESCRIPTION": "Choose !M! Flower card from your exhaust pile. Add it to your draw pile. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Choose !M! Flower cards from your exhaust pile. Add them to your draw pile. NL Exhaust",
+    "DESCRIPTION": "If you have a Flower card in your exhaust pile, choose !M! to return to your hand. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "If you have any Flower cards in your exhaust pile, choose !M! to return to your hand. NL Exhaust",
     "EXTENDED_DESCRIPTION": [
-      "Choose Flower cards to retrieve."
+      "Choose Flower cards to retrieve.",
+      "There is no Flower card in the exhaust pile..."
     ]},
   "${modID}:Suika": {
     "NAME": "Suika",
@@ -198,6 +219,8 @@
   "${modID}:Blossoming_of_Gensokyo": {
     "NAME": "Blossoming of Gensokyo",
     "DESCRIPTION": "Deal !D! damage. NL Create a copy in hand with double damage, Ethereal, and Exhaust.",
+    "SIGNATURE_UNLOCK_CONDITION": "Deal 100 or more damage with a single Blossoming of Gensokyo or its copy",
+    "SIGNATURE_ILLUSTRATOR": "NEKO♨ BFG5 NL Pixiv 27763069",
     "EXTENDED_DESCRIPTION": [
       "Ethereal NL Deal !D! damage. NL Create a copy in hand with double damage. NL Exhaust "]},
   "${modID}:Broken_flower": {
@@ -224,22 +247,28 @@
     "DESCRIPTION": "${modID}:Flower NL Deal !D! damage. NL Trigger up to 10 total ${modID}:Danmaku or ${modID}:Plant cards from your hand and upgraded ones from your draw pile.",
     "UPGRADE_DESCRIPTION": "${modID}:Flower NL Deal !D! damage. NL Trigger all ${modID}:Danmaku or ${modID}:Plant cards in your hand and draw pile."},
   "${modID}:Fragrance": {
-    "NAME": "Fragrance",
-    "DESCRIPTION": "Gain [E] . Draw !M! card. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Gain [E] [E] . Draw !M! card. NL Exhaust after !${modID}:SecondMagic! uses."},
+      "NAME": "Fragrance",
+      "DESCRIPTION": "Gain [E] . Draw !M! card. NL Exhaust",
+      "SIGNATURE_UNLOCK_CONDITION": "Use Fragrance 20 times across the run",
+      "SIGNATURE_ILLUSTRATOR": "晨 NL Pixiv 131696298",
+      "UPGRADE_DESCRIPTION": "Gain [E] [E] . Draw !M! card. NL Exhaust after !${modID}:SecondMagic! uses."},
   "${modID}:Infinite_spiral": {
     "NAME": "Infinite Spiral",
     "DESCRIPTION": "Unplayable  Retain  Innate  NL Turns remaining: !M!  NL At end of turn, decrease by 1. When 0, deal !D! damage to ALL enemies and remove this copy from deck. NL After remove, you will receive a random relic and a [Bouquet]."},
   "${modID}:LLS_PC98_form": {
-    "NAME": "LLS PC98 form",
-    "DESCRIPTION": "Change to PC98 form. Every first !M! Attack cards each round deal double damage. NL Cannot be used in the next combat.",
-    "UPGRADE_DESCRIPTION": "Change to PC98 form. Every first !M! Attack cards each round deal double damage.",
-    "EXTENDED_DESCRIPTION": [
-      "Cannot use: on cooldown from previous combat.",
-      "Cooldown: "]},
+      "NAME": "LLS PC98 form",
+      "DESCRIPTION": "Change to PC98 form. Every first !M! Attack cards each round deal double damage. NL Cannot be used in the next combat.",
+      "SIGNATURE_UNLOCK_CONDITION": "Trigger the custom music with LLS PC98 form",
+      "SIGNATURE_ILLUSTRATOR": "朝夕染古 NL Pixiv 134780977",
+      "UPGRADE_DESCRIPTION": "Change to PC98 form. Every first !M! Attack cards each round deal double damage.",
+      "EXTENDED_DESCRIPTION": [
+        "Cannot use: on cooldown from previous combat.",
+        "Cooldown: "]},
   "${modID}:Manipulating_flower": {
     "NAME": "Manipulating Flower",
     "DESCRIPTION": "Draw cards until your hand is full. ${modID}:Flower cards are drawn first. NL Exhaust",
+    "SIGNATURE_UNLOCK_CONDITION": "Draw 7 or more cards with Manipulating Flower",
+    "SIGNATURE_ILLUSTRATOR": "Cyrle costeau NL Pixiv 119063756",
     "UPGRADE_DESCRIPTION": "Draw cards until your hand is full. ${modID}:Flower cards are drawn first. NL Gain Vigor equal to the number of cards drawn. NL Exhaust"},
   "${modID}:Meet_Retsu": {
     "NAME": "Meet Retsu",
@@ -254,9 +283,11 @@
     "DESCRIPTION": "At the end of your turn, gain Block equal to half the highest stack amount among your buffs.",
     "UPGRADE_DESCRIPTION": "At the end of your turn, gain Block equal to the highest stack amount among your buffs."},
   "${modID}:The_beauties_of_nature": {
-    "NAME": "The beauties of nature",
-    "DESCRIPTION": "For every 2 Energy spent, gain 1 stack (rounded down). NL Each stack negates the next instance of damage you take and reflects half back to the attacker.",
-    "UPGRADE_DESCRIPTION": "For every 2 Energy spent, gain 1 stack (rounded up). NL Each stack negates the next instance of damage you take and reflects half back to the attacker."},
+      "NAME": "The beauties of nature",
+      "DESCRIPTION": "For every 2 Energy spent, gain 1 stack (rounded down). NL Each stack negates the next instance of damage you take and reflects half back to the attacker.",
+      "SIGNATURE_UNLOCK_CONDITION": "Gain 3 or more stacks of The beauties of nature in a single play",
+      "SIGNATURE_ILLUSTRATOR": "Emloste NL Pixiv 146336826",
+      "UPGRADE_DESCRIPTION": "For every 2 Energy spent, gain 1 stack (rounded up). NL Each stack negates the next instance of damage you take and reflects half back to the attacker."},
   "${modID}:Try_your_best": {
     "NAME": "Try Your Best",
     "DESCRIPTION": "If lethal damage would kill you before the enemy turn ends, survive with full HP instead. NL Otherwise, die when the enemy turn ends. NL Removed from your deck for the rest of the run. NL Exhaust.",
@@ -272,9 +303,11 @@
     "DESCRIPTION": "Shuffle your discard pile into your draw pile.",
     "UPGRADE_DESCRIPTION": "Shuffle your discard pile into your draw pile. NL Retrieve deck cards from your exhaust pile. NL !M! uses remaining. NL When 0, remove this card from your deck."},
   "${modID}:Worthy_opponent": {
-    "NAME": "Worthy Opponent",
-    "DESCRIPTION": "${modID}:unique NL Ethereal NL Whenever you play a card, gain !M! Strength.",
-    "UPGRADE_DESCRIPTION": "${modID}:unique NL Innate NL Whenever you play a card, gain !M! Strength."},
+      "NAME": "Worthy Opponent",
+      "DESCRIPTION": "${modID}:unique NL Ethereal NL Whenever you play a card, gain !M! Strength.",
+      "SIGNATURE_UNLOCK_CONDITION": "Play Worthy Opponent and end combat with 25 or more Strength",
+      "SIGNATURE_ILLUSTRATOR": "しろきあい NL Pixiv 105762048",
+      "UPGRADE_DESCRIPTION": "${modID}:unique NL Innate NL Whenever you play a card, gain !M! Strength."},
 
   "${modID}:Mega_magic_cannon": {
     "NAME": "Mega Magic Cannon",

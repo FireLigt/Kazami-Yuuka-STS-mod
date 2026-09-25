@@ -1,3 +1,11 @@
 # Project exclude paths
 /target/
 /.idea/
+
+# Decompile / simulation artifacts
+/com/megacrit/
+/basemod/
+/test_autotrig*
+/test_sunflower_logic*
+/gam_bytecode.txt
+/gam_lines.txt

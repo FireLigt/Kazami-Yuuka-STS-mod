@@ -1,16 +1,15 @@
 {
-  "${modID}:Example": {
+  "${modID}:FumoHints": {
     "TEXT": [
-      "This is",
-      "an array of Strings."
-    ],
-    "EXTRA_TEXT": [
-      "This is another",
-      "array of Strings."
-    ],
-    "TEXT_DICT": {
-      "This": "Contains pairs of Strings, used to get values based on keys.",
-      "This is a key": "This is a value."
-    }
+      "擁有 幽香Fumo 時 : 觸發時額外獲得 [E] 。",
+      "擁有 幽香Fumo 時 : 退出 平靜 時額外獲得 [E] 。",
+      "擁有 幽香Fumo 時 : 戰鬥中的治療效果提高 75%。",
+      "擁有 幽香Fumo 時 : 能量消耗大於或等於時即可觸發效果",
+      "擁有 幽香Fumo 時 : 再獲得5點格擋",
+      "擁有 幽香Fumo 時 : 再獲得1層再生",
+      "擁有 幽香Fumo 時 : 不再有回合限制",
+      "擁有 幽香Fumo 時 : 機率從40%增幅至60%",
+      "擁有 幽香Fumo 時 : 不再有回合限制"
+    ]
   }
 }

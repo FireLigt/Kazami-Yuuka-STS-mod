@@ -1,9 +1,12 @@
 package YuukaMod;
 
 import YuukaMod.cards.BaseCard;
+import YuukaMod.events.MagicCannonEvent;
 import YuukaMod.events.ParasolEvent;
+import YuukaMod.events.RecordPlayerEvent;
 import YuukaMod.events.TataraBlacksmith;
 import YuukaMod.events.UsedCampfireEvent;
+import YuukaMod.monsters.RecordPlayer;
 import YuukaMod.cards.power.LLS_PC98_form;
 import YuukaMod.cards.rare.Infinite_spiral;
 import YuukaMod.cards.special.Mega_magic_cannon;
@@ -19,6 +22,7 @@ import YuukaMod.powers.LLSPC98formCooldown;
 import YuukaMod.powers.LLSPC98formPower;
 import YuukaMod.powers.YumemiPower;
 import YuukaMod.potions.BlackTea;
+import YuukaMod.potions.BombPotion;
 import YuukaMod.potions.GreenTea;
 import YuukaMod.potions.HoneyMilk;
 import YuukaMod.potions.PureWater;
@@ -34,6 +38,7 @@ import YuukaMod.relics.RoseRelic;
 import YuukaMod.relics.SunflowerRelic;
 import YuukaMod.relics.VioletRelic;
 import YuukaMod.relics.YuukaFumoRelic;
+import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import basemod.AutoAdd;
@@ -46,8 +51,14 @@ import basemod.interfaces.*;
 import com.badlogic.gdx.graphics.Color;
 import YuukaMod.util.AutoTriggerLimit;
 import YuukaMod.util.GeneralUtils;
+import YuukaMod.util.SignatureUnlockManager;
+import YuukaMod.util.SignatureUnlockSubscriber;
+import YuukaMod.util.YuukaSignatureHelper;
 import YuukaMod.util.KeywordInfo;
+import YuukaMod.util.MagicCannonComboTracker;
+import YuukaMod.util.RunRecorder;
 import YuukaMod.util.Sounds;
+import YuukaMod.util.TogetherInSpireCompat;
 import YuukaMod.util.TextureLoader;
 import com.badlogic.gdx.Files;
 import com.badlogic.gdx.Gdx;
@@ -65,6 +76,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.rooms.MonsterRoomBoss;
 
 import com.megacrit.cardcrawl.rewards.RewardItem;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
@@ -90,7 +102,9 @@ public class Yuukamod implements
         AddAudioSubscriber,
         OnStartBattleSubscriber,
         PostBattleSubscriber,
-        PostInitializeSubscriber {
+        PostInitializeSubscriber,
+        StartGameSubscriber,
+        PostPowerApplySubscriber {
     public static ModInfo info;
     public static String modID; //Edit your pom.xml to change this
     static { loadModInfo(); }
@@ -156,6 +170,8 @@ public class Yuukamod implements
 
     @Override
     public void receivePostInitialize() {
+        TogetherInSpireCompat.init();
+
         Texture badgeTexture = TextureLoader.getTexture(imagePath("badge.png"));
 
         ModPanel panel = new ModPanel();
@@ -185,6 +201,27 @@ public class Yuukamod implements
 
         BaseMod.addEvent(new AddEventParams.Builder(TataraBlacksmith.ID, TataraBlacksmith.class)
                 .create());
+
+        BaseMod.addMonster(RecordPlayer.ID, () -> {
+            RunRecorder.RunData data = RunRecorder.loadRunData();
+            if (data == null) {
+                data = new RunRecorder.RunData();
+                data.characterClass = "DEFECT";
+                data.maxHP = 60;
+            }
+            return new RecordPlayer(data);
+        });
+
+        BaseMod.addEvent(new AddEventParams.Builder(RecordPlayerEvent.ID, RecordPlayerEvent.class)
+                .bonusCondition(() -> RunRecorder.hasSavedRunData() && AbstractDungeon.actNum == 3)
+                .create());
+
+        BaseMod.addEvent(new AddEventParams.Builder(MagicCannonEvent.ID, MagicCannonEvent.class)
+                .create());
+
+        YuukaSignatureHelper.registerAll();
+        SignatureUnlockManager.loadRunStats();
+        me.antileaf.signature.utils.SignatureHelper.registerEasyUnlock(new SignatureUnlockSubscriber());
     }
 
     /*----------Localization----------*/
@@ -400,6 +437,8 @@ public class Yuukamod implements
     public void receiveOnBattleStart(com.megacrit.cardcrawl.rooms.AbstractRoom room) {
         LLSPC98formPower.stopBossMusic();
         AutoTriggerLimit.reset();
+        MagicCannonComboTracker.reset();
+        SignatureUnlockManager.onBattleStart();
         if (AbstractDungeon.player != null) {
             AbstractPower cooldown = AbstractDungeon.player.getPower(LLSPC98formCooldown.POWER_ID);
             if (cooldown != null) {
@@ -419,9 +458,37 @@ public class Yuukamod implements
     }
 
     @Override
+    public void receivePostPowerApplySubscriber(AbstractPower power, com.megacrit.cardcrawl.core.AbstractCreature target, com.megacrit.cardcrawl.core.AbstractCreature source) {
+        SignatureUnlockManager.onPowerApplied(power, target, source);
+        if (AbstractDungeon.actNum == 4 && AbstractDungeon.getCurrRoom() instanceof MonsterRoomBoss
+                && target instanceof AbstractPlayer) {
+            RunRecorder.recordPower(power);
+        }
+    }
+
+    @Override
+    public void receiveStartGame() {
+        RunRecorder.clearSampledPowers();
+        MagicCannonComboTracker.clearAll();
+        LLS_PC98_form.clearBlockedCombatCounts();
+        SignatureUnlockManager.onNewRun();
+    }
+
+    @Override
     public void receivePostBattle(com.megacrit.cardcrawl.rooms.AbstractRoom room) {
+        SignatureUnlockManager.onBattleEnd();
+        if (AbstractDungeon.actNum == 4 && AbstractDungeon.getCurrRoom() instanceof MonsterRoomBoss) {
+            if (AbstractDungeon.player != null) {
+                logger.info("Act IV boss defeated! Saving run data for Record Player enemy.");
+                RunRecorder.saveRunData(AbstractDungeon.player);
+            }
+        }
+
         LLSPC98formPower.restoreDefaultAnimation();
-        LLSPC98formPower.stopBossMusic();
+        if (LLSPC98formPower.isLocalBossMusicActive()) {
+            LLSPC98formPower.fadeOutBossMusic();
+            TogetherInSpireCompat.broadcastBossMusicStop();
+        }
         if (AbstractDungeon.player != null) {
             AbstractPower cooldown = AbstractDungeon.player.getPower(LLSPC98formCooldown.POWER_ID);
             if (cooldown != null) {
@@ -471,13 +538,17 @@ public class Yuukamod implements
             logger.info("Infinite Spiral: adding relic reward");
             RelicTier tier = MathUtils.random(0, 2) == 0 ? RelicTier.COMMON : (MathUtils.randomBoolean() ? RelicTier.UNCOMMON : RelicTier.RARE);
             AbstractRelic relic = AbstractDungeon.returnRandomRelic(tier);
-            RewardItem reward = new RewardItem(relic);
-            if (AbstractDungeon.getCurrRoom() != null) {
-                AbstractDungeon.getCurrRoom().rewards.add(reward);
-                logger.info("Infinite Spiral: added reward to currRoom.rewards");
+            if (relic != null) {
+                RewardItem reward = new RewardItem(relic);
+                if (AbstractDungeon.getCurrRoom() != null) {
+                    AbstractDungeon.getCurrRoom().rewards.add(reward);
+                    logger.info("Infinite Spiral: added reward to currRoom.rewards");
+                } else {
+                    AbstractDungeon.combatRewardScreen.rewards.add(reward);
+                    logger.warn("Infinite Spiral: currRoom null, added to combatRewardScreen.rewards (fallback)");
+                }
             } else {
-                AbstractDungeon.combatRewardScreen.rewards.add(reward);
-                logger.warn("Infinite Spiral: currRoom null, added to combatRewardScreen.rewards (fallback)");
+                logger.warn("Infinite Spiral: no relic available for tier " + tier + ", skipping relic reward");
             }
 
             RewardItem bouquetReward = new RewardItem();
@@ -500,9 +571,12 @@ public class Yuukamod implements
                 RewardItem reward = new RewardItem();
                 reward.type = RewardItem.RewardType.CARD;
                 reward.cards = new ArrayList<>();
-                reward.cards.add(AbstractDungeon.returnTrulyRandomCardInCombat().makeCopy());
-                reward.cards.add(AbstractDungeon.returnTrulyRandomCardInCombat().makeCopy());
-                reward.cards.add(AbstractDungeon.returnTrulyRandomCardInCombat().makeCopy());
+                AbstractCard yumemiCard = AbstractDungeon.returnTrulyRandomCardInCombat();
+                if (yumemiCard != null) reward.cards.add(yumemiCard.makeCopy());
+                yumemiCard = AbstractDungeon.returnTrulyRandomCardInCombat();
+                if (yumemiCard != null) reward.cards.add(yumemiCard.makeCopy());
+                yumemiCard = AbstractDungeon.returnTrulyRandomCardInCombat();
+                if (yumemiCard != null) reward.cards.add(yumemiCard.makeCopy());
                 if (AbstractDungeon.getCurrRoom() != null) {
                     AbstractDungeon.getCurrRoom().rewards.add(reward);
                 } else {
@@ -566,11 +640,15 @@ public class Yuukamod implements
                 new Color(140f/255f, 80f/255f, 30f/255f, 1f),
                 new Color(220f/255f, 180f/255f, 80f/255f, 1f),
                 BlackTea.ID);
+        BaseMod.addPotion(BombPotion.class,
+                new Color(40f/255f, 40f/255f, 40f/255f, 1f),
+                new Color(200f/255f, 60f/255f, 40f/255f, 1f),
+                new Color(1f, 200f/255f, 60f/255f, 1f),
+                BombPotion.ID);
         BaseMod.addPotion(GreenTea.class,
                 new Color(140f/255f, 220f/255f, 120f/255f, 1f),
                 new Color(60f/255f, 160f/255f, 60f/255f, 1f),
                 new Color(200f/255f, 1f, 180f/255f, 1f),
                 GreenTea.ID);
     }
-
 }

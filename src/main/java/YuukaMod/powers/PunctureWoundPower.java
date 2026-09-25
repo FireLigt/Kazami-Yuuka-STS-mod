@@ -15,6 +15,8 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public class PunctureWoundPower extends BasePower {
     public static final String POWER_ID = Yuukamod.makeID(PunctureWoundPower.class.getSimpleName());
+    private static final com.megacrit.cardcrawl.localization.PowerStrings powerStrings =
+            com.megacrit.cardcrawl.core.CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 
     public PunctureWoundPower(AbstractCreature owner, int amount) {
         super(POWER_ID, PowerType.BUFF, false, owner, amount);

@@ -196,5 +196,17 @@
       "The next #b",
       " card(s) you play that would Exhaust will not Exhaust instead."
     ]
+  },
+  "${modID}:BombPower": {
+    "NAME": "Bomb",
+    "DESCRIPTIONS": [
+      "At the end of each turn, if you have #b10 different buffs, win the battle."
+    ]
+  },
+  "${modID}:GentleLockoutPower": {
+    "NAME": "Gentle Lockout",
+    "DESCRIPTIONS": [
+      "You are gently locked out of using cards this turn."
+    ]
   }
 }

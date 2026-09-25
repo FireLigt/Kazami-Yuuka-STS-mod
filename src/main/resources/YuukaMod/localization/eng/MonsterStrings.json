@@ -1,0 +1,7 @@
+{
+  "${modID}:RecordPlayer": {
+    "NAME": "Phantom",
+    "MOVES": ["Memory"],
+    "DIALOG": ["seems similar...", "..."]
+  }
+}

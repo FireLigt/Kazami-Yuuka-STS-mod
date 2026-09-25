@@ -39,6 +39,12 @@
       "獲得1個隨機增益效果。"
     ]
   },
+  "${modID}:BombPotion": {
+    "NAME": "炸彈",
+    "DESCRIPTIONS": [
+      "獲得增益：炸彈-在每個回合結束時，如果你擁有10種不同的增益效果，則贏得本場戰鬥。"
+    ]
+  },
   "${modID}:GreenTea": {
     "NAME": "綠茶",
     "DESCRIPTIONS": [

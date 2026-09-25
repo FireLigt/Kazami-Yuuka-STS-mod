@@ -10,7 +10,7 @@
     "NAME": "Mega Magic Cannon Certificate",
     "FLAVOR": "The ultimate magic cannon certificate, allow you to gain and use everywhere.",
     "DESCRIPTIONS": [
-      "On the 3th turn of each combat, add a Mega Magic Cannon to your hand."
+      "On the 3rd turn of each combat, add a Mega Magic Cannon to your hand."
     ]
   },
   "${modID}:ParasolDebuffRelic": {
@@ -31,7 +31,7 @@
     "NAME": "Sunflower",
     "FLAVOR": "A radiant sunflower that follows the sun's path, storing energy for tomorrow's bloom.",
     "DESCRIPTIONS": [
-      "In a single turn, for every 3 Energy used, gain [E] at the start of your next turn."
+      "If you use more Energy this turn than last turn, gain [E] at the start of your next turn."
     ]
   },
   "${modID}:DaisyRelic": {
@@ -66,7 +66,7 @@
     "NAME": "Sunflower Bouquet",
     "FLAVOR": "A sunflower bouquet, brimming with enchanting energy, seeks to give back to its master.",
     "DESCRIPTIONS": [
-      "Replaces #ySunflower. NL Combines all energy spent across combat. Every 3 Energy used grants [E] at the start of your next turn."
+      "Replaces #ySunflower. NL In a single turn, for every 3 Energy used, gain [E] at the start of your next turn."
     ]
   },
   "${modID}:YuukaFumoRelic": {

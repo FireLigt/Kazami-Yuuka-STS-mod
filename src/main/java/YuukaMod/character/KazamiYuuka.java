@@ -13,7 +13,9 @@ import basemod.abstracts.CustomEnergyOrb;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.math.MathUtils;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -25,6 +27,7 @@ import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
@@ -121,6 +124,8 @@ public class KazamiYuuka extends CustomPlayer {
 
     //Actual character class code below this point
 
+    private static TextureAtlas.AtlasRegion smallOrb;
+
     public KazamiYuuka() {
         super(getNames()[0], Meta.FLOWER_FIELD_TYRANT,
                 new CustomEnergyOrb(orbTextures, characterPath("energyorb/vfx.png"), layerSpeeds), //Energy Orb
@@ -137,6 +142,22 @@ public class KazamiYuuka extends CustomPlayer {
         //Location for text bubbles. You can adjust it as necessary later. For most characters, these values are fine.
         dialogX = (drawX + 0.0F * Settings.scale);
         dialogY = (drawY + 220.0F * Settings.scale);
+    }
+
+    @Override
+    public TextureAtlas.AtlasRegion getOrb() {
+        //[E] in card/tip text is rendered from this region. The card energy orb image is a large
+        //512x512 sprite meant for card art, so return the small orb texture instead so that [E]
+        //renders as a compact inline icon like the vanilla characters.
+        if (smallOrb == null) {
+            Texture tex = ImageMaster.loadImage(Meta.SMALL_ORB);
+            if (tex != null) {
+                smallOrb = new TextureAtlas.AtlasRegion(tex, 0, 0, tex.getWidth(), tex.getHeight());
+            } else {
+                smallOrb = AbstractCard.orb_green;
+            }
+        }
+        return smallOrb;
     }
 
     @Override
@@ -161,7 +182,7 @@ public class KazamiYuuka extends CustomPlayer {
     @Override
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        if (Yuukamod.isMegaCannonRelicMode()) {
+        if (Yuukamod.isMegaCannonRelicMode() && Yuukamod.isEasterEggTriggered()) {
             retVal.add(MegaMagicCannonRelic.ID);
         } else {
             retVal.add(SunflowerRelic.ID);

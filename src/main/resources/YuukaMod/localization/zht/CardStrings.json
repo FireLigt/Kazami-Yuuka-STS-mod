@@ -41,13 +41,17 @@
     "DESCRIPTION": "${modID}:體術 NL 造成 !D! 點傷害。 NL 每次使用，此卡在本局遊戲中永久增加1點傷害。"},
   "${modID}:Pursuit": {
     "NAME": "追擊",
-    "DESCRIPTION": "${modID}:體術 NL 造成 !D! 點傷害。 斬殺 時， 此卡回到手牌并獲得 [E] [E] [E] 。"},
+    "DESCRIPTION": "${modID}:體術 NL 造成 !D! 點傷害。 斬殺 時， 此卡回到手牌并獲得 [E] [E] [E] 。",
+    "SIGNATURE_UNLOCK_CONDITION": "在同一回合內用追擊擊殺3名敵人",
+    "SIGNATURE_ILLUSTRATOR": "ヘッツァ NL Pixiv 8866388"},
   "${modID}:Ready": {
     "NAME": "準備",
     "DESCRIPTION": "從抽牌堆中抽 !M! 張隨機 ${modID}:魔炮 卡加入手牌。"},
   "${modID}:Reload": {
     "NAME": "裝填",
     "DESCRIPTION": "將棄牌堆中的所有 ${modID}:彈幕 卡洗回抽牌堆。",
+    "SIGNATURE_UNLOCK_CONDITION": "用裝填將3張以上彈幕卡洗回抽牌堆",
+    "SIGNATURE_ILLUSTRATOR": "東天紅@紅楼夢そ-05ab NL Pixiv 132693801",
     "UPGRADE_DESCRIPTION": " 保留  NL 將棄牌堆中的所有 ${modID}:彈幕 卡洗回抽牌堆。"},
   "${modID}:Resist_offensive": {
     "NAME": "抵御攻勢",
@@ -62,7 +66,9 @@
     "UPGRADE_DESCRIPTION": "抽 !M! 張卡。 NL 消耗 "},
   "${modID}:Smiling": {
     "NAME": "微笑",
-    "DESCRIPTION": "回復 !M! 點生命。 NL 消耗 "},
+    "DESCRIPTION": "回復 !M! 點生命。 NL 消耗 ",
+    "SIGNATURE_UNLOCK_CONDITION": "累計回復50點生命",
+    "SIGNATURE_ILLUSTRATOR": "林檎の兎 NL Pixiv 135594938"},
   "${modID}:Straight_punch": {
     "NAME": "直拳",
     "DESCRIPTION": "${modID}:體術 NL 造成 !D! 點傷害。 NL 從棄牌堆抽 !M! 張卡。",
@@ -100,17 +106,23 @@
     "DESCRIPTION": "${modID}:體術 NL 若上一張使用的卡是 ${modID}:體術 卡，本牌費用減少 1 點。 NL 造成 !D! 點傷害。"},
    "${modID}:Contempt": {
     "NAME": "藐視",
-    "DESCRIPTION": "${modID}:唯一 NL 本回合内，除臨時卡牌外，所有卡牌費用-1。 NL 消耗 "},
+    "DESCRIPTION": "${modID}:唯一 NL 本回合内，除臨時卡牌外，所有卡牌費用-1。 NL 消耗 ",
+    "SIGNATURE_UNLOCK_CONDITION": "將藐視保留在手牌中直到回合結束，且不打出它",
+    "SIGNATURE_ILLUSTRATOR": "AeeGs NL Pixiv 134749519"},
   "${modID}:Crazy_yuuka": {
     "NAME": "瘋狂幽香",
     "DESCRIPTION": "每當你使用一張 ${modID}:植物 卡，往手牌加入一張帶有 虛無 和 消耗 的隨機 ${modID}:植物 卡。",
     "UPGRADE_DESCRIPTION": "每當你使用一張 ${modID}:植物 卡，往手牌加入升級過的一張帶有 虛無 和 消耗 的隨機 ${modID}:植物 卡。"},
   "${modID}:Famed_far": {
     "NAME": "威名遠揚",
-    "DESCRIPTION": "抽牌直到抽到能力牌或抽牌堆為空。多餘的牌進入棄牌堆。 NL 消耗 "},
+    "DESCRIPTION": "抽牌直到抽到能力牌或抽牌堆為空。多餘的牌進入棄牌堆。 NL 消耗 ",
+    "SIGNATURE_UNLOCK_CONDITION": "打出威名遠揚時，沒有卡牌因該卡效果被棄牌",
+    "SIGNATURE_ILLUSTRATOR": "ZeeW NL Pixiv 148539974"},
   "${modID}:Finishing_move": {
     "NAME": "收尾招式",
-    "DESCRIPTION": "${modID}:體術 NL 造成 !D! 點傷害。 NL 若這回合有使用過其他的 ${modID}:體術 卡，造成雙倍傷害并給予 !M! 層 虛弱。 NL 立即結束回合。"},
+    "DESCRIPTION": "${modID}:體術 NL 造成 !D! 點傷害。 NL 若這回合有使用過其他的 ${modID}:體術 卡，造成雙倍傷害并給予 !M! 層 虛弱。 NL 立即結束回合。",
+    "SIGNATURE_UNLOCK_CONDITION": "用收尾招式擊殺一名敵人",
+    "SIGNATURE_ILLUSTRATOR": "wei NL Pixiv 147044087"},
   "${modID}:Flower_danmaku": {
     "NAME": "花朵彈幕",
     "DESCRIPTION": "${modID}:花朵 ${modID}:彈幕 NL 造成 !D! 點傷害。",
@@ -122,10 +134,14 @@
   "${modID}:Gensou_shunka": {
     "NAME": "幻想春花",
     "DESCRIPTION": "每回合開始時， 往手牌加入一張帶有 虛無 和 消耗 的隨機 ${modID}:花朵 卡。",
+    "SIGNATURE_UNLOCK_CONDITION": "累計使用10次幻想春花",
+    "SIGNATURE_ILLUSTRATOR": "にしもん NL Pixiv 37591920",
     "UPGRADE_DESCRIPTION": "每回合開始時， 往手牌加入升級過的一張帶有 虛無 和 消耗 的隨機 ${modID}:花朵 卡。"},
   "${modID}:Gentle": {
     "NAME": "紳士風范",
-      "DESCRIPTION": "只能在本回合未使用過攻擊牌時打出。 NL 獲得 !B! 點 格擋 。 NL 若敵人的意圖是攻擊，对其施加 ${modID}:無禮 。 NL 消耗 "},
+      "DESCRIPTION": "只能在本回合未使用過攻擊牌時打出。 NL 獲得 !B! 點 格擋 。 NL 若敵人的意圖是攻擊，对其施加 ${modID}:無禮 。 NL 消耗 ",
+      "SIGNATURE_UNLOCK_CONDITION": "累計使用5次紳士風范",
+      "SIGNATURE_ILLUSTRATOR": "白山ゆーき NL Pixiv 145649076"},
   "${modID}:Getting_over_it": {
     "NAME": "掘地求花",
     "DESCRIPTION": "在每回合開始時，獲得 !M! 層 力量 。若你受到傷害，失去此能力。",
@@ -143,7 +159,9 @@
     "DESCRIPTION": "${modID}:魔炮 NL 對所有敵人造成 !D! 點傷害。 NL 對所有敵人施加 !M! 層 易傷 。"},
   "${modID}:Low_speed": {
     "NAME": "低速",
-    "DESCRIPTION": "失去 !${modID}:DexLoss! 層 敏捷 。 NL 獲得 !M! 層 力量 。"},
+    "DESCRIPTION": "失去 !${modID}:DexLoss! 層 敏捷 。 NL 獲得 !M! 層 力量 。",
+    "SIGNATURE_UNLOCK_CONDITION": "在敏捷為負數時打出低速",
+    "SIGNATURE_ILLUSTRATOR": "Cloudy.R NL Pixiv 101783065"},
   "${modID}:Marigold": {
     "NAME": "金盞花",
     "DESCRIPTION": "${modID}:花朵 NL 獲得 !M! 金幣。 NL 消耗 "},
@@ -153,14 +171,16 @@
     "UPGRADE_DESCRIPTION": "${modID}:唯一 NL 固有 。 NL 每回合開始時額外抽出3張牌。"},
   "${modID}:Parasol": {
     "NAME": "陽傘",
-    "DESCRIPTION": "每當你打出一張卡時，獲得 !M! 點 格擋 。"},
+    "DESCRIPTION": "每當你打出一張卡時，獲得 !M! 點 格擋 。",
+    "SIGNATURE_UNLOCK_CONDITION": "累計使用10次陽傘",
+    "SIGNATURE_ILLUSTRATOR": "Reina NL Pixiv 7593428"},
   "${modID}:Power_deterrence": {
     "NAME": "力量威懾",
     "DESCRIPTION": "抽 !M! 張卡。每抽到一張 ${modID}:魔炮 卡，對所有敵人施加 !M! 層 虛弱 。 NL 消耗 "},
   "${modID}:Prepare": {
     "NAME": "準備",
-    "DESCRIPTION": "根據你牌組中的 ${modID}:彈幕 卡牌總數，獲得 !${modID}:DANMAKU! 層 臨時 力量 。",
-    "UPGRADE_DESCRIPTION": "保留 NL 根據你牌組中的 ${modID}:彈幕 卡牌總數，獲得 !${modID}:DANMAKU! 層 臨時 力量 。"},
+    "DESCRIPTION": "根據你牌組中的 ${modID}:彈幕 卡牌總數，獲得 臨時 力量 。 NL 彈幕總數 : !${modID}:DANMAKU!",
+    "UPGRADE_DESCRIPTION": "保留 NL 根據你牌組中的 ${modID}:彈幕 卡牌總數，獲得 臨時 力量 。 NL 彈幕總數 : !${modID}:DANMAKU!"},
   "${modID}:Punch_in_face": {
     "NAME": "正面重拳",
     "DESCRIPTION": "${modID}:體術 NL 造成 !D! 點傷害。 NL 擊暈敵人。 NL 消耗 "},
@@ -177,8 +197,12 @@
     "UPGRADE_DESCRIPTION": "${modID}:唯一 NL 每使用 ${modID}:體術 時，從抽牌堆中抽取一張隨機的 ${modID}:體術 卡。本回合其費用減少 1。"},
   "${modID}:Shovel": {
     "NAME": "鏟子",
-    "DESCRIPTION": "從你的消耗堆中選擇 !M! 張 ${modID}:花朵 加入你的抽牌堆。 NL 消耗 ",
-    "UPGRADE_DESCRIPTION": "從你的消耗堆中選擇 !M! 張 ${modID}:花朵 加入你的抽牌堆。 NL 消耗 "},
+    "DESCRIPTION": "若你的消耗堆有花朵牌，選擇 !M! 張返回你的手牌。 NL 消耗 ",
+    "UPGRADE_DESCRIPTION": "若你的消耗堆有花朵牌，選擇 !M! 張返回你的手牌。 NL 消耗 ",
+    "EXTENDED_DESCRIPTION": [
+      "選擇要回收的花朵牌。",
+      "消耗堆中沒有花朵牌……"
+    ]},
   "${modID}:Suika": {
     "NAME": "萃香",
     "DESCRIPTION": "${modID}:植物 NL 造成 !D! 點傷害。 NL 手動打出時，在你的抽牌堆中生成 3 張小萃香，並將此卡暂时移出本場戰鬥。 NL 當被 ${modID}:花朵 觸發時，改為造成 !M! 點傷害。",
@@ -194,6 +218,8 @@
   "${modID}:Blossoming_of_Gensokyo": {
     "NAME": "幻想鄉の開花",
     "DESCRIPTION": "造成 !D! 傷害。 NL 在手中生成一張傷害翻倍、具有 虛無 與 消耗 的復制卡。",
+    "SIGNATURE_UNLOCK_CONDITION": "用幻想鄉の開花或其複製品單次造成100點以上傷害",
+    "SIGNATURE_ILLUSTRATOR": "NEKO♨ BFG5 NL Pixiv 27763069",
     "EXTENDED_DESCRIPTION": [
       "虛無  NL 造成 !D! 傷害。 NL 在手中生成一張傷害翻倍的複製卡。 NL 消耗 "]},
   "${modID}:Broken_flower": {
@@ -222,6 +248,8 @@
   "${modID}:Fragrance": {
       "NAME": "芳香",
       "DESCRIPTION": "獲得 [E] 。抽 !M! 張牌。 NL 消耗 ",
+      "SIGNATURE_UNLOCK_CONDITION": "累計使用20次芳香",
+      "SIGNATURE_ILLUSTRATOR": "晨 NL Pixiv 131696298",
       "UPGRADE_DESCRIPTION": "獲得 [E] [E] 。抽 !M! 張牌。 NL 使用 !${modID}:SecondMagic! 次後消耗 。"},
   "${modID}:Infinite_spiral": {
     "NAME": "無限螺旋",
@@ -229,6 +257,8 @@
   "${modID}:LLS_PC98_form": {
       "NAME": "LLS PC98 形態",
       "DESCRIPTION": "切換為 PC98 形態。每回合前 !M! 張攻擊牌造成雙倍傷害。 NL 下一場戰斗無法使用。",
+      "SIGNATURE_UNLOCK_CONDITION": "使用LLS PC98形態並觸發自定義音樂",
+      "SIGNATURE_ILLUSTRATOR": "朝夕染古 NL Pixiv 134780977",
       "UPGRADE_DESCRIPTION": "切換為 PC98 形態。每回合前 !M! 張攻擊牌造成雙倍傷害。",
       "EXTENDED_DESCRIPTION": [
         "無法使用: 冷卻中。",
@@ -236,6 +266,8 @@
   "${modID}:Manipulating_flower": {
       "NAME": "操縱花朵程度的能力",
       "DESCRIPTION": "抽牌直到手牌已滿。優先抽取 ${modID}:花朵 卡。 NL 消耗 ",
+      "SIGNATURE_UNLOCK_CONDITION": "用操縱花朵程度的能力抽7張以上卡牌",
+      "SIGNATURE_ILLUSTRATOR": "Cyrle costeau NL Pixiv 119063756",
       "UPGRADE_DESCRIPTION": "抽牌直到手牌已滿。優先抽取 ${modID}:花朵 卡。 NL 獲得等同于抽牌數量的 活力 。 NL 消耗 "},
   "${modID}:Meet_Retsu": {
       "NAME": "與烈的會面",
@@ -252,6 +284,8 @@
   "${modID}:The_beauties_of_nature": {
       "NAME": "花鳥風月、嘯風弄月",
     "DESCRIPTION": "每消耗2點能量獲得1層（向下取整）。 NL 每層會無效化一次你即將受到的傷害並反彈一半給攻擊者。",
+    "SIGNATURE_UNLOCK_CONDITION": "打出花鳥風月後獲得3層以上花鳥風月效果",
+    "SIGNATURE_ILLUSTRATOR": "Emloste NL Pixiv 146336826",
     "UPGRADE_DESCRIPTION": "每消耗2點能量獲得1層（向上取整）。 NL 每層會無效化一次你即將受到的傷害並反彈一半給攻擊者。"},
   "${modID}:Try_your_best": {
       "NAME": "全力以赴",
@@ -270,6 +304,8 @@
   "${modID}:Worthy_opponent": {
       "NAME": "可敬的對手",
       "DESCRIPTION": "${modID}:唯一 NL 虛無 NL 每當你打出一張牌，獲得 !M! 點 力量 。",
+      "SIGNATURE_UNLOCK_CONDITION": "打出可敬的對手後，戰鬥結束時擁有25點以上力量",
+      "SIGNATURE_ILLUSTRATOR": "しろきあい NL Pixiv 105762048",
       "UPGRADE_DESCRIPTION": "${modID}:唯一 NL 固有 NL 每當你打出一張牌，獲得 !M! 點 力量 。"},
 
   "${modID}:Mega_magic_cannon": {

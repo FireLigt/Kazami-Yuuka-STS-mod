@@ -11,7 +11,6 @@ public class ChrysanthemumRelic extends BaseRelic {
     public static final String ID = makeID("ChrysanthemumRelic");
     private static final int BLOCK_PER_TRIGGER = 10;
     private static final int REGEN_AMOUNT = 2;
-    private float lastBlock;
     private int blockGainedThisTurn;
 
     public ChrysanthemumRelic() {
@@ -20,29 +19,21 @@ public class ChrysanthemumRelic extends BaseRelic {
 
     @Override
     public void atBattleStart() {
-        lastBlock = 0;
         blockGainedThisTurn = 0;
         setCounter(0);
     }
 
     @Override
     public void atTurnStart() {
-        lastBlock = 0;
         blockGainedThisTurn = 0;
         setCounter(0);
     }
 
     @Override
-    public void update() {
-        super.update();
-        if (AbstractDungeon.player != null) {
-            float current = AbstractDungeon.player.currentBlock;
-            if (current > lastBlock) {
-                blockGainedThisTurn += (int) (current - lastBlock);
-                setCounter(blockGainedThisTurn);
-            }
-            lastBlock = current;
-        }
+    public int onPlayerGainedBlock(float blockAmount) {
+        blockGainedThisTurn += (int) blockAmount;
+        setCounter(blockGainedThisTurn);
+        return (int) blockAmount;
     }
 
     @Override

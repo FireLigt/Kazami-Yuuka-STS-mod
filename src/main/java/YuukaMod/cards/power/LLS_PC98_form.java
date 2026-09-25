@@ -46,6 +46,10 @@ public class LLS_PC98_form extends BaseCard {
         }
     }
 
+    public static void clearBlockedCombatCounts() {
+        blockedCombatCountMap.clear();
+    }
+
     public LLS_PC98_form() {
         super(ID, info);
         tags.add(BaseModCardTags.FORM);

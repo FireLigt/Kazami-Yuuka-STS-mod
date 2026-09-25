@@ -1,11 +1,13 @@
 package YuukaMod.util;
 
 import YuukaMod.vfx.combat.ScaledLaserEffect;
+import com.badlogic.gdx.math.Vector2;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.MinionPower;
 
 import java.util.ArrayList;
 
@@ -13,11 +15,11 @@ public class VFXHelper {
     private static final String THIN = "combat/laserThin";
     private static final String THICK = "combat/laserThick";
 
-    private static float[] getGroupCenter(ArrayList<AbstractMonster> group) {
+    private static float[] getGroupCenter(ArrayList<Vector2> group) {
         float cx = 0f, cy = 0f;
-        for (AbstractMonster mo : group) {
-            cx += mo.hb.cX;
-            cy += mo.hb.cY;
+        for (Vector2 pt : group) {
+            cx += pt.x;
+            cy += pt.y;
         }
         int count = group.size();
         if (count > 0) {
@@ -46,17 +48,36 @@ public class VFXHelper {
                         tex, sc), dur));
     }
 
-    private static void fireLasersToAll(AbstractPlayer p, String tex, float sc) {
-        ArrayList<AbstractMonster> monsters = AbstractDungeon.getMonsters().monsters;
-        ArrayList<AbstractMonster> left = new ArrayList<>();
-        ArrayList<AbstractMonster> right = new ArrayList<>();
-        for (AbstractMonster mo : monsters) {
-            if (!mo.isDeadOrEscaped()) {
-                if (mo.hb.cX < p.hb.cX) {
-                    left.add(mo);
-                } else {
-                    right.add(mo);
+    private static ArrayList<Vector2> collectLaserTargets(AbstractPlayer p) {
+        ArrayList<Vector2> targets = new ArrayList<>();
+        if (p instanceof PhantomPlayer) {
+            AbstractPlayer real = ((PhantomPlayer) p).getRealPlayer();
+            if (real != null && real.hb != null && !real.isDeadOrEscaped()) {
+                targets.add(new Vector2(real.hb.cX, real.hb.cY));
+            }
+            for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
+                if (!mo.isDeadOrEscaped() && mo.hasPower(MinionPower.POWER_ID)) {
+                    targets.add(new Vector2(mo.hb.cX, mo.hb.cY));
                 }
+            }
+        } else {
+            for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
+                if (!mo.isDeadOrEscaped()) {
+                    targets.add(new Vector2(mo.hb.cX, mo.hb.cY));
+                }
+            }
+        }
+        return targets;
+    }
+
+    private static void fireLasersToAll(AbstractPlayer p, String tex, float sc) {
+        ArrayList<Vector2> left = new ArrayList<>();
+        ArrayList<Vector2> right = new ArrayList<>();
+        for (Vector2 target : collectLaserTargets(p)) {
+            if (target.x < p.hb.cX) {
+                left.add(target);
+            } else {
+                right.add(target);
             }
         }
         if (!left.isEmpty()) {

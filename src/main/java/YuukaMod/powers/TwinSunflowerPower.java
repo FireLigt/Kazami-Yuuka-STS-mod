@@ -7,6 +7,8 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 
 public class TwinSunflowerPower extends BasePower {
     public static final String POWER_ID_BASE = Yuukamod.makeID(TwinSunflowerPower.class.getSimpleName());
+    private static final com.megacrit.cardcrawl.localization.PowerStrings powerStrings =
+            com.megacrit.cardcrawl.core.CardCrawlGame.languagePack.getPowerStrings(POWER_ID_BASE);
     private static int globalInstanceCount = 0;
 
     public TwinSunflowerPower(AbstractCreature owner, int amount) {

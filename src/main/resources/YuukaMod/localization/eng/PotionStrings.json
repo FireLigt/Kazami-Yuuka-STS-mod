@@ -39,6 +39,12 @@
       "Gain 1 random buff."
     ]
   },
+  "${modID}:BombPotion": {
+    "NAME": "Bomb",
+    "DESCRIPTIONS": [
+      "Gain Buff: Bomb - At the end of each turn, if you have 10 different buffs, you win the battle."
+    ]
+  },
   "${modID}:GreenTea": {
     "NAME": "Green Tea",
     "DESCRIPTIONS": [

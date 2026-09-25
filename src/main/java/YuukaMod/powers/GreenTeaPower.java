@@ -11,7 +11,7 @@ import static YuukaMod.Yuukamod.makeID;
 
 public class GreenTeaPower extends BasePower {
     public static final String POWER_ID = makeID("GreenTeaPower");
-    private static final PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+    private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 
     public GreenTeaPower(AbstractCreature owner, int amount) {
         super(POWER_ID, PowerType.BUFF, false, owner, amount);
@@ -23,8 +23,7 @@ public class GreenTeaPower extends BasePower {
         if (!card.exhaust && !card.exhaustOnUseOnce) return;
         if (amount <= 0) return;
 
-        card.exhaust = false;
-        card.exhaustOnUseOnce = false;
+        action.exhaustCard = false;
         amount--;
 
         if (amount <= 0) {
@@ -38,6 +37,6 @@ public class GreenTeaPower extends BasePower {
 
     @Override
     public void updateDescription() {
-        description = strings.DESCRIPTIONS[0] + amount + strings.DESCRIPTIONS[1];
+        description = powerStrings.DESCRIPTIONS[0] + amount + powerStrings.DESCRIPTIONS[1];
     }
 }

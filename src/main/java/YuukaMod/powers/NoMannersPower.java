@@ -13,6 +13,8 @@ import java.util.Map;
 
 public class NoMannersPower extends BasePower {
     public static final String POWER_ID = Yuukamod.makeID(NoMannersPower.class.getSimpleName());
+    private static final com.megacrit.cardcrawl.localization.PowerStrings powerStrings =
+            com.megacrit.cardcrawl.core.CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 
     private ArrayList<String> existingBuffIDs = new ArrayList<>();
     private Map<String, Integer> existingBuffAmounts = new HashMap<>();

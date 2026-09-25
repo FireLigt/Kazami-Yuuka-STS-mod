@@ -8,6 +8,8 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 
 public class TheBeautiesOfNaturePower extends BasePower {
     public static final String POWER_ID = Yuukamod.makeID(TheBeautiesOfNaturePower.class.getSimpleName());
+    private static final com.megacrit.cardcrawl.localization.PowerStrings powerStrings =
+            com.megacrit.cardcrawl.core.CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 
     private AbstractCreature lastAttacker;
     private boolean pendingAttack = false;
@@ -19,7 +21,7 @@ public class TheBeautiesOfNaturePower extends BasePower {
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
         this.lastAttacker = info.owner;
-        this.pendingAttack = true;
+        this.pendingAttack = damageAmount > 0;
         return damageAmount;
     }
 

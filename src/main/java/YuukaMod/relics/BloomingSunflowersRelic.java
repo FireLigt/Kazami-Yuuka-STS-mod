@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import com.megacrit.cardcrawl.rooms.TreasureRoomBoss;
 
 import static YuukaMod.Yuukamod.makeID;
 
@@ -13,49 +14,68 @@ public class BloomingSunflowersRelic extends BaseRelic {
     public static final String ID = makeID("BloomingSunflowersRelic");
     private static final int ENERGY_THRESHOLD = 3;
 
-    private int cumulativeSpent;
-    private int pendingBonus;
+    private int energySpentThisTurn;
+    private int bonusEnergy;
+    private int energyGrantedTotal;
 
     public BloomingSunflowersRelic() {
         super(ID, "BloomingSunflowersRelic", RelicTier.BOSS, LandingSound.FLAT);
     }
 
     @Override
-    public void onEquip() {
-        for (AbstractRelic r : AbstractDungeon.player.relics) {
-            if (r.relicId.equals(SunflowerRelic.ID)) {
-                AbstractDungeon.player.loseRelic(r.relicId);
-                break;
-            }
+    public boolean canSpawn() {
+        return AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(SunflowerRelic.ID);
+    }
+
+    @Override
+    public void bossObtainLogic() {
+        this.instantObtain(AbstractDungeon.player, 0, true);
+        this.isObtained = true;
+        if (AbstractDungeon.getCurrRoom() instanceof TreasureRoomBoss) {
+            AbstractDungeon.overlayMenu.proceedButton.show();
         }
     }
 
     @Override
+    public void onEquip() {
+    }
+
+    @Override
     public void atBattleStart() {
-        cumulativeSpent = 0;
-        pendingBonus = 0;
+        energySpentThisTurn = 0;
+        bonusEnergy = 0;
+        energyGrantedTotal = 0;
         setCounter(0);
     }
 
     @Override
     public void atTurnStart() {
-        if (pendingBonus > 0) {
+        if (bonusEnergy > 0) {
             flash();
-            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(pendingBonus));
-            pendingBonus = 0;
+            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(bonusEnergy));
+            energyGrantedTotal += bonusEnergy;
         }
+        if (!AbstractDungeon.player.hasRelic(YuukaFumoRelic.ID)) {
+            energySpentThisTurn = 0;
+        }
+        bonusEnergy = 0;
+        setCounter(energySpentThisTurn);
     }
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
         if (c.costForTurn > 0 && !AutoTriggerLimit.isAutoTriggered(c)) {
-            cumulativeSpent += c.costForTurn;
-            int triggered = cumulativeSpent / ENERGY_THRESHOLD;
-            if (triggered > 0) {
-                pendingBonus += triggered;
-                cumulativeSpent -= triggered * ENERGY_THRESHOLD;
-            }
-            setCounter(cumulativeSpent);
+            energySpentThisTurn += c.costForTurn;
+            setCounter(energySpentThisTurn);
+        }
+    }
+
+    @Override
+    public void onPlayerEndTurn() {
+        if (AbstractDungeon.player.hasRelic(YuukaFumoRelic.ID)) {
+            bonusEnergy = Math.max(0, energySpentThisTurn / ENERGY_THRESHOLD - energyGrantedTotal);
+        } else {
+            bonusEnergy = energySpentThisTurn / ENERGY_THRESHOLD;
         }
     }
 

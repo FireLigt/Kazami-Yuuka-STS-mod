@@ -7,7 +7,9 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import java.util.ArrayList;
@@ -32,70 +34,105 @@ public class Shovel extends BaseCard {
     }
 
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        int amount = magicNumber;
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        if (!super.canUse(p, m)) {
+            return false;
+        }
 
+        boolean hasFlower = false;
+        for (AbstractCard c : p.exhaustPile.group) {
+            if (c.hasTag(CustomTags.FLOWER)) {
+                hasFlower = true;
+                break;
+            }
+        }
+
+        if (!hasFlower) {
+            CardStrings strings = CardCrawlGame.languagePack.getCardStrings(cardID);
+            String msg = strings != null && strings.EXTENDED_DESCRIPTION != null && strings.EXTENDED_DESCRIPTION.length > 1
+                    ? strings.EXTENDED_DESCRIPTION[1]
+                    : "There is no Flower card in the exhaust pile...";
+            cantUseMessage = msg;
+            return false;
+        }
+
+        return true;
+    }
+
+    @Override
+    public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new AbstractGameAction() {
+            private int remaining = magicNumber;
+            private boolean choosing = false;
+            private final ArrayList<java.util.UUID> selectedCardIDs = new ArrayList<>();
+
             @Override
             public void update() {
-                ArrayList<AbstractCard> flowerCards = new ArrayList<>();
+                if (remaining <= 0) {
+                    this.isDone = true;
+                    return;
+                }
+
+                if (AbstractDungeon.isScreenUp) {
+                    return;
+                }
+
+                if (choosing) {
+                    choosing = false;
+                    if (AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
+                        this.isDone = true;
+                        return;
+                    }
+                    for (AbstractCard c : AbstractDungeon.gridSelectScreen.selectedCards) {
+                        selectedCardIDs.add(c.uuid);
+                        AbstractCard cardRef = c;
+                        addToBot(new AbstractGameAction() {
+                            @Override
+                            public void update() {
+                                retrieveToHand(p, cardRef);
+                                this.isDone = true;
+                            }
+                        });
+                    }
+                    AbstractDungeon.gridSelectScreen.selectedCards.clear();
+                    remaining--;
+                    if (remaining <= 0) {
+                        this.isDone = true;
+                        return;
+                    }
+                }
+
+                ArrayList<AbstractCard> available = new ArrayList<>();
                 for (AbstractCard c : p.exhaustPile.group) {
-                    if (c.hasTag(CustomTags.FLOWER)) {
-                        flowerCards.add(c);
+                    if (c.hasTag(CustomTags.FLOWER) && !selectedCardIDs.contains(c.uuid)) {
+                        available.add(c);
                     }
                 }
 
-                if (flowerCards.isEmpty()) {
+                if (available.isEmpty()) {
                     this.isDone = true;
                     return;
                 }
 
-                if (flowerCards.size() <= amount) {
-                    for (AbstractCard c : flowerCards) {
-                        retrieveFromExhaust(p, c);
-                    }
-                    this.isDone = true;
-                    return;
-                }
-
-                CardGroup cardGroup = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-                for (AbstractCard c : flowerCards) {
-                    cardGroup.addToTop(c);
+                CardGroup group = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+                for (AbstractCard c : available) {
+                    group.addToTop(c);
                 }
                 String prompt = cardStrings.EXTENDED_DESCRIPTION != null && cardStrings.EXTENDED_DESCRIPTION.length > 0
                         ? cardStrings.EXTENDED_DESCRIPTION[0]
                         : "Choose Flower cards to retrieve.";
-                AbstractDungeon.gridSelectScreen.open(cardGroup, amount, prompt, false, false, false, false);
-                addToBot(new AbstractGameAction() {
-                    @Override
-                    public void update() {
-                        if (AbstractDungeon.isScreenUp) {
-                            return;
-                        }
-                        if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
-                            int retrieved = 0;
-                            for (AbstractCard c : AbstractDungeon.gridSelectScreen.selectedCards) {
-                                if (retrieved >= amount) break;
-                                retrieveFromExhaust(p, c);
-                                retrieved++;
-                            }
-                            AbstractDungeon.gridSelectScreen.selectedCards.clear();
-                        }
-                        this.isDone = true;
-                    }
-                });
-                this.isDone = true;
+                AbstractDungeon.gridSelectScreen.open(group, 1, prompt, false, false, true, false);
+                choosing = true;
             }
         });
     }
 
-    private static void retrieveFromExhaust(AbstractPlayer p, AbstractCard c) {
-        c.unhover();
-        c.stopGlowing();
-        p.exhaustPile.removeCard(c);
-        p.drawPile.addToRandomSpot(c);
-        p.drawPile.refreshHandLayout();
-        p.exhaustPile.refreshHandLayout();
+    private static void retrieveToHand(AbstractPlayer p, AbstractCard c) {
+        if (p.exhaustPile.contains(c)) {
+            p.exhaustPile.removeCard(c);
+            p.hand.addToHand(c);
+            p.hand.refreshHandLayout();
+        }
     }
 
     @Override

@@ -8,6 +8,8 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 
 public class FertilizerPower extends BasePower {
     public static final String POWER_ID_BASE = Yuukamod.makeID(FertilizerPower.class.getSimpleName());
+    private static final com.megacrit.cardcrawl.localization.PowerStrings powerStrings =
+            com.megacrit.cardcrawl.core.CardCrawlGame.languagePack.getPowerStrings(POWER_ID_BASE);
     private static int globalInstanceCount = 0;
 
     public FertilizerPower(AbstractCreature owner) {

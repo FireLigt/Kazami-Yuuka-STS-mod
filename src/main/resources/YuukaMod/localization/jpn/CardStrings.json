@@ -44,13 +44,17 @@
     "DESCRIPTION": "${modID}:体術 NL !D! ダメージ。 NL プレイするたび、このランの間永続的にダメージ+1。"},
   "${modID}:Pursuit": {
     "NAME": "追撃",
-    "DESCRIPTION": "${modID}:体術 NL !D! ダメージ。 致命一击時、このカードを手札に戻し [E] [E] [E] を獲得。"},
+    "DESCRIPTION": "${modID}:体術 NL !D! ダメージ。 致命一击時、このカードを手札に戻し [E] [E] [E] を獲得。",
+    "SIGNATURE_UNLOCK_CONDITION": "1ターンで追撃を使って敵を3体撃破する",
+    "SIGNATURE_ILLUSTRATOR": "ヘッツァ NL Pixiv 8866388"},
   "${modID}:Ready": {
     "NAME": "準備",
     "DESCRIPTION": "山札から !M! 枚のランダムな ${modID}:魔砲 カードを手札に加える。"},
   "${modID}:Reload": {
     "NAME": "リロード",
     "DESCRIPTION": "捨て札の ${modID}:弾幕 を全て山札に戻す。",
+    "SIGNATURE_UNLOCK_CONDITION": "リロードで3枚以上の弾幕を山札に戻す",
+    "SIGNATURE_ILLUSTRATOR": "東天紅@紅楼夢そ-05ab NL Pixiv 132693801",
     "UPGRADE_DESCRIPTION": "保留 NL 捨て札の ${modID}:弾幕 を全て山札に戻す。"},
   "${modID}:Resist_offensive": {
     "NAME": "耐勢攻勢",
@@ -65,7 +69,9 @@
     "UPGRADE_DESCRIPTION": "カードを !M! 枚引く。 NL 廃棄。"},
   "${modID}:Smiling": {
     "NAME": "微笑み",
-    "DESCRIPTION": "HPを !M! 回復。 NL 廃棄。"},
+    "DESCRIPTION": "HPを !M! 回復。 NL 廃棄。",
+    "SIGNATURE_UNLOCK_CONDITION": "ランを通じて合計50HPを回復する",
+    "SIGNATURE_ILLUSTRATOR": "林檎の兎 NL Pixiv 135594938"},
   "${modID}:Straight_punch": {
     "NAME": "ストレートパンチ",
     "DESCRIPTION": "${modID}:体術 NL !D! ダメージ。 捨て札からカードを!M!枚引く。",
@@ -101,17 +107,23 @@
     "DESCRIPTION": "${modID}:体術 NL 直前にプレイしたカードが ${modID}:体術 の場合、このカードのコストが1減る。 NL !D! ダメージ。"},
   "${modID}:Contempt": {
     "NAME": "侮蔑",
-    "DESCRIPTION": "${modID}:ユニーク NL このターンでは、一時的なカードを除くすべてのカードのコストが-1になります。 NL 廃棄。"},
+    "DESCRIPTION": "${modID}:ユニーク NL このターンでは、一時的なカードを除くすべてのカードのコストが-1になります。 NL 廃棄。",
+    "SIGNATURE_UNLOCK_CONDITION": "侮蔑を手札に残したままターンを終了する（プレイしない）",
+    "SIGNATURE_ILLUSTRATOR": "AeeGs NL Pixiv 134749519"},
   "${modID}:Crazy_yuuka": {
     "NAME": "クレイジー幽香",
     "DESCRIPTION": "プラントカードをプレイするたび、ランダムなプラントカードを手札に加える。それはエセリアルと廃棄を持つ。",
     "UPGRADE_DESCRIPTION": "プラントカードをプレイするたび、アップグレードされたランダムなプラントカードを手札に加える。それはエセリアルと廃棄を持つ。"},
   "${modID}:Famed_far": {
     "NAME": "フェイムド・ファー",
-    "DESCRIPTION": "パワーカードを引くかドロー山札が空になるまでドローする。溢れたカードは捨て山札に行く。"},
+    "DESCRIPTION": "パワーカードを引くかドロー山札が空になるまでドローする。溢れたカードは捨て山札に行く。",
+    "SIGNATURE_UNLOCK_CONDITION": "フェイムド・ファーをプレイし、その効果でカードが捨て山札に行かない",
+    "SIGNATURE_ILLUSTRATOR": "ZeeW NL Pixiv 148539974"},
   "${modID}:Finishing_move": {
     "NAME": "フィニッシュムーブ",
-    "DESCRIPTION": "${modID}:体術 NL !D! ダメージ。 NL このターン他の ${modID}:体術 をプレイしていた場合、ダメージが2倍になり、代わりに !M! 脱力を付与。 NL ターンを終了。"},
+    "DESCRIPTION": "${modID}:体術 NL !D! ダメージ。 NL このターン他の ${modID}:体術 をプレイしていた場合、ダメージが2倍になり、代わりに !M! 脱力を付与。 NL ターンを終了。",
+    "SIGNATURE_UNLOCK_CONDITION": "フィニッシュムーブで敵を撃破する",
+    "SIGNATURE_ILLUSTRATOR": "wei NL Pixiv 147044087"},
   "${modID}:Flower_danmaku": {
     "NAME": "花弾",
     "DESCRIPTION": "${modID}:フラワー ${modID}:弾幕 NL !D! ダメージ。",
@@ -123,10 +135,14 @@
   "${modID}:Gensou_shunka": {
     "NAME": "幻想春花",
     "DESCRIPTION": "各ターン開始時、ランダムな ${modID}:フラワー カードを手札に加える。それはエセリアルと廃棄を持つ。",
+    "SIGNATURE_UNLOCK_CONDITION": "ランを通じて幻想春花を10回使用する",
+    "SIGNATURE_ILLUSTRATOR": "にしもん NL Pixiv 37591920",
     "UPGRADE_DESCRIPTION": "各ターン開始時、アップグレードされたランダムな ${modID}:フラワー カードを手札に加える。それはエセリアルと廃棄を持つ。"},
   "${modID}:Gentle": {
     "NAME": "ジェントル",
-      "DESCRIPTION": "このターンに攻撃カードをプレイしていない場合のみ使用可能。 NL !B! ブロックを獲得。 NL 敵が攻撃を意図している場合、${modID}:無作法 を付与。 NL 廃棄 。"},
+      "DESCRIPTION": "このターンに攻撃カードをプレイしていない場合のみ使用可能。 NL !B! ブロックを獲得。 NL 敵が攻撃を意図している場合、${modID}:無作法 を付与。 NL 廃棄 。",
+      "SIGNATURE_UNLOCK_CONDITION": "ランを通じてジェントルを5回使用する",
+      "SIGNATURE_ILLUSTRATOR": "白山ゆーき NL Pixiv 145649076"},
   "${modID}:Getting_over_it": {
     "NAME": "ゲッティング・オーバー・イット",
     "DESCRIPTION": "各ターン開始時、!M! 筋力を獲得。HPダメージを受けるとこのパワーを失う。",
@@ -144,7 +160,9 @@
     "DESCRIPTION": "${modID}:魔砲 NL 敵全体に !D! ダメージ。 NL 敵全体に !M! 弱体を付与。"},
   "${modID}:Low_speed": {
     "NAME": "低速",
-    "DESCRIPTION": "!${modID}:DexLoss! 敏捷を失う。 NL !M! 筋力を獲得。"},
+    "DESCRIPTION": "!${modID}:DexLoss! 敏捷を失う。 NL !M! 筋力を獲得。",
+    "SIGNATURE_UNLOCK_CONDITION": "敏捷がマイナスの状態で低速をプレイする",
+    "SIGNATURE_ILLUSTRATOR": "Cloudy.R NL Pixiv 101783065"},
   "${modID}:Marigold": {
     "NAME": "マリーゴールド",
     "DESCRIPTION": "${modID}:フラワー NL !M! ゴールドを獲得。 NL 廃棄"},
@@ -154,14 +172,16 @@
     "UPGRADE_DESCRIPTION": "${modID}:ユニーク NL 天賦 NL 各ターンの開始時に、追加でカードを3枚引く。"},
   "${modID}:Parasol": {
     "NAME": "日傘",
-    "DESCRIPTION": "カードをプレイするたび、!M!ブロックを獲得。"},
+    "DESCRIPTION": "カードをプレイするたび、!M!ブロックを獲得。",
+    "SIGNATURE_UNLOCK_CONDITION": "ランを通じて日傘を10回使用する",
+    "SIGNATURE_ILLUSTRATOR": "Reina NL Pixiv 7593428"},
   "${modID}:Power_deterrence": {
     "NAME": "パワー抑止",
     "DESCRIPTION": "カードを !M! 枚引く。この方法で引いた ${modID}:魔砲 1枚につき、敵全体に !M! 脱力を付与。 NL 廃棄"},
   "${modID}:Prepare": {
     "NAME": "準備",
-    "DESCRIPTION": "デッキ内の ${modID}:弾幕 カードの総数と等しい !${modID}:DANMAKU! 一時的な 筋力を 獲得。",
-    "UPGRADE_DESCRIPTION": "リテイン。 NL デッキ内の ${modID}:弾幕 カードの総数と等しい !${modID}:DANMAKU! 一時的な 筋力を 獲得。"},
+    "DESCRIPTION": "デッキ内の ${modID}:弾幕 カードの総数と等しい 一時的な 筋力を 獲得。 NL 弾幕の総数 : !${modID}:DANMAKU!",
+    "UPGRADE_DESCRIPTION": "リテイン。 NL デッキ内の ${modID}:弾幕 カードの総数と等しい 一時的な 筋力を 獲得。 NL 弾幕の総数 : !${modID}:DANMAKU!"},
   "${modID}:Punch_in_face": {
     "NAME": "顔面パンチ",
     "DESCRIPTION": "${modID}:体術 NL !D! ダメージ。 NL 敵をスタンさせる。 NL 廃棄 "},
@@ -178,8 +198,12 @@
     "UPGRADE_DESCRIPTION": "${modID}:ユニーク NL ${modID}:体術 をプレイするたび、山札からランダムな ${modID}:体術 を1枚引く。このターンそのコストを1減らす。"},
   "${modID}:Shovel": {
     "NAME": "ショベル",
-    "DESCRIPTION": "廃棄札からフラワーカードを !M! 枚選び、山札に加える。 NL 廃棄",
-    "UPGRADE_DESCRIPTION": "廃棄札からフラワーカードを !M! 枚選び、山札に加える。 NL 廃棄"},
+    "DESCRIPTION": "廃棄札にフラワーカードがある場合、!M! 枚選び手札に戻す。 NL 廃棄",
+    "UPGRADE_DESCRIPTION": "廃棄札にフラワーカードがある場合、!M! 枚選び手札に戻す。 NL 廃棄",
+    "EXTENDED_DESCRIPTION": [
+      "回収するフラワーカードを選択。",
+      "廃棄札にフラワーカードがない……"
+    ]},
   "${modID}:Suika": {
     "NAME": "萃香",
     "DESCRIPTION": "${modID}:プラント NL !D! ダメージ。 NL 手動でプレイした場合、小型萃香を3枚山札に生成し、このカードを戦闘から取り除く。 NL ${modID}:フラワー カードで発動した場合、代わりに !M! ダメージ。",
@@ -195,6 +219,8 @@
   "${modID}:Blossoming_of_Gensokyo": {
     "NAME": "幻想郷の開花",
     "DESCRIPTION": "!D! ダメージ。 NL ダメージが2倍のコピーを手札に生成。それはエセリアルと廃棄を持つ。",
+    "SIGNATURE_UNLOCK_CONDITION": "幻想郷の開花またはそのコピーで1回の攻撃で100以上のダメージを与える",
+    "SIGNATURE_ILLUSTRATOR": "NEKO♨ BFG5 NL Pixiv 27763069",
     "EXTENDED_DESCRIPTION": [
       "エセリアル NL !D! ダメージ。 NL ダメージが2倍のコピーを手札に生成。 NL 廃棄"]},
   "${modID}:Broken_flower": {
@@ -223,6 +249,8 @@
   "${modID}:Fragrance": {
     "NAME": "芳香",
     "DESCRIPTION": " [E] を獲得。カードを !M! 枚引く。 NL 廃棄。",
+    "SIGNATURE_UNLOCK_CONDITION": "ランを通じて芳香を20回使用する",
+    "SIGNATURE_ILLUSTRATOR": "晨 NL Pixiv 131696298",
     "UPGRADE_DESCRIPTION": " [E] [E] を獲得。カードを !M! 枚引く。 NL !${modID}:SecondMagic! 回使用後 廃棄 。"},
   "${modID}:Infinite_spiral": {
     "NAME": "無限螺旋",
@@ -230,6 +258,8 @@
   "${modID}:LLS_PC98_form": {
     "NAME": "LLS PC98形態",
     "DESCRIPTION": "PC98形態に変化。各ラウンド最初の !M! 枚の攻撃カードのダメージが2倍になる。 NL 次の戦闘では使用不可。",
+      "SIGNATURE_UNLOCK_CONDITION": "LLS PC98形態でカスタムミュージックを発動する",
+      "SIGNATURE_ILLUSTRATOR": "朝夕染古 NL Pixiv 134780977",
       "UPGRADE_DESCRIPTION": "PC98形態に変化。各ラウンド最初の !M! 枚の攻撃カードのダメージが2倍になる。",
       "EXTENDED_DESCRIPTION": [
         "使用不可: クールダウン中。",
@@ -237,6 +267,8 @@
   "${modID}:Manipulating_flower": {
     "NAME": "操花",
     "DESCRIPTION": "手札が一杯になるまでカードを引く。${modID}:フラワー カードが優先的に引かれる。 NL 廃棄。",
+    "SIGNATURE_UNLOCK_CONDITION": "操花で7枚以上のカードを引く",
+    "SIGNATURE_ILLUSTRATOR": "Cyrle costeau NL Pixiv 119063756",
     "UPGRADE_DESCRIPTION": "手札が一杯になるまでカードを引く。${modID}:フラワー カードが優先的に引かれる。 NL 引いたカードの枚数と等しい活力を獲得。 NL 廃棄。"},
   "${modID}:Meet_Retsu": {
     "NAME": "ミート烈",
@@ -253,6 +285,8 @@
   "${modID}:The_beauties_of_nature": {
     "NAME": "花鳥風月、嘯風弄月",
     "DESCRIPTION": "2エネルギーにつき1スタック獲得（切り捨て）。 NL 各スタックは、次に受けるダメージを無効化し、半分を攻撃者に反射する。",
+    "SIGNATURE_UNLOCK_CONDITION": "花鳥風月を1回のプレイで3スタック以上獲得する",
+    "SIGNATURE_ILLUSTRATOR": "Emloste NL Pixiv 146336826",
     "UPGRADE_DESCRIPTION": "2エネルギーにつき1スタック獲得（切り上げ）。 NL 各スタックは、次に受けるダメージを無効化し、半分を攻撃者に反射する。"},
   "${modID}:Try_your_best": {
     "NAME": "全力を尽くせ",
@@ -271,6 +305,8 @@
   "${modID}:Worthy_opponent": {
     "NAME": "好敵手",
     "DESCRIPTION": "${modID}:ユニーク NL エセリアル NL カードを使用するたび、!M! 筋力を獲得。",
+    "SIGNATURE_UNLOCK_CONDITION": "好敵手をプレイし、戦闘終了時に25以上の筋力を維持する",
+    "SIGNATURE_ILLUSTRATOR": "しろきあい NL Pixiv 105762048",
     "UPGRADE_DESCRIPTION": "${modID}:ユニーク NL 初手 NL カードを使用するたび、!M! 筋力を獲得。"},
 
   "${modID}:Mega_magic_cannon": {

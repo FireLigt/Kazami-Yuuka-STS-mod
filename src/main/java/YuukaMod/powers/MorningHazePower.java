@@ -10,6 +10,8 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public class MorningHazePower extends BasePower {
     public static final String POWER_ID_BASE = Yuukamod.makeID(MorningHazePower.class.getSimpleName());
+    private static final com.megacrit.cardcrawl.localization.PowerStrings powerStrings =
+            com.megacrit.cardcrawl.core.CardCrawlGame.languagePack.getPowerStrings(POWER_ID_BASE);
     private static int globalInstanceCount = 0;
     private boolean upgraded;
     private int hpLostTracker = 0;

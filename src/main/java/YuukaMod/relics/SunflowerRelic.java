@@ -11,10 +11,10 @@ import static YuukaMod.Yuukamod.makeID;
 
 public class SunflowerRelic extends BaseRelic {
     public static final String ID = makeID("SunflowerRelic");
-    private static final int ENERGY_THRESHOLD = 3;
 
-    private int energySpentThisTurn;
-    private int bonusEnergy;
+    private int lastTurnEnergySpent;
+    private int thisTurnEnergySpent;
+    private boolean firstTurn;
 
     public SunflowerRelic() {
         super(ID, "SunflowerRelic", RelicTier.STARTER, LandingSound.FLAT);
@@ -22,33 +22,34 @@ public class SunflowerRelic extends BaseRelic {
 
     @Override
     public void atBattleStart() {
-        energySpentThisTurn = 0;
-        bonusEnergy = 0;
-        setCounter(0);
+        lastTurnEnergySpent = 0;
+        thisTurnEnergySpent = 0;
+        firstTurn = true;
+        setCounter(-1);
     }
 
     @Override
     public void atTurnStart() {
-        if (bonusEnergy > 0) {
+        boolean fumoBoost = AbstractDungeon.player != null && AbstractDungeon.player.hasRelic(YuukaFumoRelic.ID);
+        if (!firstTurn && (fumoBoost ? thisTurnEnergySpent >= lastTurnEnergySpent : thisTurnEnergySpent > lastTurnEnergySpent)) {
             flash();
-            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(bonusEnergy));
+            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
         }
-        energySpentThisTurn = 0;
-        bonusEnergy = 0;
-        setCounter(0);
+        lastTurnEnergySpent = thisTurnEnergySpent;
+        thisTurnEnergySpent = 0;
+        firstTurn = false;
     }
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
         if (c.costForTurn > 0 && !AutoTriggerLimit.isAutoTriggered(c)) {
-            energySpentThisTurn += c.costForTurn;
-            setCounter(energySpentThisTurn);
+            thisTurnEnergySpent += c.costForTurn;
+            setCounter(thisTurnEnergySpent);
         }
     }
 
     @Override
     public void onPlayerEndTurn() {
-        bonusEnergy = energySpentThisTurn / ENERGY_THRESHOLD;
     }
 
     @Override

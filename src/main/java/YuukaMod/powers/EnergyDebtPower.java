@@ -7,6 +7,8 @@ import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 
 public class EnergyDebtPower extends BasePower {
     public static final String POWER_ID = Yuukamod.makeID(EnergyDebtPower.class.getSimpleName());
+    private static final com.megacrit.cardcrawl.localization.PowerStrings powerStrings =
+            com.megacrit.cardcrawl.core.CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     private boolean debtApplied = false;
 
     public EnergyDebtPower(AbstractCreature owner, int amount) {

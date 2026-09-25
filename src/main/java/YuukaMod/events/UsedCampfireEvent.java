@@ -17,6 +17,7 @@ public class UsedCampfireEvent extends PhasedEvent {
     public static final String ID = makeID("UsedCampfire");
     private static final EventStrings eventStrings = CardCrawlGame.languagePack.getEventString(ID);
 
+    private static final String NAME = eventStrings.NAME;
     private static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
     private static final String[] OPTIONS = eventStrings.OPTIONS;
 
@@ -25,7 +26,7 @@ public class UsedCampfireEvent extends PhasedEvent {
     private AbstractRelic relicPreview;
 
     public UsedCampfireEvent() {
-        super(ID, eventStrings.NAME, imagePath("events/UsedCampfire.png"));
+        super(ID, NAME, imagePath("events/UsedCampfire.png"));
 
         cardPreview1 = getRandomIroncladCard();
         cardPreview2 = getRandomIroncladCard();

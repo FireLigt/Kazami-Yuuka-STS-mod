@@ -1,0 +1,7 @@
+{
+  "${modID}:RecordPlayer": {
+    "NAME": "Record Player",
+    "MOVES": ["Memory"],
+    "DIALOG": ["I remember this...", "..."]
+  }
+}

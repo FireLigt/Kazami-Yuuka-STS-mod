@@ -39,6 +39,12 @@
       "ランダムなバフを1つ得る。"
     ]
   },
+  "${modID}:BombPotion": {
+    "NAME": "爆弾",
+    "DESCRIPTIONS": [
+      "爆弾を得る。各ターン終了時、10種類以上の異なるバフを持っている場合、戦闘に勝利する。"
+    ]
+  },
   "${modID}:GreenTea": {
     "NAME": "緑茶",
     "DESCRIPTIONS": [

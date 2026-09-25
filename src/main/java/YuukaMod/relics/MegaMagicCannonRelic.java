@@ -28,6 +28,11 @@ public class MegaMagicCannonRelic extends BaseRelic {
     }
 
     @Override
+    public void atBattleStart() {
+        turnsElapsed = 0;
+    }
+
+    @Override
     public void onEquip() {
         turnsElapsed = 0;
     }

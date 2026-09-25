@@ -148,6 +148,7 @@ public class AutoTriggerLimit {
             p.drawPile.removeCard(card);
         }
         card.freeToPlayOnce = true;
+        card.dontTriggerOnUseCard = true;
         markAutoTriggered(card);
 
         AbstractDungeon.actionManager.addToBottom(new NewQueueCardAction(card, true, false, false));
